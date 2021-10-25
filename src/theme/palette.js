@@ -1,25 +1,26 @@
 export const light = {
   alternate: {
-    main: '#f7faff',
-    dark: '#edf1f7',
+    light: "#f7f9fc",
+    main: "#f5f5f6",
+    dark: "#eeeeef",
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
   primary: {
-    main: '#377dff',
-    light: '#467de3',
-    dark: '#2f6ad9',
-    contrastText: '#fff',
+    light: '#ce9038',
+    main: '#996300',
+    dark: '#673900',
+    contrastText: '#ffffff',
   },
   secondary: {
-    light: '#ffb74d',
-    main: '#f9b934',
-    dark: '#FF9800',
+    light: '#8c8c8d',
+    main: '#bcbcbd',
+    dark: '#5f5f60',
     contrastText: 'rgba(0, 0, 0, 0.87)',
   },
   text: {
-    primary: '#1e2022',
-    secondary: '#677788',
+     primary: "#2b2526",
+    secondary: "#544d4e",
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
@@ -27,6 +28,7 @@ export const light = {
     default: '#ffffff',
     level2: '#f5f5f5',
     level1: '#ffffff',
+    footer: "#1b1642",
   },
 };
 
@@ -42,16 +44,16 @@ export const dark = {
   },
   mode: 'dark',
   primary: {
-    main: '#1976d2',
-    light: '#2196f3',
-    dark: '#0d47a1',
-    contrastText: '#fff',
+    main: "#dda95f",
+    light: "#ffda8e",
+    dark: "#a97a32",
+    contrastText: "#000000",
   },
   secondary: {
-    light: '#FFEA41',
-    main: '#FFE102',
-    dark: '#DBBE01',
-    contrastText: 'rgba(0, 0, 0, 0.87)',
+    main: "#bcbcbd",
+    light: "#eeeeef",
+    dark: "#8c8c8d",
+    contrastText: "#000000",
   },
   text: {
     primary: '#EEEEEF',
@@ -63,5 +65,6 @@ export const dark = {
     default: '#222B45',
     level2: '#333',
     level1: '#2D3748',
+    footer: "#18181f",
   },
 };
