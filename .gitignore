@@ -15,6 +15,7 @@
 # gatsby.js
 **/.cache
 gatsbyjs/public
+public*
 
 # react-scripts production
 **/build
