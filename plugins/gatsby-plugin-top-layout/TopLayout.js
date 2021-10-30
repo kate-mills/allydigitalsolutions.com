@@ -17,7 +17,7 @@ export default function TopLayout(props) {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
+          href="https://github.com/kate-mills/helloAlly/blob/076167b8c647511f4da96ed263a7ca19ae9080b0/src/images/icon.png"
         />
         <meta
           name="viewport"
@@ -52,7 +52,7 @@ export default function TopLayout(props) {
           content="https://thefront.maccarianagency.com/"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
       </Helmet>
       <Page>
         {props.children}
