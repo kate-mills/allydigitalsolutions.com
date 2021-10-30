@@ -8,9 +8,9 @@ import Grid from '@mui/material/Grid';
 
 const mock = [
   {
-    title: 'Built for developers',
+    title: "Website Development",
     subtitle:
-      'theFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
+      "We help you gain the advantage and efficiency through intelligent automation and always follow the latest developer best practices to enhance the experience for all users visiting our sites.",
     icon: (
       <svg
         height={24}
@@ -24,15 +24,15 @@ const mock = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
         />
       </svg>
     ),
   },
   {
-    title: 'Designed to be modern',
+    title: "Social Media Management",
     subtitle:
-      'Designed with the latest design trends in mind. theFront feels modern, minimal, and beautiful.',
+      "Having a digital presence is a vital factor in the success of your brand. Therefore, we monitor, execute, filter, and measure our client's product, brand, and business's social media presence.",
     icon: (
       <svg
         height={24}
@@ -52,9 +52,9 @@ const mock = [
     ),
   },
   {
-    title: 'Documentation for everything',
+    title: "Digital Brand Management",
     subtitle:
-      'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
+      "Even if your business already has a web presence, a Google My Business listing account ensures you are discoverable and much more.  According to Google, customers are 70% more likely to visit businesses with a complete Google My Business listing.",
     icon: (
       <svg
         height={24}
@@ -68,7 +68,7 @@ const mock = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
         />
       </svg>
     ),
@@ -89,8 +89,7 @@ const Services = () => {
             sx={{
               fontWeight: 700,
             }}
-          >
-            Build accessible React apps with speed
+          >Synthesis of development and design
           </Typography>
           <Typography
             variant="h6"
@@ -98,10 +97,7 @@ const Services = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >
-            Build a beautiful, modern website with flexible, fully customizable,
-            atomic MUI components.
-          </Typography>
+          >Our design strategy is a fluid integration of composition, fusion & symmetry.</Typography>
         </Box>
       </Box>
       <Grid container spacing={2}>
