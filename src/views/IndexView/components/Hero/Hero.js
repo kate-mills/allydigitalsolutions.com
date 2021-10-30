@@ -13,66 +13,48 @@ const images = [
   {
     group: [
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img1.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img1--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img5--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img5--dark.jpg',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img4.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img4--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img2.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img2--dark.jpg',
       },
     ],
   },
   {
     group: [
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img13.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img13--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img3.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img3--dark.jpg',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img10.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img10--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img4.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img4--dark.jpg',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img7.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img7--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img3.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img3--dark.jpg',
       },
     ],
   },
   {
     group: [
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img6.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img6--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img5--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img5--dark.jpg',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img24.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img24--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img1.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img1--dark.jpg',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img17.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img17--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img5--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img5--dark.jpg',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img12.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img12--dark.png',
+        cover:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img2.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/helloAlly/dev-002/src/images/Hero/img2--dark.jpg',
       },
     ],
   },
@@ -99,39 +81,35 @@ const Hero = () => {
         <Container>
           <Box maxWidth={{ xs: 1, sm: '50%' }}>
             <Typography
-              variant="h2"
+              variant="h3"
               color="text.primary"
               gutterBottom
               sx={{
                 fontWeight: 700,
               }}
             >
-              Turn your ideas
-              <br />
-              into{' '}
+A modern approach to digital management that
+              <br />{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
-                sx={{
-                  background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
-                }}
-              >
-                <Typed
-                  strings={['startup.', 'future.', 'success.']}
-                  typeSpeed={80}
-                  loop={true}
-                />
-              </Typography>
+                sx={{ /*background: `linear-gradient(180deg, transparent 62%, ${alpha(theme.palette.secondary.main, 0.1)} 0%)`,*/ }}
+              ><Typed strings={[
+                    "is discoverable",
+                    "inspires action",
+                    "incites engagment",
+                    "motivates change",
+                    "drives movement",
+                    "forces innovation",
+                  ]}typeSpeed={40} backSpeed={50} loop/></Typography>
             </Typography>
             <Typography
               variant="h6"
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >
-              theFront will make your product look modern and professional while
-              saving you precious time.
+            >allyDigital will make your brand visible, look modern and professional while saving you precious time.
             </Typography>
             <Box
               display="flex"
