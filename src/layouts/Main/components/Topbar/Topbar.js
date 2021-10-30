@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
+import logo from 'svg/logo.svg'
 
 import { NavItem } from './components';
 
@@ -35,11 +36,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       >
         <Box
           component={'img'}
-          src={
-            (mode === 'light' && !colorInvert)
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
+          src={logo}
           height={1}
           width={1}
         />

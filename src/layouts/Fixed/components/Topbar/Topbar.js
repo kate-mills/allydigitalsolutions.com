@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import logo from 'svg/logo.svg'
 import { ThemeModeToggler } from './components';
 
 const Topbar = ({ onSidebarOpen }) => {
@@ -28,11 +29,7 @@ const Topbar = ({ onSidebarOpen }) => {
       >
         <Box
           component={'img'}
-          src={
-            mode === 'light'
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
+          src={logo}
           height={1}
           width={1}
         />

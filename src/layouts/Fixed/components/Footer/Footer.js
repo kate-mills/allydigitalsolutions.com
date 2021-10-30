@@ -6,6 +6,8 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
+import logo from 'svg/logo.svg'
+
 const Footer = () => {
   const theme = useTheme();
   const { mode } = theme.palette;
@@ -29,11 +31,7 @@ const Footer = () => {
           >
             <Box
               component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
+              src={logo}
               height={1}
               width={1}
             />

@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-
 import NavItem from './components/NavItem';
+
+import logo from 'svg/logo.svg'
 
 const SidebarNav = ({ pages }) => {
   const theme = useTheme();
@@ -31,11 +32,7 @@ const SidebarNav = ({ pages }) => {
         >
           <Box
             component={'img'}
-            src={
-              mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-            }
+            src={logo}
             height={1}
             width={1}
           />
