@@ -1,6 +1,3 @@
-
-//const gold = { light: '#c8bd99', main: '#978d6b', dark: '#686040', contrastText: '#000' }
-//const silver = { light: '#8c8c8d', main: '#bcbcbd', dark: '#5f5f60', contrastText: 'rgba(0, 0, 0, 0.87)', }
 export const light = {
   alternate: {
     light: "#f7f9fc",
@@ -10,10 +7,10 @@ export const light = {
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
   secondary: {
-    light: '#ce9038',
-    main: '#996300',
-    dark: '#673900',
-    contrastText: '#000000',
+    light: '#ffeedd',
+    main: '#d6bcab',
+    dark: '#a48c7c',
+    contrastText: '#000000'
   },
   primary: {
     light: '#8c8c8d',
@@ -47,17 +44,16 @@ export const dark = {
   },
   mode: 'dark',
   primary: {
-    main: "#dda95f",
-    light: "#ffda8e",
-    dark: "#a97a32",
-    contrastText: "#000000",
+    light: '#f1f1f1',
+    main: '#bdbdbd',
+    dark: '#8e8e8e',
+    contrastText: '#000',
   },
-  secondary: {
-    main: "#bcbcbd",
-    light: "#eeeeef",
-    dark: "#8c8c8d",
-    contrastText: "#000000",
-  },
+  secondary:{
+    light: '#ffeedd',
+    main: '#d6bcab',
+    dark: '#a48c7c',
+    contrastText: '#000',},
   text: {
     primary: '#EEEEEF',
     secondary: '#AEB0B4',
