@@ -4,12 +4,12 @@ import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
-  GetStarted,
-  Features,
-  QuickStart,
-  Services,
-  Benefits,
   Hero,
+  Services,
+  QuickStart,
+  Features,
+  Benefits,
+  GetStarted,
 } from './components';
 
 const IndexView = () => {
