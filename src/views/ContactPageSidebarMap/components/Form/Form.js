@@ -70,7 +70,7 @@ const Contact = () => {
           </Typography>
         </Box>
         <Box>
-          <form noValidate onSubmit={formik.handleSubmit}>
+          <form noValidate onSubmit={formik.handleSubmit} netlify name="contact-page-sidebar-map">
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <TextField
