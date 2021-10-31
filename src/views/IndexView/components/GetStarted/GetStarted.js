@@ -21,8 +21,7 @@ const GetStarted = () => {
         sx={{
           fontWeight: 700,
         }}
-      >
-        Get started with theFront today
+      >Get started with AllyDigital today
       </Typography>
       <Typography
         variant="h6"
@@ -30,10 +29,7 @@ const GetStarted = () => {
         color="text.secondary"
         sx={{ fontWeight: 400 }}
         align={'center'}
-      >
-        Build a beautiful, modern website with flexible, fully customizable,
-        atomic MUI components.
-      </Typography>
+      >Our mission is to you increase your business, ease your workflow, and connect you with people who share your passions.</Typography>
       <Box
         display="flex"
         flexDirection={{ xs: 'column', sm: 'row' }}
