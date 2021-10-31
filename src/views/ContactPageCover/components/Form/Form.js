@@ -54,6 +54,7 @@ const Contact = () => {
     onSubmit,
   });
 
+
   return (
     <Box maxWidth={600} margin={'0 auto'}>
       <Box marginBottom={4}>
@@ -72,7 +73,8 @@ const Contact = () => {
         </Typography>
       </Box>
       <Box>
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit}  name="contact-page-cover" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact-page-cover" />
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
               <TextField
