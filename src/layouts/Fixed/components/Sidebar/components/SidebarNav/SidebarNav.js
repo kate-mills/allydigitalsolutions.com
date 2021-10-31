@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
+import Link from 'components/Link'
 
 const SidebarNav = ({ pages, onClose }) => {
   const theme = useTheme();
@@ -40,7 +41,8 @@ const SidebarNav = ({ pages, onClose }) => {
               {item.pages.map((p, i) => (
                 <Box marginBottom={1 / 2} key={i}>
                   <Button
-                    component={'a'}
+                    component={(p.target)? 'a': Link}
+                    to={p.href}
                     href={p.href}
                     target={p.target}
                     fullWidth
@@ -56,8 +58,7 @@ const SidebarNav = ({ pages, onClose }) => {
                           : 'transparent',
                       fontWeight: activeLink === p.href ? 600 : 400,
                     }}
-                  >
-                    {p.title}
+                  >{p.title}
                   </Button>
                 </Box>
               ))}

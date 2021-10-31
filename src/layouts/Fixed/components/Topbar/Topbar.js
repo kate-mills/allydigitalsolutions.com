@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+import Link from 'components/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -22,9 +22,9 @@ const Topbar = ({ onSidebarOpen }) => {
     >
       <Box
         display={'flex'}
-        component="a"
-        href="/"
-        title="theFront"
+        component={Link}
+        to="/"
+        title="AllyDigitalSolutions"
         width={{ xs: 100, md: 120 }}
       >
         <Box
@@ -36,12 +36,12 @@ const Topbar = ({ onSidebarOpen }) => {
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginLeft={3}>
-          <Link underline="none" component="a" href="/" color="text.primary" fontWeight={600}>
+          <Link underline="none" to="/" color="text.primary" fontWeight={400}>
             Home
           </Link>
         </Box>
         <Box marginLeft={3}>
-          <Link underline="none" component="a" href="/home" color="text.primary" fontWeight={600}>
+          <Link underline="none" to="/home" color="text.primary" fontWeight={400}>
             All pages
           </Link>
         </Box>
@@ -52,12 +52,10 @@ const Topbar = ({ onSidebarOpen }) => {
           <Button
             variant="contained"
             color="primary"
-            component="a"
-            target="blank"
-            href="https://MUI.com/store/items/the-front-landing-page/"
+            component={Link}
+            to="/contact-page-cover"
             size="large"
-          >
-            Purchase now
+          >Get Started
           </Button>
         </Box>
       </Box>
