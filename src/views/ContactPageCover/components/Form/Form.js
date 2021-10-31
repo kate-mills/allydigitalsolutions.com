@@ -10,6 +10,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
+import {navigate} from 'gatsby'
 
 const validationSchema = yup.object({
   firstName: yup
@@ -53,7 +54,7 @@ const Contact = () => {
   };
 
 
-  const onSubmit = (values) => {
+  const onSubmit = (values, {resetForm}) => {
     console.log(values)
     fetch("/contact-page-cover", {
       method: "POST",
@@ -65,6 +66,8 @@ const Contact = () => {
     })
       .then(() => {
         console.log("form-sent")
+        resetForm()
+        navigate("/thanks")
       })
       .catch(error => console.log(error))
   };
