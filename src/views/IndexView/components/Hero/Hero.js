@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha, useTheme } from '@mui/material/styles';
+import Link from 'components/Link'
 
 import Container from 'components/Container';
 
@@ -120,14 +121,14 @@ A modern approach to digital management that
               marginTop={4}
             >
               <Button
-                component={'a'}
+                component={Link}
                 variant="contained"
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/home'}
+                to={'/home'}
               >
-                View pages
+               Our Work
               </Button>
               <Box
                 marginTop={{ xs: 2, sm: 0 }}
@@ -135,14 +136,13 @@ A modern approach to digital management that
                 width={{ xs: '100%', md: 'auto' }}
               >
                 <Button
-                  component={'a'}
-                  href={'/docs/introduction'}
+                  component={Link}
+                  to={'/contact-page-cover'}
                   variant="outlined"
                   color="primary"
                   size="large"
                   fullWidth={isMd ? false : true}
-                >
-                  Documentation
+                >Get Started
                 </Button>
               </Box>
             </Box>

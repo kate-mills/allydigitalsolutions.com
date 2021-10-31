@@ -37,7 +37,7 @@ const QuickStart = () => {
         padding={`${theme.spacing(2)} !important`}
         borderRadius={1}
         margin={`${theme.spacing(0)} !important`}
-        bgcolor={'#d6bcab !important'}
+        bgcolor={'#bcbcbd !important'}
       />
     </Box>
   );
