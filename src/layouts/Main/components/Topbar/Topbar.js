@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from 'svg/logo.svg'
+import Link from 'components/Link'
 
 import { NavItem } from './components';
 
@@ -29,9 +30,9 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     >
       <Box
         display={'flex'}
-        component="a"
-        href="/"
-        title="theFront"
+        component={Link}
+        to="/"
+        title="AllyDigitalSolutions"
         width={{ xs: 100, md: 120 }}
       >
         <Box
@@ -94,12 +95,10 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           <Button
             variant="contained"
             color="primary"
-            component="a"
-            target="blank"
-            href="https://MUI.com/store/items/the-front-landing-page/"
+            component={Link}
+            to="/contact-page-cover"
             size="large"
-          >
-            Buy now
+          >Get Started
           </Button>
         </Box>
       </Box>

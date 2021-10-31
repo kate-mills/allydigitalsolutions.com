@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import Link from 'components/Link';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -47,12 +47,9 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
             <Box marginRight={2}>
               <Link
                 underline="none"
-                component="a"
-                href="/docs/introduction"
+                to="/docs/colors"
                 color={colorInvert ? 'common.white' : 'text.primary'}
-              >
-                Documentation
-              </Link>
+              >Documentation</Link>
             </Box>
             <Box>
               <ThemeModeToggler />

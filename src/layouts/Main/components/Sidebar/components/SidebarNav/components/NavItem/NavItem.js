@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Link from 'components/Link'
 
 const NavItem = ({ title, items }) => {
   const theme = useTheme();
@@ -45,8 +46,8 @@ const NavItem = ({ title, items }) => {
               <Grid item key={i} xs={12}>
                 <Button
                   size={'large'}
-                  component={'a'}
-                  href={p.href}
+                  component={Link}
+                  to={p.href}
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',
@@ -61,6 +62,7 @@ const NavItem = ({ title, items }) => {
                     fontWeight: activeLink === p.href ? 600 : 400,
                   }}
                 >
+                  hi
                   {p.title}
                   {p.isNew && (
                     <Box

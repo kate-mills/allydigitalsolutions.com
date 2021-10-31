@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+import Link from 'components/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import logo from 'svg/logo.svg'
@@ -23,9 +23,8 @@ const Footer = () => {
         >
           <Box
             display={'flex'}
-            component="a"
-            href="/"
-            title="theFront"
+            to="/"
+            title="AllyDigitalSolutions"
             width={80}
           >
             <Box
@@ -39,8 +38,7 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                component="a"
-                href="/"
+                to="/"
                 color="text.primary"
                 variant={'subtitle2'}
               >
@@ -50,24 +48,19 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                component="a"
-                href="/docs/introduction"
+                to="/docs/colors"
                 color="text.primary"
                 variant={'subtitle2'}
-              >
-                Documentation
+              >Documentation
               </Link>
             </Box>
             <Box marginTop={1}>
               <Button
                 variant="outlined"
                 color="primary"
-                component="a"
-                target="blank"
-                href="https://MUI.com/store/items/the-front-landing-page/"
+                to="/contact-page-cover"
                 size="small"
-              >
-                Purchase now
+              >Learn More
               </Button>
             </Box>
           </Box>
@@ -79,8 +72,7 @@ const Footer = () => {
           variant={'subtitle2'}
           color="text.secondary"
           gutterBottom
-        >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+        >© AllyDigitalSolutions. {new Date().getFullYear()}, Kate Mills Company, LLC. All rights reserved
         </Typography>
         <Typography
           align={'center'}
