@@ -44,16 +44,16 @@ const Contact = () => {
     message: '',
   };
 
-  const onSubmit = (values) => {
-
-    return values;
-  };
 
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
     onSubmit,
   });
+  const onSubmit = (values) => {
+    formik.handleSubmit()
+    return values;
+  };
 
 
   return (
@@ -74,12 +74,7 @@ const Contact = () => {
         </Typography>
       </Box>
       <Box>
-        <form onSubmit={(e)=>{
-            formik.handleSubmit(e)
-            const {values, isValid} = formik
-            return isValid && values
-          }
-          } method="POST"  name="contact-page-cover" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form onSubmit={onSubmit} method="POST"  name="contact-page-cover" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact-page-cover" />
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
