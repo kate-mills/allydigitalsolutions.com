@@ -18,7 +18,7 @@ const contactSubmit = (values, {resetForm}) => {
     }),
   })
     .then(() => {
-      console.log("form-sent")
+      console.log("success")
       resetForm()
       navigate("/thanks")
     })

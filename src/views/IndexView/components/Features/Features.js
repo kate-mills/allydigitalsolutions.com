@@ -4,11 +4,11 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import {useSrcImages} from 'hooks/use-src-images'
 
@@ -24,10 +24,7 @@ const mock = [
 
 const Features = () => {
   const {katePng}  = useSrcImages()
-  console.log(katePng)
-
   const theme = useTheme();
-  console.log('theme', theme)
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -54,8 +51,8 @@ const Features = () => {
             width={1}
             backgroundColor={ theme.palette.primary.main }
           >
-            <Box component={GatsbyImage} height={1} width={1} minHeight={300} image={getImage(katePng.img.gatsbyImageData)}
-            alt="web developer holding laptop"
+            <Box component={GatsbyImage} height={1} width={1} minHeight={300} image={getImage(katePng.img)}
+            alt="Woman smiling holding a laptop."
           /></Box>
         </Grid>
 

@@ -16,8 +16,6 @@ const Colors = () => {
   const theme = useTheme();
 
   const palette = theme.palette.mode === 'dark' ? darkPalette : lightPalette;
-  console.log(palette.background);
-
   return (
     <FixedLayout>
       <Container>
