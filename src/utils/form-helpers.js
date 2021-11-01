@@ -9,7 +9,7 @@ const encode = data => {
 
 
 const contactSubmit = (values, {resetForm}) => {
-  fetch("/contact-page-cover", {
+  fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({

@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Link from 'components/Link';
@@ -7,15 +6,19 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+import {useSrcImages} from 'hooks/use-src-images'
+
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-const NotFoundCover = () => {
+const ThanksPage  = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
-
+  const { office: {img} }  = useSrcImages()
   return (
     <Main>
       <Box
@@ -129,11 +132,10 @@ const NotFoundCover = () => {
                       }}
                     >
                       <Box
-                        component={LazyLoadImage}
+                        component={GatsbyImage}
+                        alt="Office lobby with bookshelf and pink velvet chair."
                         effect="blur"
-                        src={
-                          'https://assets.maccarianagency.com/backgrounds/img23.jpg'
-                        }
+                        image={getImage(img)}
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}
@@ -157,4 +159,4 @@ const NotFoundCover = () => {
   );
 };
 
-export default NotFoundCover;
+export default ThanksPage;

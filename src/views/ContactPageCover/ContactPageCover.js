@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
@@ -8,11 +7,17 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Form } from './components';
 
+
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import {useSrcImages} from 'hooks/use-src-images'
+
 const ContactPageCover = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+
+  const {office}  = useSrcImages()
 
   const Sidebar = () => (
     <Box
@@ -35,11 +40,11 @@ const ContactPageCover = () => {
         }}
       >
         <Box
-          component={LazyLoadImage}
+          component={GatsbyImage}
           height={1}
           width={1}
-          src={'https://assets.maccarianagency.com/backgrounds/img23.jpg'}
-          alt="..."
+          image={getImage(office.img)}
+          alt="Office lobby with bookshelf and pink velvet chair."
           effect="blur"
           sx={{
             objectFit: 'cover',

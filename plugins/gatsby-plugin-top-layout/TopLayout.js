@@ -15,15 +15,15 @@ export default function TopLayout(props) {
     <React.Fragment>
       <Helmet>
         <meta charSet="utf-8" />
-        <link
+        {/*<link
           rel="shortcut icon"
           href="https://github.com/kate-mills/helloAlly/blob/076167b8c647511f4da96ed263a7ca19ae9080b0/src/images/icon.png"
-        />
+        />*/}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>theFront | UI Kit by Maccarian Agency.</title>
+        <title>allyDigital | UI Kit by Maccarian Agency.</title>
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"

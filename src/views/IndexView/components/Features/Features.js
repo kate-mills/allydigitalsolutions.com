@@ -9,6 +9,9 @@ import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import {useSrcImages} from 'hooks/use-src-images'
+
 
 const mock = [
   {
@@ -20,7 +23,11 @@ const mock = [
 ];
 
 const Features = () => {
+  const {katePng}  = useSrcImages()
+  console.log(katePng)
+
   const theme = useTheme();
+  console.log('theme', theme)
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -37,6 +44,22 @@ const Features = () => {
   return (
     <Box>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
+
+
+        <Grid item container justifyContent="center" alignItems="center" xs={12} md={6} sx={{ display: { xs: 'none', md: 'flex'}, backgroundColor: 'inherit'}}>
+          <Box
+            component={Card}
+            boxShadow={4}
+            height={1}
+            width={1}
+            backgroundColor={ theme.palette.primary.main }
+          >
+            <Box component={GatsbyImage} height={1} width={1} minHeight={300} image={getImage(katePng.img.gatsbyImageData)}
+            alt="web developer holding laptop"
+          /></Box>
+        </Grid>
+
+
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>Less work. More time.
@@ -66,10 +89,6 @@ const Features = () => {
               </Grid>
             ))}
           </Grid>
-        </Grid>
-
-        <Grid item container justifyContent="center" alignItems="center" xs={12} md={6} sx={{ display: { xs: 'none', md: 'flex' }}}>
-          <Box component={Card} boxShadow={4} height={1} width={1}><Box component={CardMedia} height={1} width={1} minHeight={300} image="https://helloally.netlify.app/static/b0d8d49b5bde7094e02191b12dd40311/f73f6/meet-kate-landscape.webp"/></Box>
         </Grid>
       </Grid>
     </Box>

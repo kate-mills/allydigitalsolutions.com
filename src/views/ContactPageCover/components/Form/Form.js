@@ -49,25 +49,8 @@ const Contact = () => {
     message: '',
   };
 
-  const attrs ={ currentPage: '/contact-page-cover', formName: '/contact-page-cover', successPage: '/thanks', }
+  //const attrs ={ currentPage: '/contact-page-cover', formName: '/contact-page-cover', successPage: '/thanks', }
 
-  /*const onSubmit = (values, {resetForm}) => {
-    console.log(values)
-    fetch("/contact-page-cover", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact-page-cover",
-        ...values,
-      }),
-    })
-      .then(() => {
-        console.log("form-sent")
-        resetForm()
-        navigate("/thanks")
-      })
-      .catch(error => console.log(error))
-  };*/
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
