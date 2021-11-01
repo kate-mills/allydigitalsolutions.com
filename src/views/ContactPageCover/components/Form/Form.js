@@ -10,7 +10,9 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-import {navigate} from 'gatsby'
+//import {navigate} from 'gatsby'
+
+import {encode, contactSubmit} from 'utils/form-helpers'
 
 const validationSchema = yup.object({
   firstName: yup
@@ -36,12 +38,6 @@ const validationSchema = yup.object({
     .required('Please specify your message'),
 });
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
-
 
 const Contact = () => {
   const theme = useTheme();
@@ -53,8 +49,9 @@ const Contact = () => {
     message: '',
   };
 
+  const attrs ={ currentPage: '/contact-page-cover', formName: '/contact-page-cover', successPage: '/thanks', }
 
-  const onSubmit = (values, {resetForm}) => {
+  /*const onSubmit = (values, {resetForm}) => {
     console.log(values)
     fetch("/contact-page-cover", {
       method: "POST",
@@ -70,11 +67,11 @@ const Contact = () => {
         navigate("/thanks")
       })
       .catch(error => console.log(error))
-  };
+  };*/
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit,
+    onSubmit: contactSubmit,
   });
 
 
