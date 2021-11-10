@@ -26,7 +26,7 @@ const QuickStart = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >We have the elements to get your brand in a position to dominate your market.
+          >We help businesses establish their online presence, showcase their brand, and build an online community.
           </Typography>
         </Box>
       </Box>

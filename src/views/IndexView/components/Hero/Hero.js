@@ -90,8 +90,7 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >
-A modern approach to digital management that
+            >A modern approach to digital management that
               <br />{' '}
               <Typography
                 color={'primary'}
@@ -112,7 +111,9 @@ A modern approach to digital management that
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >allyDigital will make your brand visible, look modern and professional while saving you precious time.
+            >{/*Advancing brands on the web. We'll make your brand discoverable, look modern and professional while saving you precious time.
+              */}We help businesses establish their online presence, showcase their brand, and build an online community.
+              
             </Typography>
             <Box
               display="flex"
