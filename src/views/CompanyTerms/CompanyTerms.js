@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import { ContactCard, Content } from './components';
+import { ContactCard, PrivacyPolicy } from './components';
 
 const CompanyTerms = () => {
   const theme = useTheme();
@@ -25,15 +25,14 @@ const CompanyTerms = () => {
                   color: theme.palette.common.white,
                 }}
               >
-                Company terms & privacy policy
+                Company Terms & Privacy Policy
               </Typography>
               <Typography
                 gutterBottom
                 sx={{
                   color: theme.palette.common.white,
                 }}
-              >
-                Last modified on <strong>23 Aug, 2021</strong>
+              >Last updated: October 22, 2021.
               </Typography>
             </Container>
             <Box
@@ -52,21 +51,16 @@ const CompanyTerms = () => {
               ></path>
             </Box>
           </Box>
+
           <Container
             paddingTop={'0 !important'}
             paddingX={{ xs: 2, sm: 4 }}
             position={'relative'}
             top={0}
           >
-            <Box
-              component={Grid}
-              container
-              spacing={4}
-              flexDirection={{ xs: 'column-reverse', md: 'row' }}
+            <Box component={Grid} container spacing={4} flexDirection={{ xs: 'column-reverse', md: 'row' }}
             >
-              <Grid item xs={12} md={9}>
-                <Content />
-              </Grid>
+              <PrivacyPolicy />
               <Grid item xs={12} md={3}>
                 <Box
                   position={'sticky'}
@@ -78,6 +72,7 @@ const CompanyTerms = () => {
               </Grid>
             </Box>
           </Container>
+
         </Box>
       </Container>
     </Main>

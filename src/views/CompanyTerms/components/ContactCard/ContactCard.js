@@ -33,13 +33,10 @@ const ContactCard = () => {
           contact us.
         </Typography>
         <Typography variant={'subtitle2'}>
-          hi@maccarianagency.com
+          hello@allydigitalsolutions.com
           <br />
-          via Gola 4
+          (707) 266 - 8106
           <br />
-          Milan, Milano 20143
-          <br />
-          Italy
         </Typography>
       </Box>
     </Box>

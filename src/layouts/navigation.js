@@ -109,6 +109,7 @@ const pages = {
     {
       title: 'Terms',
       href: '/company-terms',
+      isNew: true,
     },
     {
       title: 'Contact: Map',
