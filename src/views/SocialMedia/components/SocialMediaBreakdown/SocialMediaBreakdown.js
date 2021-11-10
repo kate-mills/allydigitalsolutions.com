@@ -60,7 +60,7 @@ const mock = [
   },
 ];
 
-const SocialPlatforms = () => {
+const SocialMediaBreakdown = () => {
   const theme = useTheme();
 
   return (
@@ -176,4 +176,4 @@ const SocialPlatforms = () => {
   );
 };
 
-export default SocialPlatforms;
+export default SocialMediaBreakdown;

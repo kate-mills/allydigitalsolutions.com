@@ -9,7 +9,7 @@ import {
   About,
   Payment,
   Pricings,
-  SocialMedia,
+  SocialMediaBreakdown,
   Download,
 } from './components';
 
@@ -92,7 +92,7 @@ const MobileApp = () => {
       </Box>
       <Box position={'relative'} bgcolor={'alternate.main'}>
         <Container>
-          <SocialMedia />
+          <SocialMediaBreakdown />
         </Container>
         <Box
           component={'svg'}

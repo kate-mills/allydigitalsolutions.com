@@ -1,8 +1,9 @@
 const pages = {
   landings: [
     {
-      title: 'Mobile App',
-      href: '/mobile-app',
+      title: 'Social Media',
+      href: '/social-media',
+      isNew: true,
     },
     {
       title: 'Desktop App',
