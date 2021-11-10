@@ -31,7 +31,7 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >Don't listen to what they say{' '}
+            >Popular social media trends. The truth{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -39,13 +39,13 @@ const Hero = () => {
                 sx={{
                   background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
                 }}
-              >experience it
+              >revealed
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Our web designs balance modern aesthetics with responsive functionality across all devices.
+              Introducing  social media designs that balance modern aesthetics with responsive functionality across all devices.
               <br />
             </Typography>
           </Box>
