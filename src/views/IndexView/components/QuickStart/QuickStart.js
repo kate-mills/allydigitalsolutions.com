@@ -10,17 +10,14 @@ const QuickStart = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Box marginBottom={4}>
+      <Box>
         <Box marginBottom={2}>
           <Typography
             variant="h4"
             color="text.primary"
             align={'center'}
             gutterBottom
-            sx={{
-              fontWeight: 700,
-            }}
-          >
+            sx={{ fontWeight: 700 }}>
             Dominate Your Industry
           </Typography>
           <Typography
@@ -33,12 +30,6 @@ const QuickStart = () => {
           </Typography>
         </Box>
       </Box>
-      <Box
-        padding={`${theme.spacing(2)} !important`}
-        borderRadius={1}
-        margin={`${theme.spacing(0)} !important`}
-        bgcolor={'#bcbcbd !important'}
-      />
     </Box>
   );
 };

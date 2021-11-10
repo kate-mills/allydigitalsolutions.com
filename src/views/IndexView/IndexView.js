@@ -3,6 +3,9 @@ import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
+
+import Divider from '@mui/material/Divider';
+
 import {
   Hero,
   Services,
@@ -11,6 +14,7 @@ import {
   Benefits,
   GetStarted,
 } from './components';
+
 
 const IndexView = () => {
   const theme = useTheme();
@@ -31,9 +35,14 @@ const IndexView = () => {
             position: 'relative',
           }}
         >
-          <Container maxWidth={600}>
+          <Box>
+          <Divider/>
+          <Container maxWidth={800} >
             <QuickStart />
           </Container>
+          <Divider/>
+          </Box>
+
           <Container>
             <Features />
           </Container>
