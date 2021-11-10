@@ -7,6 +7,11 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
+import mobileImage from 'images/mobile-app.jpg'
+
+
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import TagIcon from '@mui/icons-material/Tag';
 
 const About = () => {
   const theme = useTheme();
@@ -56,12 +61,8 @@ const About = () => {
                 <Box
                   component={LazyLoadImage}
                   effect="blur"
-                  src={
-                    theme.palette.mode === 'light'
-                      ? 'https://assets.maccarianagency.com/screenshots/crypto-mobile.png'
-                      : 'https://assets.maccarianagency.com/screenshots/crypto-mobile--dark.png'
-                  }
-                  alt="Image Description"
+                  src={mobileImage}
+                  alt="Woman wearing black leather jacket holding flowers above her head."
                   width={1}
                   height={1}
                   sx={{
@@ -87,14 +88,11 @@ const About = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >
-              Now available on Google Play market and Apple Store
+            >Connect and reveal your business's unique essence.
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">
-              Don't listen to what they say go and see. Travelling with our app
-              is easy. Join the biggest community of travellers.
+            <Typography variant="h6" component="p" color="text.secondary">Sharing videos on social media is a valuable tool to express your individuality and creativity. In addition, social media video ads will get your message out to a larger targeted group instantly.
             </Typography>
           </Box>
           <Box display="flex" marginTop={1}>
@@ -102,16 +100,9 @@ const About = () => {
               component={Avatar}
               bgcolor={'primary.main'}
               width={{ xs: 40, sm: 50 }}
-              height={{ xs: 40, sm: 50 }}
-            >
-              <Box
-                component={'img'}
-                src={
-                  'https://assets.maccarianagency.com/svg/icons/app-store-icon.svg'
-                }
-                alt={'app store'}
-                width={{ xs: 15, md: 20 }}
-              />
+              height={{ xs: 40, sm: 50 }}>
+
+              <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
@@ -120,15 +111,8 @@ const About = () => {
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}
             >
-              <Box
-                component={'img'}
-                src={
-                  'https://assets.maccarianagency.com/svg/icons/play-store-icon.svg'
-                }
-                alt={'play store'}
-                sx={{ filter: 'brightness(0) invert(1)' }}
-                width={{ xs: 15, md: 20 }}
-              />
+
+              <Box component={AlternateEmailIcon} alt={'Alternate Email Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
           </Box>
           <Box
@@ -144,7 +128,9 @@ const About = () => {
               width="100%"
               height="100%"
               minHeight={250}
-              src="https://www.youtube.com/embed/ClIbn_IF31U"
+              src="https://www.youtube.com/embed/videoseries?list=PLKkEPyi2HaPQRsjq0fS0Bn_ZBTjW_07iT"
+              //src="https://www.youtube.com/embed/UzzB6vPRqBY"
+              //src="https://www.youtube.com/embed/ClIbn_IF31U"
               frameBorder="0"
               allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
               boxShadow={4}

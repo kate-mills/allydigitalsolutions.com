@@ -8,6 +8,11 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
+import mobileImage from 'images/mobile-app.jpg'
+
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import TagIcon from '@mui/icons-material/Tag';
+
 
 const Hero = () => {
   const theme = useTheme();
@@ -26,8 +31,7 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >
-              Don't listen to what they say{' '}
+            >Don't listen to what they say{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -35,16 +39,14 @@ const Hero = () => {
                 sx={{
                   background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
                 }}
-              >
-                go and see
+              >experience it
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Travelling with our app is easy.
+              Our web designs balance modern aesthetics with responsive functionality across all devices.
               <br />
-              Join the biggest community of travellers.
             </Typography>
           </Box>
           <Box display="flex" marginTop={1}>
@@ -52,16 +54,8 @@ const Hero = () => {
               component={Avatar}
               bgcolor={'primary.main'}
               width={{ xs: 40, sm: 50 }}
-              height={{ xs: 40, sm: 50 }}
-            >
-              <Box
-                component={'img'}
-                src={
-                  'https://assets.maccarianagency.com/svg/icons/app-store-icon.svg'
-                }
-                alt={'app store'}
-                width={{ xs: 15, md: 20 }}
-              />
+              height={{ xs: 40, sm: 50 }}>
+              <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
@@ -70,15 +64,7 @@ const Hero = () => {
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}
             >
-              <Box
-                component={'img'}
-                src={
-                  'https://assets.maccarianagency.com/svg/icons/play-store-icon.svg'
-                }
-                alt={'play store'}
-                sx={{ filter: 'brightness(0) invert(1)' }}
-                width={{ xs: 15, md: 20 }}
-              />
+              <Box component={AlternateEmailIcon} alt={'Alternate Email Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
           </Box>
         </Box>
@@ -133,12 +119,8 @@ const Hero = () => {
               >
                 <Box
                   component={LazyLoadImage}
-                  src={
-                    theme.palette.mode === 'light'
-                      ? 'https://assets.maccarianagency.com/screenshots/crypto-mobile.png'
-                      : 'https://assets.maccarianagency.com/screenshots/crypto-mobile--dark.png'
-                  }
-                  alt="Image Description"
+                  src={mobileImage}
+                  alt="Woman wearing black leather jacket holding flowers above her head."
                   effect="blur"
                   width={1}
                   height={1}

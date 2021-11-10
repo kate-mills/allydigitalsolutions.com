@@ -7,9 +7,9 @@ import Container from 'components/Container';
 import {
   Hero,
   About,
-  Features,
   Payment,
   Pricings,
+  SocialMedia,
   Download,
 } from './components';
 
@@ -71,17 +71,10 @@ const MobileApp = () => {
           </Box>
         </Box>
       </Container>
+
       <Box bgcolor={'alternate.main'}>
         <Container>
           <Payment />
-        </Container>
-      </Box>
-      <Container>
-        <Features />
-      </Container>
-      <Box position={'relative'} bgcolor={'alternate.main'}>
-        <Container>
-          <Pricings />
         </Container>
         <Box
           component={'svg'}
@@ -93,20 +86,32 @@ const MobileApp = () => {
           sx={{
             width: '100%',
             marginBottom: theme.spacing(-1),
-          }}
-        >
-          <path
-            fill={theme.palette.background.default}
-            d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
-          ></path>
+          }}>
+          <path fill={theme.palette.background.default} d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
         </Box>
       </Box>
-
+      <Box position={'relative'} bgcolor={'alternate.main'}>
+        <Container>
+          <SocialMedia />
+        </Container>
+        <Box
+          component={'svg'}
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 1920 100.1"
+          sx={{ width: '100%', marginBottom: theme.spacing(-1), }}>
+          <path fill={theme.palette.background.default} d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z" ></path>
+        </Box>
+      </Box>
       <Divider />
+
       <Container>
         <Download />
       </Container>
       <Divider />
+
     </Main>
   );
 };

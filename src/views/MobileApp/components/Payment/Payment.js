@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import CreditCardsIllustration from 'svg/illustrations/CreditCards';
+import Link from 'components/Link'
 
 const Payment = () => {
   const theme = useTheme();
@@ -20,18 +21,13 @@ const Payment = () => {
           <Box marginBottom={2}>
             <Typography
               variant="h4"
-              sx={{
-                fontWeight: 700,
-              }}
-            >
-              The pro account for entrepreneurs.
+              sx={{ fontWeight: 700 }}
+            >Make shopping simple with a Facebook and Instagram store.
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Much more than a bank, it is the ideal, fastest and most
-              convenient financial and administrative co-driver to work with
-              peace of mind.
+              Remove shopping barriers and meet your customers where they are by selling your products online with a Facebook and Instagram store.
             </Typography>
           </Box>
           <Box
@@ -46,7 +42,7 @@ const Payment = () => {
               size="large"
               fullWidth={!isMd}
             >
-              Contact sales
+              <Link to="/contact-page-cover">Contact sales</Link>
             </Box>
             <Box
               component={Button}
@@ -56,8 +52,7 @@ const Payment = () => {
               fullWidth={!isMd}
               marginTop={{ xs: 1, sm: 0 }}
               marginLeft={{ sm: 2 }}
-            >
-              Subscribe
+            ><Link to="/contact-page-cover" sx={{color: '#000'}}>Get Started</Link>
             </Box>
           </Box>
         </Box>

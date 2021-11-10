@@ -7,118 +7,60 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 import CardActions from '@mui/material/CardActions';
+import Link from 'components/Link'
+//https://certifications.facebookblueprint.com/student/collection/248399/path/225171/activity/206430?skip_interstitial=true#/page/5faa24e91f435f7ed766a4fa
 
 const mock = [
   {
-    title: 'Basic',
-    price: '1250',
+    title: 'Facebook',
+    price: 'Business Page',
+    action: 'Your digital storefront',
+    btnText: 'Learn More',
     features: [
-      {
-        title: '1 Platform',
-        isIncluded: true,
-      },
-      {
-        title: '3 posts/ week',
-        isIncluded: true,
-      },
-      {
-        title: 'Writing and scheduling posts',
-        isIncluded: true,
-      },
-      {
-        title: 'Post Engagement',
-        isIncluded: true,
-      },
-      {
-        title: 'Reputation Managment',
-        isIncluded: true,
-      },
-      {
-        title: 'Contest Managment',
-        isIncluded: false,
-      },
-      {
-        title: 'Facebook Ads',
-        isIncluded: false,
-      },
+      { title: 'Establish your business\'s online presence', isIncluded: 'true' },
+      { title: 'Tell your business\'s story', isIncluded: 'true' },
+      { title: 'Build a community', isIncluded: 'true' },
+      { title: 'Find new customers', isIncluded: 'true' },
+      { title: 'Keep people updated', isIncluded: 'true' },
+      { title: 'Host Events', isIncluded: true, },
+      { title: 'Create & Join Groups', isIncluded: true, },
+      { title: 'Sell with Shops', isIncluded: true, },
+      { title: 'Develop and manage advertising campaigns', isIncluded: true, },
     ],
     isHighlighted: false,
-    btnText: 'Get basic',
-  },
-  {
-    title: 'Professional',
-    price: '1999',
+  },{
+    title: 'Instagram',
+    price: 'Business Profile',
+    action: 'Showcase your brand',
+    btnText: 'Learn More',
     features: [
-      {
-        title: '2 Platforms',
-        isIncluded: true,
-      },
-      {
-        title: '3 posts/ week',
-        isIncluded: true,
-      },
-      {
-        title: 'Writing and scheduling posts',
-        isIncluded: true,
-      },
-      {
-        title: 'Post Engagement',
-        isIncluded: true,
-      },
-      {
-        title: 'Reputation Managment',
-        isIncluded: true,
-      },
-      {
-        title: 'Contest Management',
-        isIncluded: true,
-      },
-      {
-        title: 'Facebook Ads',
-        isIncluded: true,
-      },
-    ],
-    isHighlighted: true,
-    btnText: 'Get pro',
-  },
-  {
-    title: 'Custom',
-    price: '1999+',
-    features: [
-      {
-        title: 'Unlimited Access',
-        isIncluded: true,
-      },
-      {
-        title: '3 posts/ week minimum',
-        isIncluded: true,
-      },
-      {
-        title: 'Writing and scheduling posts',
-        isIncluded: true,
-      },
-      {
-        title: 'Post Engagement',
-        isIncluded: true,
-      },
-      {
-        title: 'Reputation Management',
-        isIncluded: true,
-      },
-      {
-        title: 'Contest Managment',
-        isIncluded: true,
-      },
-      { title: 'Facebook Ads',
-        isIncluded: true,
-      },
+      { title: 'Showcase your brand through powerful visuals', isIncluded: true, },
+      { title: 'Tell the story of your business', isIncluded: true, },
+      { title: 'Bring customers behind the scenes', isIncluded: true, },
+      { title: 'Broadcast live video & share updates in real time', isIncluded: true, },
+      { title: 'Have private conversations with instant messages', isIncluded: true, },
+      { title: 'Sell with shopping posts', isIncluded: true, },
+      { title: 'Turn posts & stories into ads & reach a larger audience.', isIncluded: true, }
     ],
     isHighlighted: false,
-    btnText: 'Contact us',
+  },
+  {
+    title: 'WhatsApp',
+    price: 'Business Profile',
+    action: 'Serve customers around the world',
+    btnText: 'Learn More',
+    features: [
+      { title: 'Communicate with customers over free and secure text messages and voice & video calls', isIncluded: true, },
+      { title: 'Build & maintain a catalog of products that serves as a mobile storefront', isIncluded: true,},
+      { title: 'Increase responsiveness through automated messaging', isIncluded: true,},
+      { title: 'Display your WhatsApp number on your FB Page', isIncluded: true, },
+      { title: 'Send people to WhatsApp from your ads', isIncluded: true, },
+    ],
+    isHighlighted: false,
   },
 ];
 
-const Pricing = () => {
+const SocialPlatforms = () => {
   const theme = useTheme();
 
   return (
@@ -129,16 +71,14 @@ const Pricing = () => {
           variant={'h4'}
           align={'center'}
           gutterBottom
-        >
-          Flexible and transparent pricing
-        </Typography>
+        >Social Media For Growing Brands</Typography>
         <Typography
           variant={'h6'}
           component={'p'}
           color={'text.secondary'}
           align={'center'}
-        >
-          Whatever your status, our offers evolve according to your needs.
+        >Our complete social media package for developing brands is now available!
+          {/*Whatever your status, our offers evolve according to your needs.*/}
         </Typography>
       </Box>
       <Grid container spacing={4}>
@@ -172,7 +112,7 @@ const Pricing = () => {
                   flexDirection={'column'}
                   alignItems={'center'}
                 >
-                  <Typography variant={'h6'} gutterBottom>
+                  <Typography variant={'h4'} gutterBottom>
                     <Box component={'span'} fontWeight={600}>
                       {item.title}
                     </Box>
@@ -184,44 +124,48 @@ const Pricing = () => {
                         fontWeight={600}
                         marginRight={1 / 2}
                       >
-                        $
                       </Box>
                     </Typography>
-                    <Typography variant={'h2'} color={'primary'} gutterBottom>
+                    <Typography variant={'h6'} color={'primary'} gutterBottom>
                       <Box component={'span'} fontWeight={600}>
-                        {item.price}
+                        {item.action}
                       </Box>
                     </Typography>
                   </Box>
-                  <Typography variant={'subtitle2'} color={'text.secondary'}>
-                    per month
-                  </Typography>
                 </Box>
                 <Grid container spacing={1}>
                   {item.features.map((feature, j) => (
                     <Grid item xs={12} key={j}>
                       <Typography
+                        gutterBottom
                         component={'p'}
                         align={'center'}
                         style={{
                           textDecoration: !feature.isIncluded
                             ? 'line-through'
                             : 'none',
+                          fontSize: !!feature.isBold
+                            ?'large'
+                            : 'small',
+                          fontWeight: !!feature.isBold
+                            ?'bold'
+                            : 'normal',
                         }}
-                      >
-                        {feature.title}
+                      >{feature.title}
                       </Typography>
                     </Grid>
                   ))}
                 </Grid>
               </CardContent>
+
               <Box flexGrow={1} />
               <CardActions sx={{ justifyContent: 'flex-end', padding: 4 }}>
                 <Button
+                  component={Link}
                   size={'large'}
                   variant={item.isHighlighted ? 'contained' : 'outlined'}
-                >
-                  {item.btnText}
+                  to={'/contact-page-cover'}
+                >{item.btnText}
                 </Button>
               </CardActions>
             </Box>
@@ -232,4 +176,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default SocialPlatforms;

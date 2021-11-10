@@ -3,6 +3,9 @@ import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import TagIcon from '@mui/icons-material/Tag';
+
 const Download = () => {
   return (
     <Box>
@@ -14,12 +17,9 @@ const Download = () => {
           sx={{
             fontWeight: 700,
           }}
-        >
-          Everything your team could need.
+        >Our all-inclusive package is now available.
         </Typography>
-        <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>
-          We make sure to include all the amenities and niceties that a growing
-          startup could possibly need.
+        <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>At last! The total social media package for a developing small business.
         </Typography>
       </Box>
       <Box
@@ -29,27 +29,14 @@ const Download = () => {
         flexDirection={{ xs: 'column', sm: 'row' }}
       >
         <Box>
-          <Typography fontWeight={700} variant={'h6'} gutterBottom>
-            Apply in 15 minutes
-          </Typography>
-          <Typography>Get your dream mobile app without the hassle.</Typography>
+          <Typography fontWeight={700} variant={'h6'} gutterBottom>Our clients say it's effortless.</Typography>
+          <Typography>Answer simple questions to get the process rolling.  No pressure - ever!</Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Box display="flex" marginTop={1}>
-            <Box
-              component={Avatar}
-              bgcolor={'primary.main'}
-              width={{ xs: 40, sm: 50 }}
-              height={{ xs: 40, sm: 50 }}
-            >
-              <Box
-                component={'img'}
-                src={
-                  'https://assets.maccarianagency.com/svg/icons/app-store-icon.svg'
-                }
-                alt={'app store'}
-                width={{ xs: 15, md: 20 }}
-              />
+
+            <Box component={Avatar} bgcolor={'primary.main'} width={{ xs: 40, sm: 50 }} height={{ xs: 40, sm: 50 }} >
+              <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
@@ -58,15 +45,7 @@ const Download = () => {
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}
             >
-              <Box
-                component={'img'}
-                src={
-                  'https://assets.maccarianagency.com/svg/icons/play-store-icon.svg'
-                }
-                alt={'play store'}
-                sx={{ filter: 'brightness(0) invert(1)' }}
-                width={{ xs: 15, md: 20 }}
-              />
+              <Box component={AlternateEmailIcon} alt={'Favorite Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
           </Box>
         </Box>

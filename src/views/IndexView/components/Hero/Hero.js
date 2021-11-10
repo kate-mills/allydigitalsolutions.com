@@ -14,48 +14,48 @@ const images = [
   {
     group: [
       {
-        cover:'https://helloally.netlify.app/static/img1-504807d56a14911d770d83f636a0849b.jpg',
-        coverDark:'https://helloally.netlify.app/static/img1--dark-da0195026e27a25f521ad22ee5d745bd.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
       },
       {
-        cover:'https://helloally.netlify.app/static/img2-85a2d89d857bff1f8b87576ccc28a817.jpg',
-        coverDark: 'https://helloally.netlify.app/static/img2--dark-eb419f8376d81947090ce4aeeb43b968.jpg',
-      },
-    ],
-  },
-  {
-    group: [
-      {
-        cover:'https://helloally.netlify.app/static/img3-87a43b1e34897e66839ae224550d5a68.jpg',
-        coverDark:'https://helloally.netlify.app/static/img3--dark-a4c9d3112a9965891c8a65a6668b67a5.jpg',
-      },
-      {
-        cover:'https://helloally.netlify.app/static/img4-1bf8f4df50dedd3df3ac32c44b28c2c1.jpg',
-        coverDark:'https://helloally.netlify.app/static/img4--dark-641026a2285b4f27992123c4d98f0e8f.jpg',
-      },
-      {
-        cover:'https://helloally.netlify.app/static/img3-87a43b1e34897e66839ae224550d5a68.jpg',
-        coverDark:'https://helloally.netlify.app/static/img3--dark-a4c9d3112a9965891c8a65a6668b67a5.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--dark.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--light.jpg',
       },
     ],
   },
   {
     group: [
       {
-        cover:'https://helloally.netlify.app/static/img3-87a43b1e34897e66839ae224550d5a68.jpg',
-        coverDark:'https://helloally.netlify.app/static/img3--dark-a4c9d3112a9965891c8a65a6668b67a5.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
       },
       {
-        cover:'https://helloally.netlify.app/static/img4-1bf8f4df50dedd3df3ac32c44b28c2c1.jpg',
-        coverDark:'https://helloally.netlify.app/static/img4--dark-641026a2285b4f27992123c4d98f0e8f.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--dark.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--light.jpg',
       },
       {
-        cover:'https://helloally.netlify.app/static/img2-85a2d89d857bff1f8b87576ccc28a817.jpg',
-        coverDark: 'https://helloally.netlify.app/static/img2--dark-eb419f8376d81947090ce4aeeb43b968.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+      },
+    ],
+  },
+  {
+    group: [
+      {
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
       },
       {
-        cover:'https://helloally.netlify.app/static/img3-87a43b1e34897e66839ae224550d5a68.jpg',
-        coverDark:'https://helloally.netlify.app/static/img3--dark-a4c9d3112a9965891c8a65a6668b67a5.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+      },
+      {
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+      },
+      {
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
       },
     ],
   },
@@ -101,10 +101,10 @@ A modern approach to digital management that
               ><Typed strings={[
                     "is discoverable",
                     "inspires action",
-                    "incites engagment",
+                    "elevates engagment",
                     "motivates change",
                     "drives movement",
-                    "forces innovation",
+                    "leads innovation",
                   ]}typeSpeed={40} backSpeed={50} loop/></Typography>
             </Typography>
             <Typography
