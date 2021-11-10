@@ -19,7 +19,7 @@ const Download = () => {
           }}
         >Our all-inclusive package is now available.
         </Typography>
-        <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>At last! The total social media package for a developing small business.
+        <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>At last!  Our comprehensive social media package for developing businesses.
         </Typography>
       </Box>
       <Box
