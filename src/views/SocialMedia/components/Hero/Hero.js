@@ -44,7 +44,7 @@ const Hero = () => {
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">We help small businesses establish their online presence, showcase their brand, and build an online community.
+            <Typography variant="h6" component="p" color="text.secondary">We help businesses establish a solid online presence, showcase their brand, and build an online community.
               <br />
             </Typography>
           </Box>

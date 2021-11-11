@@ -26,7 +26,7 @@ const QuickStart = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >We help businesses establish their online presence, showcase their brand, and build an online community.
+          >We help businesses establish a solid online presence, showcase their brand, and build an online community.
           </Typography>
         </Box>
       </Box>

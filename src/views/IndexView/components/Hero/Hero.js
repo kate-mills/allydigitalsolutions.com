@@ -112,8 +112,7 @@ const Hero = () => {
               color="text.secondary"
               sx={{ fontWeight: 400 }}
             >{/*Advancing brands on the web. We'll make your brand discoverable, look modern and professional while saving you precious time.
-              */}We help businesses establish their online presence, showcase their brand, and build an online community.
-              
+              */}We help businesses establish a solid online presence, showcase their brand, and build an online community.
             </Typography>
             <Box
               display="flex"
