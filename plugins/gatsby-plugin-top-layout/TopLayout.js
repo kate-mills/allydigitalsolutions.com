@@ -11,24 +11,25 @@ import 'react-image-lightbox/style.css';
 import 'aos/dist/aos.css';
 import 'css/index.css'
 
+
 export default function TopLayout(props) {
   return (
     <React.Fragment>
       <Helmet>
         <meta charSet="utf-8" />
-        {/*<link
+        <link
           rel="shortcut icon"
-          href="https://github.com/kate-mills/helloAlly/blob/076167b8c647511f4da96ed263a7ca19ae9080b0/src/images/icon.png"
-        />*/}
+          href={'https://raw.githubusercontent.com/kate-mills/10-25-21/landing-page/src/images/icon.png'}
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>allyDigital | UI Kit by Maccarian Agency.</title>
+        <title>AllyDigital | Build a solid online presence & showcase your brand.</title>
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="A modern design system for your new landing and web pages."
+          content="We help businesses establish a solid online presence, showcase their brand, and build an online community."
         />
         <meta
           name="robots"

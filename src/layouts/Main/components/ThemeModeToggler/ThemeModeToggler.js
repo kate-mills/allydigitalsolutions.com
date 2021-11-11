@@ -11,8 +11,8 @@ const ThemeModeToggler = () => {
     <Button
       variant={'outlined'}
       onClick={() => themeToggler()}
-      aria-label="Dark mode toggler"
-      color={mode === 'light' ? 'primary' : 'secondary'}
+      aria-label="Theme mode toggler"
+      color={mode === 'light' ? 'primary' : 'primary'}
       sx={{
         borderRadius: 2,
         minWidth: 'auto',
