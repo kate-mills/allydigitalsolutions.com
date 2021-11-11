@@ -26,12 +26,25 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    'gatsby-plugin-top-layout',
+    `gatsby-plugin-top-layout`,
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
-    'gatsby-plugin-mui-emotion',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-resolve-src',
+    `gatsby-plugin-mui-emotion`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-resolve-src`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-netlify-identity-gotrue',
+      options: {
+        url: 'https://ally-ten.netlify.app',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-force-trailing-slashes`,
+      options: {
+        excludedPaths: [`/404.html`],
+      },
+    },
     //`gatsby-plugin-offline`, //last
   ],
   siteMetadata: {
