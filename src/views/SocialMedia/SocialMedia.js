@@ -8,7 +8,6 @@ import {
   Hero,
   About,
   Payment,
-  Pricings,
   SocialMediaBreakdown,
   Download,
 } from './components';

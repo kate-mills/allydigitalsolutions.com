@@ -11,7 +11,7 @@ import { ThemeModeToggler } from './components';
 
 const Topbar = ({ onSidebarOpen }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
+  //const { mode } = theme.palette;
 
   return (
     <Box

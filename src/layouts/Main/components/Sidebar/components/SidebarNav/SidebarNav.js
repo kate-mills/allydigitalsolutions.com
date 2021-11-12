@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
+//import { useTheme } from '@mui/material/styles';
 import NavItem from './components/NavItem';
 import Link from 'components/Link'
 
 import logo from 'svg/logo.svg'
 
 const SidebarNav = ({ pages }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
+  //const theme = useTheme();
+  //const { mode } = theme.palette;
 
   const {
     landings: landingPages,

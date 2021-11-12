@@ -22,7 +22,7 @@ module.exports = {
         background_color:`#b9bdbd`,
         theme_color: `#b9bdbd`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/icon-square.png`,
         crossOrigin: `use-credentials`,
       },
     },
@@ -32,6 +32,7 @@ module.exports = {
     'gatsby-plugin-mui-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
+    `gatsby-plugin-netlify`,
     //`gatsby-plugin-offline`, //last
   ],
   siteMetadata: {

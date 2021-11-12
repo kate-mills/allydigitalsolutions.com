@@ -11,7 +11,7 @@ import { NavItem } from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
+  //const { mode } = theme.palette;
   const {
     landings: landingPages,
     secondary: secondaryPages,

@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 //import {navigate} from 'gatsby'
 
-import {encode, contactSubmit} from 'utils/form-helpers'
+import {contactSubmit} from 'utils/form-helpers'
 
 const validationSchema = yup.object({
   firstName: yup
