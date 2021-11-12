@@ -11,21 +11,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `%s | Ally Digital Solutions`,
-        short_name: `AllyDigital`,
-        description: `We help businesses establish a solid online presence, showcase their brand, and build an online community.`,
-        lang: `en`,
-        start_url: `/`,
-        background_color:`#b9bdbd`,
-        theme_color: `#b9bdbd`,
-        display: `standalone`,
-        icon: `src/images/icon-square.png`,
-        crossOrigin: `use-credentials`,
-      },
-    },
+    //{ resolve: `gatsby-plugin-manifest`, options: { name: `%s | Ally Digital Solutions`, short_name: `AllyDigital`, description: `We help businesses establish a solid online presence, showcase their brand, and build an online community.`, lang: `en`, start_url: `/`, background_color:`#b9bdbd`, theme_color: `#b9bdbd`, display: `standalone`, icon: `src/images/icon-square.png`, crossOrigin: `use-credentials`, }, },
     'gatsby-plugin-top-layout',
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
