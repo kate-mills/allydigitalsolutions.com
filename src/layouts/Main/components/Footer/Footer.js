@@ -55,13 +55,9 @@ const Footer = () => {
               </Link>
             </Box>
             <Box marginTop={1}>
-              <Button
-                variant="outlined"
-                color="primary"
-                to="/contact-page-cover"
-                size="small"
-              >Learn More
-              </Button>
+            <Button to="/contact-page-cover" color="primary" marginTop={1} size="small" variant="outlined" component={Link}>
+              Learn More
+            </Button>
             </Box>
           </Box>
         </Box>
