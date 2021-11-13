@@ -8,7 +8,7 @@ const encode = data => {
 
 
 
-const contactSubmit = (values, {resetForm}) => {
+const contactSubmit = (values, {setSubmitting, resetForm}) => {
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -17,11 +17,15 @@ const contactSubmit = (values, {resetForm}) => {
       ...values,
     }),
   })
-    .then(() => {
-      console.log("success")
-      resetForm()
-      navigate("/thanks")
-    })
+    //.then(() => {
+      //console.log("success")
+      //resetForm()
+      //setSubmitting(false)
+      //navigate("/thanks")
+    //})
+    .then(()=>resetForm())
+    .then(()=>setSubmitting(false))
+    .then(()=>navigate("/thanks"))
     .catch(error => console.log(error))
 };
 

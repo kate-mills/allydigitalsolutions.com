@@ -48,6 +48,7 @@ const Contact = () => {
     lastName: '',
     email: '',
     message: '',
+    formName: 'contact-page-cover',
   };
 
   //const attrs ={ currentPage: '/contact-page-cover', formName: '/contact-page-cover', successPage: '/thanks', }

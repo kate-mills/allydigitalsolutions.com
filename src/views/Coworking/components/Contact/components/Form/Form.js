@@ -10,6 +10,8 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
+import Link from 'components/Link'
+import {contactSubmit} from 'utils/form-helpers'
 
 const validationSchema = yup.object({
   firstName: yup
@@ -43,6 +45,7 @@ const Form = () => {
     lastName: '',
     email: '',
     message: '',
+    formName: 'latest-form',
   };
 
   const onSubmit = (values) => {
@@ -52,7 +55,7 @@ const Form = () => {
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit,
+    onSubmit:contactSubmit,
   });
 
   return (
@@ -64,7 +67,15 @@ const Form = () => {
         boxShadow={1}
         marginBottom={4}
       >
-        <form noValidate autoComplete="off" onSubmit={formik.handleSubmit}>
+        <form
+          name="latest-form"
+          onSubmit={formik.handleSubmit}
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="latest-form"/>
+          <input type="hidden" name="bot-field"/>
+
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -152,30 +163,27 @@ const Form = () => {
                 <Typography component="p" variant="body2" align="left">
                   By clicking on "submit" you agree to our{' '}
                   <Box
-                    component="a"
-                    href=""
+                    component={Link}
+                    to={'/company-terms'}
+                    underline={'underline'}
                     color={theme.palette.text.primary}
-                    fontWeight={'700'}
-                  >
-                    Privacy Policy
+                  >Privacy Policy
                   </Box>
                   ,{' '}
                   <Box
-                    component="a"
-                    href=""
+                    component={Link}
+                    to={'/company-terms#data-policy'}
+                    underline={'underline'}
                     color={theme.palette.text.primary}
-                    fontWeight={'700'}
-                  >
-                    Data Policy
+                  >Data Policy
                   </Box>{' '}
                   and{' '}
                   <Box
-                    component="a"
-                    href=""
+                    component={Link}
+                    to={'/company-terms#cookie-policy'}
+                    underline={'underline'}
                     color={theme.palette.text.primary}
-                    fontWeight={'700'}
-                  >
-                    Cookie Policy
+                  >Cookie Policy
                   </Box>
                   .
                 </Typography>

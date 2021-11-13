@@ -35,7 +35,7 @@ const Map = () => {
           marginHeight={0}
           marginWidth={0}
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+          src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Napa+Ca&ie=UTF8&t=&z=14&iwloc=B&output=embed"
           style={{
             minHeight: 300,
             borderRadius: 8,
@@ -55,7 +55,7 @@ const Map = () => {
           >
             Call us:
           </Typography>
-          <Typography variant={'subtitle1'}>+39 34 111 222</Typography>
+          <Typography variant={'subtitle1'}>(707) 266-8106</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography
@@ -65,7 +65,7 @@ const Map = () => {
           >
             Email us:
           </Typography>
-          <Typography variant={'subtitle1'}>hi@maccarianagency.com</Typography>
+          <Typography variant={'subtitle1'}>hellow@allydigitalsolutions.com</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography
@@ -73,10 +73,9 @@ const Map = () => {
             gutterBottom
             sx={{ fontWeight: 'medium' }}
           >
-            Address:
           </Typography>
           <Typography variant={'subtitle1'}>
-            Via E. Gola 4, Milan MI, Italy
+            Let us know if you're in Napa, Ca
           </Typography>
         </Grid>
       </Grid>

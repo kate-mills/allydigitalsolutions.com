@@ -8,7 +8,7 @@ const Link = React.forwardRef(function Link(props, ref) {
       component={GatsbyLink}
       ref={ref}
       {...props}
-      underline={props.underline==="underline"? "underline": "none"}
+      underline={props.underline==="underline"? "always": "none"}
       color="text.primary"
     />
   );
