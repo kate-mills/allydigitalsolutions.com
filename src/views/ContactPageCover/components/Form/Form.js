@@ -57,6 +57,7 @@ const Contact = () => {
     initialValues,
     validationSchema: validationSchema,
     onSubmit: contactSubmit,
+    formName: 'contact-page-cover',
   });
 
 

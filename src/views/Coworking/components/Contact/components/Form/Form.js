@@ -45,12 +45,10 @@ const Form = () => {
     lastName: '',
     email: '',
     message: '',
-    formName: 'latest-form',
+    formName: 'contact-page',
   };
 
-  const onSubmit = (values) => {
-    return values;
-  };
+  //const onSubmit = (values) => { return values; };
 
   const formik = useFormik({
     initialValues,
@@ -68,12 +66,12 @@ const Form = () => {
         marginBottom={4}
       >
         <form
-          name="latest-form"
+          name="contact-page"
           onSubmit={formik.handleSubmit}
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="latest-form"/>
+          <input type="hidden" name="form-name" value="contact-page"/>
           <input type="hidden" name="bot-field"/>
 
           <Grid container spacing={4}>
