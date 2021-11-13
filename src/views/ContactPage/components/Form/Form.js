@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import {contactSubmit} from 'utils/form-helpers'
 
 const validationSchema = yup.object({
   fullName: yup
@@ -40,14 +41,12 @@ const Form = () => {
     email: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
-  };
+  //const onSubmit = (values) => { return values; };
 
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit,
+    onSubmit: contactSubmit,
   });
 
   return (
@@ -70,9 +69,10 @@ const Form = () => {
       <Box
         maxWidth={600}
         margin={'0 auto'}
-        name={'contact-page'}
-        data-netlify={'true'}
         component={'form'}
+        name={'contact-page'}
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         onSubmit={formik.handleSubmit}
         sx={{
           '& .MuiOutlinedInput-root.MuiInputBase-multiline': {
