@@ -10,6 +10,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
+import Link from 'components/Link'
 //import {navigate} from 'gatsby'
 
 import {contactSubmit} from 'utils/form-helpers'
@@ -175,32 +176,23 @@ const Contact = () => {
                 <Typography component="p" variant="body2" align="left">
                   By clicking on "submit" you agree to our{' '}
                   <Box
-                    component="a"
-                    href=""
+                    component={Link}
+                    to={'/company-terms'}
                     color={theme.palette.text.primary}
-                    fontWeight={'700'}
-                  >
-                    Privacy Policy
-                  </Box>
-                  ,{' '}
+                    underline={"underline"}
+                  >Privacy Policy</Box>,{' '}
                   <Box
-                    component="a"
-                    href=""
+                    component={Link}
+                    to={'/company-terms#data-policy'}
+                    underline={"underline"}
                     color={theme.palette.text.primary}
-                    fontWeight={'700'}
-                  >
-                    Data Policy
-                  </Box>{' '}
-                  and{' '}
+                  >Data Policy</Box>{' '} and{' '}
                   <Box
-                    component="a"
-                    href=""
+                    component={Link}
+                    to={'/company-terms#cookie-policy'}
+                    underline={"underline"}
                     color={theme.palette.text.primary}
-                    fontWeight={'700'}
-                  >
-                    Cookie Policy
-                  </Box>
-                  .
+                  >Cookie Policy</Box>.
                 </Typography>
               </Box>
             </Grid>
