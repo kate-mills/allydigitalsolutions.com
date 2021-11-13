@@ -9,23 +9,20 @@ const encode = data => {
 
 
 const contactSubmit = (values, {setSubmitting, resetForm}) => {
+  const {formName} = values
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
-      "form-name": values.formName || "contact-page-cover",
+      "form-name": formName || "undefined-form-name",
       ...values,
     }),
   })
-    //.then(() => {
-      //console.log("success")
-      //resetForm()
-      //setSubmitting(false)
-      //navigate("/thanks")
-    //})
-    .then(()=>resetForm())
-    .then(()=>setSubmitting(false))
-    .then(()=>navigate("/thanks"))
+    .then(() => {
+      console.log("success")
+      resetForm()
+      navigate("/thanks")
+    })
     .catch(error => console.log(error))
 };
 
