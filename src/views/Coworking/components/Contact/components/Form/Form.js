@@ -45,7 +45,7 @@ const Form = () => {
     lastName: '',
     email: '',
     message: '',
-    formName: 'contact-page',
+    formName: 'contact-page-cover',
   };
 
   //const onSubmit = (values) => { return values; };
@@ -66,12 +66,14 @@ const Form = () => {
         marginBottom={4}
       >
         <form
-          name="contact-page"
+          noValidate
+          autoComplete="off"
+          name="contact-page-cover"
           onSubmit={formik.handleSubmit}
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact-page"/>
+          <input type="hidden" name="form-name" value="contact-page-cover"/>
           <input type="hidden" name="bot-field"/>
 
           <Grid container spacing={4}>
