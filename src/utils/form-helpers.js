@@ -14,7 +14,7 @@ const contactSubmit = (values, {setSubmitting, resetForm}) => {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
-      "form-name": formName || "undefined-form-name",
+      "form-name": formName || "basic-contact-form",
       ...values,
     }),
   })

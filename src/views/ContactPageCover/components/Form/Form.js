@@ -48,16 +48,14 @@ const Contact = () => {
     lastName: '',
     email: '',
     message: '',
-    formName: 'contact-page-cover',
   };
 
-  //const attrs ={ currentPage: '/contact-page-cover', formName: '/contact-page-cover', successPage: '/thanks', }
 
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
     onSubmit: contactSubmit,
-    formName: 'contact-page-cover',
+    formName: 'basic-contact-form',
   });
 
 
@@ -80,11 +78,11 @@ const Contact = () => {
       </Box>
       <Box>
         <form onSubmit={formik.handleSubmit}
-          name="contact-page-cover"
+          name="basic-contact-form"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact-page-cover"/>
+          <input type="hidden" name="form-name" value="basic-contact-form"/>
           <input type="hidden" name="bot-field"/>
 
           <Grid container spacing={4}>

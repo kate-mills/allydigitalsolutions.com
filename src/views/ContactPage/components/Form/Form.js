@@ -47,6 +47,7 @@ const Form = () => {
     initialValues,
     validationSchema: validationSchema,
     onSubmit: contactSubmit,
+    formName: 'basic-contact-form',
   });
 
   return (
@@ -70,7 +71,7 @@ const Form = () => {
         maxWidth={600}
         margin={'0 auto'}
         component={'form'}
-        name={'contact-page'}
+        name={'basic-contact-form'}
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={formik.handleSubmit}
@@ -84,6 +85,9 @@ const Form = () => {
           },
         }}
       >
+        <input type="hidden" name="form-name" value="basic-contact-form"/>
+        <input type="hidden" name="bot-field"/>
+
         <Grid container spacing={isMd ? 4 : 2}>
           <Grid item xs={12}>
             <Typography

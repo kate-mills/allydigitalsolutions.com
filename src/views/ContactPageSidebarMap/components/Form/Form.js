@@ -47,7 +47,6 @@ const Contact = () => {
       lastName: '',
       email: '',
       message: '',
-      formName: 'contact-page-sidebar-map',
     };
 
     const onSubmit = (values) => {
@@ -58,6 +57,7 @@ const Contact = () => {
       initialValues,
       validationSchema: validationSchema,
       onSubmit:contactSubmit,
+      formName: 'basic-contact-form',
     });
 
     return (
@@ -70,8 +70,8 @@ const Contact = () => {
           </Typography>
         </Box>
         <Box>
-          <form noValidate onSubmit={formik.handleSubmit} name="contact-page-sidebar-map" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact-page-sidebar-map"/>
+          <form noValidate onSubmit={formik.handleSubmit} name="basic-contact-form" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="basic-contact-form"/>
             <input type="hidden" name="bot-field"/>
 
             <Grid container spacing={4}>
