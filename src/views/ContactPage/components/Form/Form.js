@@ -70,6 +70,8 @@ const Form = () => {
       <Box
         maxWidth={600}
         margin={'0 auto'}
+        name={'contact-page'}
+        data-netlify={'true'}
         component={'form'}
         onSubmit={formik.handleSubmit}
         sx={{
