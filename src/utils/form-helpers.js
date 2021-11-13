@@ -13,7 +13,7 @@ const contactSubmit = (values, {resetForm}) => {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
-      "form-name": "contact-page-cover",
+      "form-name": values.formName || "contact-page-cover",
       ...values,
     }),
   })

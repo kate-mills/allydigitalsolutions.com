@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
+import {contactSubmit} from 'utils/form-helpers'
 
 import Container from 'components/Container';
 
@@ -45,6 +46,7 @@ const Contact = () => {
       lastName: '',
       email: '',
       message: '',
+      formName: 'contact-page-sidebar-map',
     };
 
     const onSubmit = (values) => {
@@ -54,7 +56,7 @@ const Contact = () => {
     const formik = useFormik({
       initialValues,
       validationSchema: validationSchema,
-      onSubmit,
+      onSubmit:contactSubmit,
     });
 
     return (
@@ -70,7 +72,10 @@ const Contact = () => {
           </Typography>
         </Box>
         <Box>
-          <form noValidate onSubmit={formik.handleSubmit} netlify name="contact-page-sidebar-map">
+          <form noValidate onSubmit={formik.handleSubmit} name="contact-page-sidebar-map" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact-page-sidebar-map"/>
+            <input type="hidden" name="bot-field"/>
+
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6}>
                 <TextField
