@@ -12,8 +12,7 @@ import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Link from 'components/Link'
 //import {navigate} from 'gatsby'
-
-import {contactSubmit} from 'utils/form-helpers'
+import {contactBasic} from 'utils/form-helpers'
 
 const validationSchema = yup.object({
   firstName: yup
@@ -54,8 +53,7 @@ const Contact = () => {
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit: contactSubmit,
-    formName: 'basic-contact-form',
+    onSubmit: contactBasic,
   });
 
 

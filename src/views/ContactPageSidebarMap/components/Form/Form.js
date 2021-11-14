@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-import {contactSubmit} from 'utils/form-helpers'
+import {contactBasic} from 'utils/form-helpers'
 import Link from 'components/Link'
 
 import Container from 'components/Container';
@@ -56,8 +56,7 @@ const Contact = () => {
     const formik = useFormik({
       initialValues,
       validationSchema: validationSchema,
-      onSubmit:contactSubmit,
-      formName: 'basic-contact-form',
+      onSubmit:contactBasic,
     });
 
     return (

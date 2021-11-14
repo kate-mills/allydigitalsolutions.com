@@ -8,13 +8,13 @@ const encode = data => {
 
 
 
-const contactSubmit = (values, {setSubmitting, resetForm}) => {
-  const {formName} = values
+
+const contactBasic = (values, {resetForm}) => {
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
-      "form-name": formName || "basic-contact-form",
+      "form-name": "basic-contact-form",
       ...values,
     }),
   })
@@ -28,5 +28,5 @@ const contactSubmit = (values, {setSubmitting, resetForm}) => {
 
 export {
   encode,
-  contactSubmit
+  contactBasic
 }

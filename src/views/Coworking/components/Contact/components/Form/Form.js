@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Link from 'components/Link'
-import {contactSubmit} from 'utils/form-helpers'
+import {contactBasic} from 'utils/form-helpers'
 
 const validationSchema = yup.object({
   firstName: yup
@@ -52,8 +52,7 @@ const Form = () => {
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit:contactSubmit,
-    formName: 'basic-contact-form',
+    onSubmit:contactBasic,
   });
 
   return (
