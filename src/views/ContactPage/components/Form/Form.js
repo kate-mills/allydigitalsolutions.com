@@ -9,6 +9,8 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import {contactDemo} from 'utils/form-helpers'
+
 import {navigate} from 'gatsby'
 
 const validationSchema = yup.object({
@@ -41,15 +43,12 @@ const Form = () => {
     email: '',
   };
 
-  const onSubmit = async (values) => { 
-    navigate('/thanks')
-    return JSON.stringify(values, null, 2);
-  };
+  //const onSubmit = async (values) => { return JSON.stringify(values, null, 2); };
 
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit,
+    onSubmit:contactDemo,
   });
 
   return (
@@ -63,20 +62,16 @@ const Form = () => {
         >
           Can't find the answer you need?
         </Typography>
-        <Typography color="text.secondary" align={'center'}>
-          I am async
-          Keep track of what's happening with your data, change permissions, and
-          run reports against your data anywhere in the world. Keep track of
-          what's happening with your data, change permissions.
+        <Typography color="text.secondary" align={'center'}>We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
         </Typography>
       </Box>
       <Box
         maxWidth={600}
         margin={'0 auto'}
+        method="POST"
         component={'form'}
-        name={'async-contact-form'}
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        name={'fullname-contact-form'}
+        data-netlify={true}
         onSubmit={formik.handleSubmit}
         sx={{
           '& .MuiOutlinedInput-root.MuiInputBase-multiline': {
@@ -88,9 +83,6 @@ const Form = () => {
           },
         }}
       >
-        <input type="hidden" name="form-name" value="async-contact-form"/>
-        <input type="hidden" name="bot-field"/>
-
         <Grid container spacing={isMd ? 4 : 2}>
           <Grid item xs={12}>
             <Typography
