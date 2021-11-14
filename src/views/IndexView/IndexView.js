@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
+import { useIdentityContext } from 'react-netlify-identity-gotrue'
+
 import Divider from '@mui/material/Divider';
 
 import {
@@ -18,6 +20,10 @@ import {
 
 const IndexView = () => {
   const theme = useTheme();
+  const identity = useIdentityContext()
+  const [processing, setProcessing] = React.useState(false)
+
+  console.log('identity', identity)
   return (
     <Box sx={{ overflowX: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
