@@ -31,12 +31,6 @@ module.exports = {
     'gatsby-plugin-resolve-src',
     //`gatsby-plugin-netlify`,
     //`gatsby-plugin-offline`, //last
-   {
-      resolve: `gatsby-plugin-netlify-identity-gotrue`,
-      options: {
-        url: `https://ally-ten.netlify.app`, // no trailing slash
-      }
-    },
   ],
   siteMetadata: {
     title: 'Ally Digital Solutions',

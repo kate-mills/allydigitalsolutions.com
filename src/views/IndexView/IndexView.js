@@ -15,6 +15,7 @@ import {
   GetStarted,
 } from './components';
 
+
 const IndexView = () => {
   const theme = useTheme();
   return (
@@ -41,6 +42,7 @@ const IndexView = () => {
           </Container>
           <Divider/>
           </Box>
+
           <Container>
             <Features />
           </Container>
