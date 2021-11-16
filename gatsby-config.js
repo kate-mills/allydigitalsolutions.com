@@ -27,6 +27,12 @@ module.exports = {
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
     'gatsby-plugin-mui-emotion',
+    {
+      resolve: 'gatsby-plugin-netlify-identity-gotrue',
+      options: {
+        url: 'https://ally-ten.netlify.app'
+      }
+    },
     //'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     //`gatsby-plugin-netlify`,

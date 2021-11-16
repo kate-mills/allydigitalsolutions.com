@@ -9,6 +9,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
+import { useIdentityContext } from 'react-netlify-identity-gotrue'
+import {navigate} from 'gatsby'
+
 const validationSchema = yup.object({
   firstName: yup
     .string()
@@ -34,6 +37,7 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
+  const identity = useIdentityContext()
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -41,8 +45,19 @@ const Form = () => {
     password: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
+  const onSubmit = async (values, {resetForm}) => {
+
+    await identity.signup({
+      password: values.password,
+      email: values.email,
+      user_metadata: {
+        full_name: `${values.firstName} ${values.lastName}`,
+      }
+    }).then(()=>{
+        console.log(`Please check your email to confirm your account`)
+        resetForm()
+        navigate('/thanks')
+      }).catch(e => console.log(e.message))
   };
 
   const formik = useFormik({
@@ -76,7 +91,12 @@ const Form = () => {
           Fill out the form to get started.
         </Typography>
       </Box>
-      <form onSubmit={formik.handleSubmit}>
+      <form onSubmit={async (e)=> {
+        e.preventDefault()
+        e.target
+        console.log(e)
+        formik.handleSubmit()
+        }}>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6}>
             <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
