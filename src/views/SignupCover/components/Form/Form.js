@@ -9,6 +9,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
+import BasicModal from 'components/BasicModal'
+
 import { useIdentityContext } from 'react-netlify-identity-gotrue'
 import {navigate} from 'gatsby'
 
@@ -37,7 +39,13 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
+
+  const [modalOpen, setModalOpen] = React.useState(false)
+  const [modalHeadMsg, setModalHeadMsg] = React.useState('We\'re processing your form...')
+  const [modalMsg, setModalMsg] = React.useState('Take a deep breath. It will be just a few moments.')
+
   const identity = useIdentityContext()
+  window.identity = identity
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -45,7 +53,8 @@ const Form = () => {
     password: '',
   };
 
-  const onSubmit = async (values, {resetForm}) => {
+  const onSubmit = async (values, actions) => {
+    actions.setSubmitting(true)
 
     await identity.signup({
       password: values.password,
@@ -53,11 +62,21 @@ const Form = () => {
       user_metadata: {
         full_name: `${values.firstName} ${values.lastName}`,
       }
-    }).then(()=>{
-        console.log(`Please check your email to confirm your account`)
-        resetForm()
-        navigate('/thanks')
-      }).catch(e => console.log(e.message))
+    }).then((response)=>{
+      console.log('response', response)
+        actions.setSubmitting(false)
+        actions.resetForm()
+        navigate('/success', {state: {
+        name: values.firstName,
+        email: values.email,
+        h1: `Welcome ${values.firstName}`,
+        msg: `Please check ${values.email} to confirm your new account.`,
+      }})
+    }).catch(
+      e =>{
+        setModalHeadMsg('There was an error processing your form')
+        setModalOpen(true)
+      })
   };
 
   const formik = useFormik({
@@ -93,8 +112,6 @@ const Form = () => {
       </Box>
       <form onSubmit={async (e)=> {
         e.preventDefault()
-        e.target
-        console.log(e)
         formik.handleSubmit()
         }}>
         <Grid container spacing={4}>
@@ -161,6 +178,14 @@ const Form = () => {
               helperText={formik.touched.password && formik.errors.password}
             />
           </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 1 }}>
+              This is a test
+            </Typography>
+          </Grid>
+
+
           <Grid item container xs={12}>
             <Box
               display="flex"
@@ -211,6 +236,9 @@ const Form = () => {
                 company terms and conditions.
               </Link>
             </Typography>
+
+            <BasicModal open={modalOpen} setOpen={setModalOpen} headMsg={modalHeadMsg} msg={modalMsg}/>
+
           </Grid>
         </Grid>
       </form>

@@ -13,10 +13,7 @@ import {useSrcImages} from 'hooks/use-src-images'
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-const ThanksPage  = ({state, pageProps}) => {
-  const navigatedFromAccount = state!== null
-  console.log('navFromAccount', navigatedFromAccount)
-  console.log('state', pageProps)
+const SuccessPage  = ({state, pageProps}) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -46,11 +43,11 @@ const ThanksPage  = ({state, pageProps}) => {
               <Container>
                 <Box>
                   <Typography
-                    variant="h1"
-                    component={'h1'}
+                    variant="h2"
+                    component={'h2'}
                     align={isMd ? 'left' : 'center'}
                     sx={{ fontWeight: 700 }}
-                  >Thanks!
+                  >{state.h1 || 'Success'}
                   </Typography>
                   <Typography
                     variant="h6"
@@ -58,11 +55,11 @@ const ThanksPage  = ({state, pageProps}) => {
                     color="text.secondary"
                     align={isMd ? 'left' : 'center'}
                   >
-                    We'll get back to you in 1-2 business days.
-                    <br />
+                    {state.msg}
+
+                    <br/>
                     If you need to reach us immediately, please call{' '}
-                    <Link component={'a'} href={'tel:17072668106'} underline="none">(707) 266 - 8106
-                    </Link>
+                    <Link component={'a'} href={'tel:17072668106'} underline="none">(707) 266 - 8106 </Link>
                   </Typography>
                   <Box
                     marginTop={4}
@@ -162,4 +159,4 @@ const ThanksPage  = ({state, pageProps}) => {
   );
 };
 
-export default ThanksPage;
+export default SuccessPage;
