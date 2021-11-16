@@ -68,10 +68,7 @@ const Contact = () => {
         >
           Contact us
         </Typography>
-        <Typography color="text.secondary" align={'center'}>
-          Rather than worrying about switching offices every couple years, you
-          can instead stay in the same location and grow-up from your shared
-          coworking space to an office that takes up an entire floor.
+        <Typography color="text.secondary" align={'center'}>We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
         </Typography>
       </Box>
       <Box>
