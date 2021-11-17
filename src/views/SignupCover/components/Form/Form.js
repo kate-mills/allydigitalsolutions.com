@@ -45,7 +45,6 @@ const Form = () => {
   const [modalMsg, setModalMsg] = React.useState('Take a deep breath. It will be just a few moments.')
 
   const identity = useIdentityContext()
-  window.identity = identity
   const initialValues = {
     firstName: '',
     lastName: '',
