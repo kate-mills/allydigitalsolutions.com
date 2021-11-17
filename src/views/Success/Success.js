@@ -13,9 +13,8 @@ import {useSrcImages} from 'hooks/use-src-images'
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-const SuccessPage  = ({state, pageProps}) => {
-  console.log('state', state)
-  const {msg, heading} = state
+const SuccessPage  = (props) => {
+  console.log(props)
 
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -50,7 +49,7 @@ const SuccessPage  = ({state, pageProps}) => {
                     component={'h2'}
                     align={isMd ? 'left' : 'center'}
                     sx={{ fontWeight: 700 }}
-                  >{heading || 'Success'}
+                  >Success
                   </Typography>
                   <Typography
                     variant="h6"
@@ -58,7 +57,7 @@ const SuccessPage  = ({state, pageProps}) => {
                     color="text.secondary"
                     align={isMd ? 'left' : 'center'}
                   >
-                    {msg}
+                    We just sent you an email to confirm your account.
                     <br/>
                     If you need to reach us immediately, please call{' '}
                     <Link component={'a'} href={'tel:17072668106'} underline="none">(707) 266 - 8106 </Link>
