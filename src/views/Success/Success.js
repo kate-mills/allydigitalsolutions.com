@@ -47,7 +47,7 @@ const SuccessPage  = ({state, pageProps}) => {
                     component={'h2'}
                     align={isMd ? 'left' : 'center'}
                     sx={{ fontWeight: 700 }}
-                  >{state.h1 || 'Success'}
+                  >{state.heading || 'Success'}
                   </Typography>
                   <Typography
                     variant="h6"

@@ -68,7 +68,7 @@ const Form = () => {
         navigate('/success', {state: {
         name: values.firstName,
         email: values.email,
-        h1: `Welcome ${values.firstName}`,
+        heading: `Welcome ${values.firstName}`,
         msg: `Please check ${values.email} to confirm your new account.`,
       }})
     }).catch(
