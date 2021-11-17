@@ -178,13 +178,6 @@ const Form = () => {
             />
           </Grid>
 
-          <Grid item xs={12}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 1 }}>
-              This is a test
-            </Typography>
-          </Grid>
-
-
           <Grid item container xs={12}>
             <Box
               display="flex"

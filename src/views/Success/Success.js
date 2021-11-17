@@ -14,6 +14,9 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 
 const SuccessPage  = ({state, pageProps}) => {
+  console.log('state', state)
+  const {msg, heading} = state
+
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -47,7 +50,7 @@ const SuccessPage  = ({state, pageProps}) => {
                     component={'h2'}
                     align={isMd ? 'left' : 'center'}
                     sx={{ fontWeight: 700 }}
-                  >{'Success'}
+                  >{heading || 'Success'}
                   </Typography>
                   <Typography
                     variant="h6"
@@ -55,8 +58,7 @@ const SuccessPage  = ({state, pageProps}) => {
                     color="text.secondary"
                     align={isMd ? 'left' : 'center'}
                   >
-                    {state.msg}
-
+                    {msg}
                     <br/>
                     If you need to reach us immediately, please call{' '}
                     <Link component={'a'} href={'tel:17072668106'} underline="none">(707) 266 - 8106 </Link>
