@@ -8,6 +8,8 @@ import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
+import beautyFlower from 'images/beauty-flower.jpg'
+
 const Customization = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -87,9 +89,7 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={
-                'https://assets.maccarianagency.com/screenshots/dashboard.png'
-              }
+              src={beautyFlower}
               alt="..."
               effect="blur"
               boxShadow={3}
@@ -114,9 +114,7 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={
-                'https://assets.maccarianagency.com/screenshots/dashboard1.jpg'
-              }
+              src={beautyFlower}
               alt="..."
               effect="blur"
               boxShadow={3}

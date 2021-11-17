@@ -8,6 +8,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
+import beautyFlower from 'images/beauty-flower.jpg'
+
+
 const mock = [
   {
     title: 300,
@@ -61,7 +64,7 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={'https://assets.maccarianagency.com/screenshots/dashboard1.jpg'}
+          src={beautyFlower}
           alt="..."
           effect="blur"
           boxShadow={3}

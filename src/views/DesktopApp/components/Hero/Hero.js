@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import beautyFlower from 'images/beauty-flower.jpg'
 
 const Hero = () => {
   const theme = useTheme();
@@ -87,7 +88,7 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={'https://assets.maccarianagency.com/screenshots/dashboard.png'}
+          src={beautyFlower}
           alt="..."
           effect="blur"
           boxShadow={3}
