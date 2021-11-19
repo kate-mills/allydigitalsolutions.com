@@ -2,13 +2,17 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import Link from 'components/Link';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
+
 import Main from 'layouts/Main';
 import Container from 'components/Container';
+
+//import officeImg from 'images/beauty-flower.jpg'
+import officeImg from 'images/office-tall.jpg'
 
 const NotFoundCover = () => {
   const theme = useTheme();
@@ -45,7 +49,7 @@ const NotFoundCover = () => {
                     align={isMd ? 'left' : 'center'}
                     sx={{ fontWeight: 700 }}
                   >
-                    404
+                    Sorry!
                   </Typography>
                   <Typography
                     variant="h6"
@@ -54,9 +58,8 @@ const NotFoundCover = () => {
                     align={isMd ? 'left' : 'center'}
                   >
                     Oops! Looks like you followed a bad link.
-                    <br />
-                    If you think this is a problem with us, please{' '}
-                    <Link href={''} underline="none">
+                    <br />If you think the problem is on our end, please{' '}
+                    <Link to={'/contact-page-cover'} underline="none">
                       tell us
                     </Link>
                   </Typography>
@@ -70,7 +73,7 @@ const NotFoundCover = () => {
                       variant="contained"
                       color="primary"
                       size="large"
-                      href={'/'}
+                      to={'/'}
                     >
                       Back home
                     </Button>
@@ -133,9 +136,7 @@ const NotFoundCover = () => {
                       <Box
                         component={LazyLoadImage}
                         effect="blur"
-                        src={
-                          'https://assets.maccarianagency.com/backgrounds/img23.jpg'
-                        }
+                        src={officeImg}
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}
