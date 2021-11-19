@@ -66,9 +66,11 @@ const Contact = () => {
           align={'center'}
           gutterBottom
         >
-          Contact us
+          We'd love to hear from you!
         </Typography>
-        <Typography color="text.secondary" align={'center'}>We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
+        <Typography color="text.secondary" align={'center'}>
+
+          We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
         </Typography>
       </Box>
       <Box>
