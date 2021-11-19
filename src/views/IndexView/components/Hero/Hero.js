@@ -30,12 +30,12 @@ const images = [
         coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
       },
       {
-        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--dark.jpg',
-        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--light.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--dark.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--light.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--dark.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--light.jpg',
       },
     ],
   },
@@ -50,8 +50,8 @@ const images = [
         coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--light.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--dark.jpg',
       },
       {
         cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
@@ -111,8 +111,8 @@ const Hero = () => {
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >{/*Advancing brands on the web. We'll make your brand discoverable, look modern and professional while saving you precious time.
-              */}We help businesses establish a solid online presence, showcase their brand, and build an online community.
+            >
+              We help businesses establish a solid online presence, showcase their brand, and build an online community.
             </Typography>
             <Box
               display="flex"
