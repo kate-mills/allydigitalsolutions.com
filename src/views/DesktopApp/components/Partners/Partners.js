@@ -8,8 +8,10 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import testPng from 'images/test.png'
+import Link from 'components/Link'
 
-export const mock = [
+/*export const mock = [
   {
     logo: 'https://assets.maccarianagency.com/svg/logos/slack.svg',
     name: 'Slack',
@@ -34,7 +36,7 @@ export const mock = [
     logo: 'https://assets.maccarianagency.com/svg/logos/atlassian.svg',
     name: 'Atlassian',
   },
-];
+];*/
 
 const Partners = () => {
   const theme = useTheme();
@@ -60,12 +62,12 @@ const Partners = () => {
           <Typography variant="h4" gutterBottom sx={{ fontWeight: 700 }}>
             We love to explore new ways to engage with brands and reach
           </Typography>
-          <Typography variant="h6" component="p" color="text.secondary">
-            Our mission is to help you to grow your design skills, meet and
-            connect with professional dsigners who share your passions.
+          <Typography variant="h6" component="p" color="text.secondary">Our mission is to help you grow your business, ease your workflow, and connect you with others who share your passions.
           </Typography>
           <Box marginTop={2}>
             <Button
+              component={Link}
+              to={'/contact-page-cover'}
               size={'large'}
               endIcon={
                 <Box
@@ -86,12 +88,12 @@ const Partners = () => {
                 </Box>
               }
             >
-              View all plugins
+              Get in touch
             </Button>
           </Box>
         </Box>
       </Grid>
-      <Grid item container spacing={2} xs={12} md={6}>
+    {/*<Grid item container spacing={2} xs={12} md={6}>
         {mock.map((item, i) => (
           <Grid
             item
@@ -135,7 +137,7 @@ const Partners = () => {
             </Box>
           </Grid>
         ))}
-      </Grid>
+      </Grid>*/}
     </Grid>
   );
 };

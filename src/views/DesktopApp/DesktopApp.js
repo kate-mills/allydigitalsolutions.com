@@ -8,8 +8,8 @@ import {
   Download,
   Hero,
   Hub,
-  Partners,
-  Pricings,
+  //Partners,
+  //Pricings,
   Reviews,
   Support,
 } from './components';
@@ -83,14 +83,14 @@ const DesktopApp = () => {
           />
         </Box>
       </Box>
-      <Container>
+      {/*<Container>
         <Partners />
-      </Container>
-      <Box bgcolor={'alternate.main'}>
+      </Container>*/}
+      {/*<Box bgcolor={'alternate.main'}>
         <Container>
           <Pricings />
         </Container>
-      </Box>
+      </Box>*/}
       <Container>
         <Download />
       </Container>

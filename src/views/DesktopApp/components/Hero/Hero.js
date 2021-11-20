@@ -6,7 +6,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import beautyFlower from 'images/beauty-flower.jpg'
+
+import desktopApp from 'images/desktop-app.jpg'
+import Link from 'components/Link'
 
 const Hero = () => {
   const theme = useTheme();
@@ -25,7 +27,7 @@ const Hero = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Beautiful data representation{' '}
+              Website development for your{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -34,16 +36,12 @@ const Hero = () => {
                   background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
                 }}
               >
-                built with theFront
+                business or product
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">
-              World developers use our theFront theme to build their internal
-              tools and client admin applications.
-              <br />
-              Save yourself time and money.
+            <Typography variant="h6" component="p" color="text.secondary">Excellence happens with code, not by chance. We employ artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
             </Typography>
           </Box>
           <Box
@@ -52,9 +50,11 @@ const Hero = () => {
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
           >
             <Button
+              component={Link}
               variant="contained"
               color="primary"
               size="large"
+              to={'/contact-page-cover'}
               fullWidth={isMd ? false : true}
             >
               Start now
@@ -67,8 +67,7 @@ const Hero = () => {
               marginTop={{ xs: 2, sm: 0 }}
               marginLeft={{ sm: 2 }}
               fullWidth={isMd ? false : true}
-            >
-              Learn more
+            ><Link to={'/contact-page-cover'} color="primary" >Learn more</Link>
             </Box>
           </Box>
         </Box>
@@ -88,7 +87,7 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={beautyFlower}
+          src={desktopApp}
           alt="..."
           effect="blur"
           boxShadow={3}

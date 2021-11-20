@@ -8,8 +8,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
+import Link from 'components/Link'
 
-const mock = [
+/*const mock = [
   {
     name: 'Clara Bertoletti',
     title: 'Junior Designer',
@@ -30,7 +31,7 @@ const mock = [
     title: 'Junior Designer',
     avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
   },
-];
+];*/
 
 const Support = () => {
   return (
@@ -45,7 +46,7 @@ const Support = () => {
           color={'secondary'}
           align={'center'}
         >
-          Support Team
+          SUPPORT
         </Typography>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }} align={'center'}>
           Our friendly support team will help you with anything
@@ -55,14 +56,14 @@ const Support = () => {
           component="p"
           color="text.secondary"
           align={'center'}
-        >
-          We aim to take care of you. Need help with installation, find a bug,
-          or just need a clarifiction about our documentation?
+        >We aim to take care of you. Do you need a brand new website, or just a makeover?
           <br />
           We'll be there to lend a helping hand.
         </Typography>
         <Box marginTop={2} display={'flex'} justifyContent={'center'}>
           <Button
+            component={Link}
+            to={'/contact-page-cover'}
             color={'primary'}
             variant={'contained'}
             size={'large'}
@@ -96,11 +97,12 @@ const Support = () => {
         >
           {[
             'All features',
-            'Email support',
-            'Google Ads',
-            'SSO via Google',
-            'API access',
-            'Facebook Ads',
+            'Online Scheduling',
+            'Images',
+            'Logos',
+            'Icons',
+            'Fonts',
+            'Colors',
           ].map((item, i) => (
             <Box
               key={i}
@@ -148,7 +150,7 @@ const Support = () => {
           ))}
         </Box>
       </Box>
-      <Grid container spacing={2}>
+    {/*<Grid container spacing={2}>
         {mock.map((item, i) => (
           <Grid item xs={6} md={3} key={i}>
             <ListItem
@@ -176,7 +178,7 @@ const Support = () => {
             </ListItem>
           </Grid>
         ))}
-      </Grid>
+      </Grid>*/}
     </Box>
   );
 };

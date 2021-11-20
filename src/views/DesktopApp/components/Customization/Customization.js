@@ -7,8 +7,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import Link from 'components/Link'
 
-import beautyFlower from 'images/beauty-flower.jpg'
+import desktopApp from 'images/desktop-app.jpg'
 
 const Customization = () => {
   const theme = useTheme();
@@ -39,7 +40,7 @@ const Customization = () => {
             fontWeight: 700,
           }}
         >
-          Customize your product
+          Customize your website 
         </Typography>
         <Typography
           variant="h6"
@@ -49,8 +50,7 @@ const Customization = () => {
         >
           We aim to take care of you.
           <br />
-          Need help with installation, find a bug, or just need a clarifiction
-          about our documentation?
+          Need help picking colors and fonts, or thinking about adding a scheduling app or blog? 
           <br />
           We'll be there to lend a helping hand.
         </Typography>
@@ -62,6 +62,8 @@ const Customization = () => {
           marginTop={2}
         >
           <Button
+            component={Link}
+            to={'/contact-page-cover'}
             variant="contained"
             color="primary"
             size="large"
@@ -78,7 +80,7 @@ const Customization = () => {
             marginLeft={{ sm: 2 }}
             fullWidth={isMd ? false : true}
           >
-            Learn more
+            <Link to={'/contact-page-cover'}>Learn more</Link>
           </Box>
         </Box>
       </Box>
@@ -89,8 +91,8 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={beautyFlower}
-              alt="..."
+              src={desktopApp}
+              alt=""
               effect="blur"
               boxShadow={3}
               borderRadius={2}
@@ -114,8 +116,8 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={beautyFlower}
-              alt="..."
+              src={desktopApp}
+              alt=""
               effect="blur"
               boxShadow={3}
               borderRadius={2}

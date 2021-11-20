@@ -8,25 +8,25 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import beautyFlower from 'images/beauty-flower.jpg'
+import desktopApp from 'images/desktop-app.jpg'
 
 
 const mock = [
   {
-    title: 300,
+    title: 100,
     subtitle:
-      '300 + component compositions, which will help you to build any page easily.',
+      '100 + component compositions to make your site feel fresh and unique.',
     suffix: '+',
   },
   {
-    title: 45,
+    title: 25,
     subtitle:
-      '45 + landing and supported pages to Build a professional website.',
+      '25 + landing and support pages on the ready enable us to build a professional website quickly.',
     suffix: '+',
   },
   {
-    title: 99,
-    subtitle: '99% of our customers rated 5-star our themes over 5 years.',
+    title: 100,
+    subtitle: '100% of our clients awarded us a 5-star rating in the last 2 years.',
     suffix: '%',
   },
 ];
@@ -64,7 +64,7 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={beautyFlower}
+          src={desktopApp}
           alt="..."
           effect="blur"
           boxShadow={3}
@@ -82,21 +82,18 @@ const Hero = () => {
               variant="h4"
               color="text.primary"
               sx={{ fontWeight: 700 }}
-            >
-              Use flexible components{' '}
+            >Excellence happens with code,{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
               >
-                to build an app quickly
+                not by chance.
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={4}>
-            <Typography variant="h6" component="p" color="text.secondary">
-              theFront styles and extends MUI components, but also
-              included brand new landing page focused components.
+            <Typography variant="h6" component="p" color="text.secondary">We employ artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
             </Typography>
           </Box>
           <Box>
