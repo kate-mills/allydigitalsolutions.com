@@ -1,8 +1,8 @@
 import React from 'react';
-import DesktopApp from 'views/DesktopApp';
+import WebsiteDev from 'views/WebsiteDev';
 
-const DesktopAppPage = () => {
-  return <DesktopApp />;
+const WebsiteDevPage = () => {
+  return <WebsiteDev />;
 };
 
-export default DesktopAppPage;
+export default WebsiteDevPage;
