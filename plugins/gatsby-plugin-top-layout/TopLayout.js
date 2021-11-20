@@ -14,15 +14,12 @@ import 'css/index.css'
 //import seoImage from 'images/seoimage.jpg'
 
 
+
 export default function TopLayout(props) {
   return (
     <React.Fragment>
       <Helmet>
         <meta charSet="utf-8" />
-        <link
-          rel="shortcut icon"
-          href={'https://raw.githubusercontent.com/kate-mills/10-25-21/landing-page/src/images/icon-square.png'}
-        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -39,11 +36,10 @@ export default function TopLayout(props) {
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-
-        <meta property="og:image" content="https://ally-ten.netlify.app/seoimage.jpg"/>
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
-
+        <meta
+          property="og:image"
+          content="https://ally-ten.netlify.app/seoimage.jpg"
+        />
         <meta
           property="og:title"
           content="Ally Digital Solutions | Build a solid online presence, showcase your brand & inspire action."
@@ -52,8 +48,7 @@ export default function TopLayout(props) {
           property="og:description"
           content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."
         />
-        <meta property="og:url" content="https://allydigitalsolutions.com" />
-
+        <meta property="og:url" content="https://ally-ten.netlify.app" />
         <link rel="preconnect" href="https://fonts.gstatic.com" as="font" crossorigin/>
         <link
           as="style"
