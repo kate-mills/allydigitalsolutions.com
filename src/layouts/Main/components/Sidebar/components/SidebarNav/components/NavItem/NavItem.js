@@ -61,9 +61,7 @@ const NavItem = ({ title, items }) => {
                         : 'transparent',
                     fontWeight: activeLink === p.href ? 600 : 400,
                   }}
-                >
-                  hi
-                  {p.title}
+                >{p.title}
                   {p.isNew && (
                     <Box
                       padding={0.5}
