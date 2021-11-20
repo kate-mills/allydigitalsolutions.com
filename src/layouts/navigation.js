@@ -6,8 +6,9 @@ const pages = {
       isNew: true,
     },
     {
-      title: 'Desktop App',
-      href: '/desktop-app',
+      title: 'Website Dev',
+      href: '/website-dev',
+      isNew: true,
     },
     {
       title: 'Startup',

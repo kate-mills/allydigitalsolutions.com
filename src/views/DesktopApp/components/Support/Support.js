@@ -46,7 +46,7 @@ const Support = () => {
           color={'secondary'}
           align={'center'}
         >
-          SUPPORT
+          GET SUPPORT
         </Typography>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }} align={'center'}>
           Our friendly support team will help you with anything
@@ -56,7 +56,7 @@ const Support = () => {
           component="p"
           color="text.secondary"
           align={'center'}
-        >We aim to take care of you. Do you need a brand new website, or just a makeover?
+        >Do you need a brand new website, or just a makeover?
           <br />
           We'll be there to lend a helping hand.
         </Typography>

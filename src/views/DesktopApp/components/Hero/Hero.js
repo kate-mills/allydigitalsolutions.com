@@ -41,7 +41,7 @@ const Hero = () => {
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">Excellence happens with code, not by chance. We employ artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
+            <Typography variant="h6" component="p" color="text.secondary">Whether you need a brand new website or just a makeover, we can turn your vision into reality.
             </Typography>
           </Box>
           <Box
