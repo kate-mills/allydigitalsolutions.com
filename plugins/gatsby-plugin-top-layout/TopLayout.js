@@ -25,11 +25,11 @@ export default function TopLayout(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>AllyDigital | Build a solid online presence & showcase your brand.</title>
+        <title>AllyDigital | Build a solid online presence, showcase your brand & inspire action.</title>
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="We help businesses establish a solid online presence, showcase their brand, and build an online community."
+          content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."
         />
         <meta
           name="robots"
@@ -39,22 +39,26 @@ export default function TopLayout(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
+          content="https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--light.jpg"
         />
         <meta
           property="og:title"
-          content="theFront | UI Kit by Maccarian Agency."
+          content="Ally Digital Solutions | Build a solid online presence, showcase your brand & inspire action."
         />
         <meta
           property="og:description"
-          content="A modern design system for your new landing and web pages."
+          content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."
         />
-        <meta
-          property="og:url"
-          content="https://thefront.maccarianagency.com/"
+        <meta property="og:url" content="https://allydigitalsolutions.com" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" as="font" crossorigin/>
+        <link
+          as="style"
+          rel="stylesheet preload prefetch"
+          type="text/css"
+          crossorigin="anonymous"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
         />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
       </Helmet>
       <Page>
         {props.children}
