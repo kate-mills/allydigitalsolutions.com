@@ -40,11 +40,7 @@ const Topbar = ({ onSidebarOpen }) => {
             Home
           </Link>
         </Box>
-        <Box marginLeft={3}>
-          <Link underline="none" to="/home" color="text.primary" fontWeight={400}>
-            All pages
-          </Link>
-        </Box>
+        {/*<Box marginLeft={3}> <Link underline="none" to="/home" color="text.primary" fontWeight={400}> All pages </Link> </Box>*/}
         <Box marginLeft={3}>
           <ThemeModeToggler />
         </Box>

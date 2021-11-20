@@ -45,52 +45,17 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
+            title={'More'}
             id={'landing-pages'}
             items={landingPages}
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Company'}
-            id={'company-pages'}
-            items={companyPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Account'}
-            id={'account-pages'}
-            items={accountPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Pages'}
-            id={'secondary-pages'}
-            items={secondaryPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Blog'}
-            id={'blog-pages'}
-            items={blogPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Portfolio'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
+        {/*<Box marginLeft={4}> <NavItem title={'Company'} id={'company-pages'} items={companyPages} colorInvert={colorInvert} /> </Box>*/}
+        {/*<Box marginLeft={4}> <NavItem title={'Account'} id={'account-pages'} items={accountPages} colorInvert={colorInvert} /> </Box>*/}
+        {/*<Box marginLeft={4}> <NavItem title={'Pages'} id={'secondary-pages'} items={secondaryPages} colorInvert={colorInvert} /> </Box>*/}
+        {/*<Box marginLeft={4}> <NavItem title={'Blog'} id={'blog-pages'} items={blogPages} colorInvert={colorInvert} /> </Box>*/}
+        {/*<Box marginLeft={4}> <NavItem title={'Portfolio'} id={'portfolio-pages'} items={portfolioPages} colorInvert={colorInvert} /> </Box>*/}
         <Box marginLeft={4}>
           <Button
             variant="contained"

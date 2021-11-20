@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 
-import Page from '../../src/components/Page';
+import Page from 'components/Page';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'slick-carousel/slick/slick.css';
@@ -10,9 +10,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'react-image-lightbox/style.css';
 import 'aos/dist/aos.css';
 import 'css/index.css'
-
-//import seoImage from 'images/seoimage.jpg'
-
 
 
 export default function TopLayout(props) {

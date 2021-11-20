@@ -41,23 +41,13 @@ const SidebarNav = ({ pages }) => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Landings'} items={landingPages} />
+          <NavItem title={'More'} items={landingPages} />
         </Box>
-        <Box>
-          <NavItem title={'Company'} items={companyPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Pages'} items={secondaryPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Account'} items={accountPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Blog'} items={blogPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Portfolio'} items={portfolioPages} />
-        </Box>
+        {/*<Box> <NavItem title={'Company'} items={companyPages} /> </Box>*/}
+        {/*<Box> <NavItem title={'Pages'} items={secondaryPages} /> </Box>*/}
+        {/*<Box> <NavItem title={'Account'} items={accountPages} /> </Box>*/}
+        {/*<Box> <NavItem title={'Blog'} items={blogPages} /> </Box>*/}
+        {/*<Box> <NavItem title={'Portfolio'} items={portfolioPages} /> </Box>*/}
         <Box marginTop={2}>
           <Button
             size={'large'}
