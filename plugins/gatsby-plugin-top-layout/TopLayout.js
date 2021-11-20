@@ -11,7 +11,7 @@ import 'react-image-lightbox/style.css';
 import 'aos/dist/aos.css';
 import 'css/index.css'
 
-import seoImage from 'images/seoimage.jpg'
+//import seoImage from 'images/seoimage.jpg'
 
 
 export default function TopLayout(props) {
@@ -40,7 +40,7 @@ export default function TopLayout(props) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
 
-        <meta property="og:image" content={seoImage} />
+        <meta property="og:image" content="https://ally-ten.netlify.app/seoimage.jpg"/>
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
 
