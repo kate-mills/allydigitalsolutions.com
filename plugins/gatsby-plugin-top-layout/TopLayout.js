@@ -11,6 +11,8 @@ import 'react-image-lightbox/style.css';
 import 'aos/dist/aos.css';
 import 'css/index.css'
 
+import seoImage from 'images/seoimage.jpg'
+
 
 export default function TopLayout(props) {
   return (
@@ -19,7 +21,7 @@ export default function TopLayout(props) {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href={'https://raw.githubusercontent.com/kate-mills/10-25-21/landing-page/src/images/icon.png'}
+          href={'https://raw.githubusercontent.com/kate-mills/10-25-21/landing-page/src/images/icon-square.png'}
         />
         <meta
           name="viewport"
@@ -37,10 +39,11 @@ export default function TopLayout(props) {
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--light.jpg"
-        />
+
+        <meta property="og:image" content={seoImage} />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+
         <meta
           property="og:title"
           content="Ally Digital Solutions | Build a solid online presence, showcase your brand & inspire action."
