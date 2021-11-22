@@ -22,6 +22,7 @@ const Footer = () => {
           flexDirection={{ xs: 'column', sm: 'row' }}
         >
           <Box
+            component={Link}
             display={'flex'}
             to="/"
             title="AllyDigitalSolutions"
@@ -48,10 +49,10 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                to="/docs/colors"
+                to="/company-terms"
                 color="text.primary"
                 variant={'subtitle2'}
-              >Documentation
+              >Privacy
               </Link>
             </Box>
             <Box marginTop={1}>

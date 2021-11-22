@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import logo from 'svg/logo.svg'
 import Link from 'components/Link'
 
-import { NavItem } from './components';
+import { NavItem, ThemeModeToggler} from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
@@ -51,6 +51,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             colorInvert={colorInvert}
           />
         </Box>
+        <Box marginLeft={3}><ThemeModeToggler/></Box>
         {/*<Box marginLeft={4}> <NavItem title={'Company'} id={'company-pages'} items={companyPages} colorInvert={colorInvert} /> </Box>*/}
         {/*<Box marginLeft={4}> <NavItem title={'Account'} id={'account-pages'} items={accountPages} colorInvert={colorInvert} /> </Box>*/}
         {/*<Box marginLeft={4}> <NavItem title={'Pages'} id={'secondary-pages'} items={secondaryPages} colorInvert={colorInvert} /> </Box>*/}

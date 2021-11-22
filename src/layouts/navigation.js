@@ -3,11 +3,10 @@ const pages = {
     {
       title: 'Social Media',
       href: '/social-media',
-      isNew: true,
     },
     {
-      title: 'Website Dev',
-      href: '/website-dev',
+      title: 'Web Development',
+      href: '/web-development',
       isNew: true,
     },
     //{ title: 'Startup', href: '/startup', },

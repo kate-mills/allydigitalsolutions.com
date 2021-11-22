@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 
+import Link from 'components/Link'
+
 import logo from 'svg/logo.svg'
 
 import NavItem from './components/NavItem';
@@ -26,9 +28,9 @@ const SidebarNav = ({ pages }) => {
       <Box width={1} paddingX={2} paddingY={1}>
         <Box
           display={'flex'}
-          component="a"
-          href="/"
-          title="theFront"
+          component={Link}
+          to="/"
+          title="AllyDigital"
           width={{ xs: 100, md: 120 }}
         >
           <Box
@@ -73,11 +75,9 @@ const SidebarNav = ({ pages }) => {
             variant="contained"
             color="primary"
             fullWidth
-            component="a"
-            target="blank"
-            href="https://MUI.com/store/items/the-front-landing-page/"
-          >
-            Purchase now
+            component={Link}
+            to="/contact-page-cover"
+          >Learn More
           </Button>
         </Box>
       </Box>

@@ -62,11 +62,6 @@ const pages = [
         title: 'Illustrations',
         href: '/docs/illustrations',
       },
-      {
-        title: 'Components',
-        href: 'https://next.MUI.com/components/box/',
-        target: '_blank',
-      },
     ],
   },
   {

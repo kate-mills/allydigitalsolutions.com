@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import Link from 'components/Link';
 import logo from 'svg/logo.svg'
 
 const Footer = () => {
@@ -23,8 +23,8 @@ const Footer = () => {
         >
           <Box
             display={'flex'}
-            component="a"
-            href="/"
+            component={Link}
+            to="/"
             title="theFront"
             width={80}
           >
@@ -39,8 +39,8 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                component="a"
-                href="/"
+                component={Link}
+                to="/"
                 color="text.primary"
                 variant={'subtitle2'}
               >
@@ -50,24 +50,23 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                component="a"
-                href="/docs/introduction"
+                component={Link}
+                to="/company-policy"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Documentation
+                Privacy
               </Link>
             </Box>
             <Box marginTop={1}>
               <Button
                 variant="outlined"
                 color="primary"
-                component="a"
+                component={Link}
                 target="blank"
-                href="https://MUI.com/store/items/the-front-landing-page/"
+                to="/"
                 size="small"
-              >
-                Purchase now
+              >Home 
               </Button>
             </Box>
           </Box>
@@ -79,8 +78,7 @@ const Footer = () => {
           variant={'subtitle2'}
           color="text.secondary"
           gutterBottom
-        >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+        >&copy; AllyDigitalSolutions. {new Date().getFullYear()}, Kate Mills Company, LLC. All rights reserved
         </Typography>
         <Typography
           align={'center'}

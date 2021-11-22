@@ -9,7 +9,7 @@ import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 import Container from 'components/Container';
-import { Topbar, Sidebar, Footer, ThemeModeToggler } from './components';
+import { Topbar, Sidebar, Footer } from './components';
 
 import pages from '../navigation';
 
@@ -44,16 +44,17 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           paddingBottom={'0 !important'}
         >
           <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>
+        {/*
+
             <Box marginRight={2}>
               <Link
                 underline="none"
                 to="/docs/colors"
                 color={colorInvert ? 'common.white' : 'text.primary'}
-              >Documentation</Link>
+              >Developers</Link>
             </Box>
-            <Box>
-              <ThemeModeToggler />
-            </Box>
+            <Box><ThemeModeToggler /></Box>
+      */}
           </Box>
         </Container>
       </Box>
