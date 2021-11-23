@@ -22,7 +22,7 @@ const GetStarted = () => {
         sx={{
           fontWeight: 700,
         }}
-      >Get started with AllyDigital today
+      >Get started with AllyDigital today!
       </Typography>
       <Typography
         variant="h6"
