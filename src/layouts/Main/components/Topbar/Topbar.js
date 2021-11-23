@@ -64,11 +64,14 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             component={Link}
             to="/contact-page-cover"
             size="large"
-          >Get Started
+          >Contact Sales
           </Button>
         </Box>
       </Box>
-      <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
+      <Box sx={{ display: { xs: 'flex', md: 'none' } }} alignItems={'center'}>
+        <Box marginRight={2}>
+          <ThemeModeToggler />
+        </Box>
         <Button
           onClick={() => onSidebarOpen()}
           aria-label="Menu"

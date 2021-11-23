@@ -54,9 +54,8 @@ const SidebarNav = ({ pages }) => {
             variant="outlined"
             fullWidth
             component={Link}
-            to="/docs/colors"
-          >
-            Documentation
+            to="/contact-page-cover"
+          >Contact Sales
           </Button>
         </Box>
         <Box marginTop={1}>
@@ -66,9 +65,8 @@ const SidebarNav = ({ pages }) => {
             color="primary"
             fullWidth
             component={Link}
-            to="/contact-page-cover"
-          >
-            Get Started
+            to="/contact-page"
+          >Get Started
           </Button>
         </Box>
       </Box>

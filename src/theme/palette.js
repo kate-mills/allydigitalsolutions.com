@@ -5,9 +5,9 @@ const grey = {
   contrastText: '#000',
 }
 const blue = {
-  light: '#b4bbc8',
-  main: '#848b97',
-  dark: '#050d18',
+  light: '#5e6b72',
+  main: '#344047',
+  dark: '#0e1a20',
   contrastText: '#fff',
 }
 export const light = {

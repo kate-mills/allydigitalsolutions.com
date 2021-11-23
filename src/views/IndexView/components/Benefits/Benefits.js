@@ -55,32 +55,9 @@ const mock = [
     ),
   },
   {
-    title: "Branding",
-    subtitle:
-      "We transform businesses into brands through high-quality logo design.",
-    icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        {" "}
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-        />{" "}
-      </svg>
-    ),
-  },
-  {
-    title: "Accessible",
-    subtitle:
-      "We follow the latest developer best practices to enhance the experience for all users visiting our sites.",
+    title: "Social Media",
+
+    subtitle: "We help businesses establish a solid online presence, showcase their brand, and build an online community.",
     icon: (
       <svg
         height={24}
@@ -100,11 +77,10 @@ const mock = [
       </svg>
     ),
   },
-
   {
-    title: "Automation",
+    title: "Accessible",
     subtitle:
-      "We help your business gain leverage and efficiency through smart automation.",
+      "We follow the latest developer best practices to enhance the experience for all users visiting our sites.",
     icon: (
       <svg
         height={24}
@@ -115,11 +91,30 @@ const mock = [
         stroke="currentColor"
       >
         {" "}
-        <path
-          strokeLinecap="round"
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+        />
+        {" "}
+      </svg>
+    ),
+  },
+  {
+    title: "Branding",
+    subtitle: "We transform businesses into brands through high-quality logo design.",
+    icon: (
+      <svg
+        height={24}
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        {" "}
+        <path strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
         />{" "}
       </svg>
     ),

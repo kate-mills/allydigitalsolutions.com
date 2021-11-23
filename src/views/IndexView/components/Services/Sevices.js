@@ -97,7 +97,9 @@ const Services = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >Our design strategy is a fluid integration of composition, fusion & symmetry.</Typography>
+          >We employ artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
+           
+          </Typography>
         </Box>
       </Box>
       <Grid container spacing={2}>
