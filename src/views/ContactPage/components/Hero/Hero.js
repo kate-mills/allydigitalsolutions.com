@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
+import AllySvg from 'svg/Ally-Hello.svg'
+
 const Hero = () => {
   const theme = useTheme();
 
@@ -19,8 +21,7 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >
-              Contact us
+            >We'd love to hear from you!
             </Typography>
           </Box>
           <Box>
@@ -29,9 +30,7 @@ const Hero = () => {
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >
-              theFront will make your product look modern and professional while
-              saving you precious time.
+            >We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
             </Typography>
           </Box>
         </Box>
@@ -47,9 +46,7 @@ const Hero = () => {
           <Box height={1} width={1} maxWidth={500}>
             <Box
               component={'img'}
-              src={
-                'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration6.svg'
-              }
+              src={AllySvg}
               width={1}
               height={1}
               sx={{

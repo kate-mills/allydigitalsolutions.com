@@ -62,7 +62,7 @@ const Form = () => {
         >
           Can't find the answer you need?
         </Typography>
-        <Typography color="text.secondary" align={'center'}>We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
+        <Typography color="text.secondary" align={'center'}>Our friendly support team will help you with anything!
         </Typography>
       </Box>
       <Box
@@ -138,7 +138,7 @@ const Form = () => {
               Message
             </Typography>
             <TextField
-              placeholder="Your question about our services"
+              placeholder="Your message"
               variant="outlined"
               name="message"
               fullWidth
@@ -157,7 +157,7 @@ const Form = () => {
               color="primary"
               size="large"
             >
-              Send the question
+              Send your message
             </Button>
           </Grid>
         </Grid>

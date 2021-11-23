@@ -44,9 +44,8 @@ const GetStarted = () => {
           color="primary"
           size="large"
           fullWidth={isMd ? false : true}
-          to={'/home'}
-        >
-          View pages
+          to={'/contact-page'}
+        >Get Started
         </Button>
         <Box
           marginTop={{ xs: 2, sm: 0 }}
@@ -55,13 +54,12 @@ const GetStarted = () => {
         >
           <Button
             component={Link}
-            to={'/docs/colors'}
+            to={'/contact-page-cover'}
             variant="outlined"
             color="primary"
             size="large"
             fullWidth={isMd ? false : true}
-          >
-            Documentation
+          >Learn More
           </Button>
         </Box>
       </Box>

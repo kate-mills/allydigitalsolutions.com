@@ -126,9 +126,9 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                to={'/home'}
+                to={'/contact-page'}
               >
-               Our Work
+               Learn More
               </Button>
               <Box
                 marginTop={{ xs: 2, sm: 0 }}
