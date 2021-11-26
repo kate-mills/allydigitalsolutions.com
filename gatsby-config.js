@@ -57,7 +57,7 @@ module.exports = {
         url: 'https://ally-ten.netlify.app'
       }
     },
-    //'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     //`gatsby-plugin-netlify`,
     //`gatsby-plugin-offline`, //last
