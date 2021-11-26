@@ -4,11 +4,35 @@ const grey = {
   dark: '#898d8d',
   contrastText: '#000',
 }
+const darkApricot = {
+  light: '#b68a67',
+  main: '#c3a896',
+  dark: '#553314',
+  contrastText: '#000',
+}
+const darkGrey = {
+  light: '#bfc9bf',
+  main: '#8f988f', //#8f988f
+  dark: '#626a62',
+  contrastText: '#000',
+}
+const coolPink = {
+  light: '#fad7cd',
+  main: '#C7A69C',
+  dark: '#96776e',
+  contrastText: '#000',
+}
 const blue = {
-  light: '#5e6b72',
-  main: '#344047',
-  dark: '#0e1a20',
-  contrastText: '#fff',
+  light: '#eecbae',
+  main: '#bb9a7f',
+  dark: '#8a6c52',
+  contrastText: '#000',
+}
+const apricot = {
+  light: '#f6d9c7', //#fad5af
+  main: '#c3a896', //#c6a47f
+  dark: '#927968', //#947552
+  contrastText: '#000',
 }
 export const light = {
   alternate: {
@@ -18,11 +42,11 @@ export const light = {
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  secondary:blue,
-  primary: grey,
+  secondary:apricot,
+  primary: darkGrey,
   text: {
-     primary: "#2b2526",
-    secondary: "#544d4e",
+     primary: "#2D2A1E", //#2b2526
+    secondary: "#4F554D", //#544d4e
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
@@ -41,15 +65,15 @@ export const dark = {
   },
   cardShadow: 'rgba(0, 0, 0, .11)',
   common: {
-    black: '#000',
-    white: '#fff',
+    black: '#1A1C12',
+    white: '#F7F7F7',
   },
   mode: 'dark',
-  primary: grey,
-  secondary:blue,
+  primary:apricot ,
+  secondary:darkGrey,
   text: {
-    primary: '#EEEEEF',
-    secondary: '#AEB0B4',
+    primary: '#F7F7F7', //#FBFBFB#EEEEEF
+    secondary: '#B5B8B7', //#AEB0B4
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
