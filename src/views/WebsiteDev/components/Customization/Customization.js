@@ -9,8 +9,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Link from 'components/Link'
 
-import webDeveloperOne from 'images/web-developer-01.jpg'
-import webDeveloperTwo from 'images/web-developer-02.jpg'
+import webDeveloperOne from 'images/web-developer-02.jpg'
+import webDeveloperTwo from 'images/web-developer-01.jpg'
 
 const Customization = () => {
   const theme = useTheme();

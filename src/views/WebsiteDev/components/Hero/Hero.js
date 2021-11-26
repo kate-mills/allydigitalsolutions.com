@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
 //import webDeveloper from 'images/web-developer-01.jpg'
-import webDeveloper from 'images/web-developer-02.jpg'
+import webDeveloper from 'images/web-developer-01.jpg'
 
 import Link from 'components/Link'
 
