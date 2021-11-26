@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const currentUrl = `https://ally-ten.netlify.app/`
+const currentUrl = `https://ally-ten.netlify.app`
 
 module.exports = {
   siteMetadata: {
@@ -54,10 +54,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-identity-gotrue',
       options: {
-        url: 'https://ally-ten.netlify.app'
+        url: `${currentUrl}`,
       }
     },
-    'gatsby-plugin-react-helmet',
+    //'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     //`gatsby-plugin-netlify`,
     //`gatsby-plugin-offline`, //last
