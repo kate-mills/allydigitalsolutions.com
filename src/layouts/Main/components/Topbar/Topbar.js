@@ -5,13 +5,15 @@ import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from 'svg/logo.svg'
+import logoDark from 'svg/logo-dark.svg'
 import Link from 'components/Link'
 
 import { NavItem, ThemeModeToggler} from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
-  //const { mode } = theme.palette;
+  const { mode } = theme.palette;
+  console.log('mode', mode)
   const {
     landings: landingPages,
     secondary: secondaryPages,
@@ -37,7 +39,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       >
         <Box
           component={'img'}
-          src={logo}
+          src={ mode === "light" ? logo : logoDark }
           height={1}
           width={1}
         />

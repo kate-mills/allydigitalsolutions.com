@@ -4,13 +4,14 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from 'components/Link';
 import Typography from '@mui/material/Typography';
-//import { useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 
 import logo from 'svg/logo.svg'
+import logoDark from 'svg/logo-dark.svg'
 
 const Footer = () => {
-  //const theme = useTheme();
-  //const { mode } = theme.palette;
+  const theme = useTheme();
+  const { mode } = theme.palette;
 
   return (
     <Grid container spacing={2}>
@@ -31,7 +32,7 @@ const Footer = () => {
           >
             <Box
               component={'img'}
-              src={logo}
+              src={mode === 'light' ? logo: logoDark}
               height={1}
               width={1}
             />

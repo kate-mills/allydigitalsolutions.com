@@ -9,7 +9,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Link from 'components/Link'
 
-import desktopApp from 'images/desktop-app.jpg'
+import webDeveloperOne from 'images/web-developer-01.jpg'
+import webDeveloperTwo from 'images/web-developer-02.jpg'
 
 const Customization = () => {
   const theme = useTheme();
@@ -91,7 +92,7 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={desktopApp}
+              src={webDeveloperTwo}
               alt=""
               effect="blur"
               boxShadow={3}
@@ -116,7 +117,7 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={desktopApp}
+              src={webDeveloperOne}
               alt=""
               effect="blur"
               boxShadow={3}

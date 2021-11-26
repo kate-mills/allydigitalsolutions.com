@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import desktopApp from 'images/desktop-app.jpg'
+import webDeveloperOne from 'images/web-developer-01.jpg'
 
 
 const mock = [
@@ -64,7 +64,7 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={desktopApp}
+          src={webDeveloperOne}
           alt="..."
           effect="blur"
           boxShadow={3}

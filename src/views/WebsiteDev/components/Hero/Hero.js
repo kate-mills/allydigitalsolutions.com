@@ -7,7 +7,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
-import desktopApp from 'images/desktop-app.jpg'
+//import webDeveloper from 'images/web-developer-01.jpg'
+import webDeveloper from 'images/web-developer-02.jpg'
+
 import Link from 'components/Link'
 
 const Hero = () => {
@@ -27,7 +29,7 @@ const Hero = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Website development for your{' '}
+              Web development for your{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -87,7 +89,7 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={desktopApp}
+          src={webDeveloper}
           alt="..."
           effect="blur"
           boxShadow={3}

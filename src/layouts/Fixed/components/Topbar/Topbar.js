@@ -7,11 +7,13 @@ import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import logo from 'svg/logo.svg'
+import logoDark from 'svg/logo-dark.svg'
+
 import { ThemeModeToggler } from './components';
 
 const Topbar = ({ onSidebarOpen }) => {
   const theme = useTheme();
-  //const { mode } = theme.palette;
+  const { mode } = theme.palette;
 
   return (
     <Box
@@ -29,7 +31,7 @@ const Topbar = ({ onSidebarOpen }) => {
       >
         <Box
           component={'img'}
-          src={logo}
+          src={mode === 'light' ? logo: logoDark}
           height={1}
           width={1}
         />
