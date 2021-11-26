@@ -11,8 +11,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-//import officeImg from 'images/beauty-flower.jpg'
-import officeImg from 'images/office-tall.jpg'
+import officeImg from 'images/office.jpg'
 
 const NotFoundCover = () => {
   const theme = useTheme();
