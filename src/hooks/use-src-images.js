@@ -8,7 +8,7 @@ export const useSrcImages = () => {
           publicURL
           img: childImageSharp { gatsbyImageData(backgroundColor: "silver") }
         }
-        office: file(relativePath: { eq: "office-tall.jpg" }) {
+        office: file(relativePath: { eq: "office.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
