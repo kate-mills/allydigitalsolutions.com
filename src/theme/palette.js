@@ -22,10 +22,16 @@ const coolPink = {
   dark: '#96776e',
   contrastText: '#000',
 }
-const blue = {
-  light: '#eecbae',
-  main: '#bb9a7f',
-  dark: '#8a6c52',
+const blueApricot = {
+  light: '#fffbfb',
+  main: '#d9c8c8',
+  dark: '#786969',
+  contrastText: '#000',
+}
+const hotelBackground = {
+  light: '#ffeedd',
+  main: '#d9bcab',
+  dark: '#a78c7c',
   contrastText: '#000',
 }
 const apricot = {
@@ -69,7 +75,7 @@ export const dark = {
     white: '#F7F7F7',
   },
   mode: 'dark',
-  primary:apricot ,
+  primary:hotelBackground,
   secondary:darkGrey,
   text: {
     primary: '#F7F7F7', //#FBFBFB#EEEEEF
@@ -84,3 +90,4 @@ export const dark = {
     footer: "#18181f",
   },
 };
+
