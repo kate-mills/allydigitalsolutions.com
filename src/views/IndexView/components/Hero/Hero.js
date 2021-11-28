@@ -73,9 +73,9 @@ const Hero = () => {
     <Box
       sx={{
         backgroundImage: `linear-gradient(to bottom, ${alpha(
-          theme.palette.background.paper,
+          theme.palette.background?.paper,
           0,
-        )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
+        )}, ${alpha(theme.palette.alternate?.main, 1)} 100%)`,
         backgroundRepeat: 'repeat-x',
         position: 'relative',
       }}
@@ -96,7 +96,7 @@ const Hero = () => {
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
-                sx={{ /*background: `linear-gradient(180deg, transparent 62%, ${alpha(theme.palette.secondary.main, 0.1)} 0%)`,*/ }}
+                sx={{ background: `linear-gradient(180deg, transparent 62%, ${alpha(theme.palette.secondary?.main, 0.1)} 0%)`,}}
               ><Typed strings={[
                     "is discoverable",
                     "inspires action",
@@ -203,7 +203,7 @@ const Hero = () => {
         }}
       >
         <path
-          fill={theme.palette.background.paper}
+          fill={theme.palette.background?.paper}
           d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
         ></path>
       </Box>
