@@ -19,7 +19,7 @@ const NotFound = () => {
   return (
     <Main>
       <Box
-        bgcolor={theme.palette.alternate.main}
+        bgcolor={theme.palette.alternate?.main}
         position={'relative'}
         minHeight={'calc(100vh - 247px)'}
         display={'flex'}
