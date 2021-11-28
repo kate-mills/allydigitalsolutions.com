@@ -13,10 +13,7 @@ import {useSrcImages} from 'hooks/use-src-images'
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-const ThanksPage  = ({state, pageProps}) => {
-  const navigatedFromAccount = state!== null
-  console.log('navFromAccount', navigatedFromAccount)
-  console.log('state', pageProps)
+const ThanksPage  = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,

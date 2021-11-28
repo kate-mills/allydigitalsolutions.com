@@ -13,9 +13,7 @@ import {useSrcImages} from 'hooks/use-src-images'
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-const SuccessPage  = (props) => {
-  console.log(props)
-
+const SuccessPage  = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
