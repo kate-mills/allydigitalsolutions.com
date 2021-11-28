@@ -1,3 +1,15 @@
+const mint = {
+  light: '#f2fcf2',
+  main: '#abb5ab',
+  dark: '#8f988f',
+  contrastText: 'rgba(0, 0, 0, .8)',
+}
+const m2 = {
+  light: '#dcece7',
+  main: '#aabab5',
+  dark: '#7b8a85',
+  contrastText: 'rgba(0, 0, 0, .8)',
+}
 const grey = {
   light: '#ebefef',
   main: '#b9bdbd',
@@ -49,7 +61,7 @@ export const light = {
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
   secondary:apricot,
-  primary: darkGrey,
+  primary:mint,// darkGrey,
   text: {
      primary: "#2D2A1E", //#2b2526
     secondary: "#4F554D", //#544d4e
