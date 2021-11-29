@@ -46,7 +46,7 @@ const SuccessPage  = () => {
                     variant="h2"
                     component={'h2'}
                     align={isMd ? 'left' : 'center'}
-                    sx={{ fontWeight: 700 }}
+                    sx={{ fontWeight: 600 }}
                   >Success
                   </Typography>
                   <Typography

@@ -48,7 +48,7 @@ const Support = () => {
         >
           GET SUPPORT
         </Typography>
-        <Typography variant={'h4'} sx={{ fontWeight: 700 }} align={'center'}>
+        <Typography variant={'h4'} sx={{ fontWeight: 600 }} align={'center'}>
           Our friendly support team will help you with anything
         </Typography>
         <Typography

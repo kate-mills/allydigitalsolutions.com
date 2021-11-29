@@ -87,7 +87,7 @@ const Services = () => {
             align={'center'}
             gutterBottom
             sx={{
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           >Synthesis of development and design
           </Typography>

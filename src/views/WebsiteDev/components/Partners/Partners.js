@@ -59,7 +59,7 @@ const Partners = () => {
           >
             Integrations
           </Typography>
-          <Typography variant="h4" gutterBottom sx={{ fontWeight: 700 }}>
+          <Typography variant="h4" gutterBottom sx={{ fontWeight: 600 }}>
             We love to explore new ways to engage with brands and reach
           </Typography>
           <Typography variant="h6" component="p" color="text.secondary">Our mission is to help you grow your business, ease your workflow, and connect you with others who share your passions.

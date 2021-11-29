@@ -51,7 +51,7 @@ const Contact = () => {
     return (
       <Box>
         <Box marginBottom={2}>
-          <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
+          <Typography variant={'h4'} sx={{ fontWeight: 600 }} gutterBottom>
             Contact details
           </Typography>
           <Typography color="text.secondary">

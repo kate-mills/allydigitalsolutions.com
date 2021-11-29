@@ -125,7 +125,7 @@ const Pricing = () => {
     <Box>
       <Box marginBottom={4}>
         <Typography
-          sx={{ fontWeight: 700 }}
+          sx={{ fontWeight: 600 }}
           variant={'h4'}
           align={'center'}
           gutterBottom

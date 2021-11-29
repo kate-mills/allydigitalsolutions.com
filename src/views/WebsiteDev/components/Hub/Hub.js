@@ -81,7 +81,7 @@ const Hero = () => {
             <Typography
               variant="h4"
               color="text.primary"
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >Excellence happens with code,{' '}
               <Typography
                 color={'primary'}

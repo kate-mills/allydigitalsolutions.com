@@ -20,7 +20,7 @@ const GetStarted = () => {
         align={'center'}
         gutterBottom
         sx={{
-          fontWeight: 700,
+          fontWeight: 600,
         }}
       >Get started with AllyDigital today!
       </Typography>

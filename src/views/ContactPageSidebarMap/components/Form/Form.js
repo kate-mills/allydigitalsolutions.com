@@ -62,8 +62,8 @@ const Contact = () => {
     return (
       <Box>
         <Box marginBottom={4}>
-          <Typography variant={'h3'} sx={{ fontWeight: 700 }} gutterBottom>
-            Contact us
+          <Typography variant={'h3'} sx={{ fontWeight: 600 }} gutterBottom>
+            Get in touch!
           </Typography>
           <Typography color="text.secondary">We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
           </Typography>

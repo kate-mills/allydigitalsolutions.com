@@ -27,7 +27,7 @@ const Newsletter = () => {
               align={'center'}
               gutterBottom
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
                 color: theme.palette.common.white,
               }}
             >

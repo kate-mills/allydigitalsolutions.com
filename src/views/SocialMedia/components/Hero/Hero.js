@@ -29,7 +29,7 @@ const Hero = () => {
               variant="h3"
               color="text.primary"
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
               }}
             >Popular social media trends. The truth{' '}
               <Typography

@@ -66,7 +66,7 @@ const Contact = () => {
       <Box marginBottom={2}>
         <Typography
           variant={'h4'}
-          sx={{ fontWeight: 700 }}
+          sx={{ fontWeight: 600 }}
           gutterBottom
           align={'center'}
         >

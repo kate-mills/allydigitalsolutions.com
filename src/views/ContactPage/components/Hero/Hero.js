@@ -19,7 +19,7 @@ const Hero = () => {
               variant="h2"
               color="text.primary"
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
               }}
             >We'd love to hear from you!
             </Typography>

@@ -56,7 +56,7 @@ const Form = () => {
       <Box marginBottom={2}>
         <Typography
           variant={'h4'}
-          sx={{ fontWeight: 700 }}
+          sx={{ fontWeight: 600 }}
           gutterBottom
           align={'center'}
         >
@@ -88,7 +88,7 @@ const Form = () => {
             <Typography
               variant="subtitle1"
               color="text.primary"
-              fontWeight={700}
+              fontWeight={600}
               gutterBottom
             >
               Full name
@@ -110,7 +110,7 @@ const Form = () => {
             <Typography
               variant="subtitle1"
               color="text.primary"
-              fontWeight={700}
+              fontWeight={600}
               gutterBottom
             >
               E-mail
@@ -132,7 +132,7 @@ const Form = () => {
             <Typography
               variant="subtitle1"
               color="text.primary"
-              fontWeight={700}
+              fontWeight={600}
               gutterBottom
             >
               Message

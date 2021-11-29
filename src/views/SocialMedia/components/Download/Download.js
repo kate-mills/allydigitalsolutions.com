@@ -15,7 +15,7 @@ const Download = () => {
           data-aos={'fade-up'}
           gutterBottom
           sx={{
-            fontWeight: 700,
+            fontWeight: 600,
           }}
         >Our all-inclusive package is now available.
         </Typography>
@@ -29,7 +29,7 @@ const Download = () => {
         flexDirection={{ xs: 'column', sm: 'row' }}
       >
         <Box>
-          <Typography fontWeight={700} variant={'h6'} gutterBottom>Our clients say it's effortless.</Typography>
+          <Typography fontWeight={600} variant={'h6'} gutterBottom>Our clients say it's effortless.</Typography>
           <Typography>Answer simple questions to get the process rolling.  No pressure - ever!</Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
