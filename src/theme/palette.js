@@ -2,13 +2,19 @@ const mint = {
   light: '#f2fcf2',
   main: '#abb5ab',
   dark: '#8f988f',
-  contrastText: 'rgba(0, 0, 0, .8)',
+  contrastText: '#000',
+}
+const mint2 = {
+  light: '#dde7dd',
+  main: '#abb5ab',
+  dark: '#8f988f',
+  contrastText: '#000',
 }
 const m2 = {
   light: '#dcece7',
   main: '#aabab5',
   dark: '#7b8a85',
-  contrastText: 'rgba(0, 0, 0, .8)',
+  contrastText: '#000',
 }
 const grey = {
   light: '#ebefef',
@@ -52,6 +58,12 @@ const apricot = {
   dark: '#927968', //#947552
   contrastText: '#000',
 }
+const socialApricot = {
+  light: '#d1dccb', //#fad5af
+  main: '#a0aa9a',
+  dark: '#717b6c', //#947552
+  contrastText: '#000',
+}
 export const light = {
   alternate: {
     light: "#f7f9fc",
@@ -61,9 +73,9 @@ export const light = {
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
   secondary:apricot,
-  primary:mint,// darkGrey,
+  primary:mint2,// darkGrey,
   text: {
-     primary: "#2D2A1E", //#2b2526
+     primary: "#111405", //#32332a
     secondary: "#4F554D", //#544d4e
   },
   divider: 'rgba(0, 0, 0, 0.12)',
@@ -83,8 +95,8 @@ export const dark = {
   },
   cardShadow: 'rgba(0, 0, 0, .11)',
   common: {
-    black: '#1A1C12',
-    white: '#F7F7F7',
+    black: '#333',
+    white: 'fefefe',
   },
   mode: 'dark',
   primary:hotelBackground,
