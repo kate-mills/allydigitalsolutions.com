@@ -43,17 +43,11 @@ export default function TopLayout(props) {
         />
         <meta
           property="og:description"
-          content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."
-        />
+          content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."/>
         <meta property="og:url" content="https://ally-ten.netlify.app" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" as="font" crossorigin/>
-        <link
-          as="style"
-          rel="stylesheet preload prefetch"
-          type="text/css"
-          crossorigin="anonymous"
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-        />
+
+        {/*<link rel="preconnect" href="https://fonts.gstatic.com" as="font" crossorigin/> <link as="style" rel="stylesheet preload prefetch" type="text/css" crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" />*/}
+
       </Helmet>
       <Page>
         {props.children}
