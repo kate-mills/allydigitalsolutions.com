@@ -35,7 +35,7 @@ export default function TopLayout(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://ally-ten.netlify.app/seoimage.jpg"
+          content="https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--dark.jpg"
         />
         <meta
           property="og:title"
