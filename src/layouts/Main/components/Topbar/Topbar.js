@@ -13,7 +13,6 @@ import { NavItem, ThemeModeToggler} from './components';
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  console.log('mode', mode)
   const {
     landings: landingPages,
     secondary: secondaryPages,
@@ -47,7 +46,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'More'}
+            title={'Services'}
             id={'landing-pages'}
             items={landingPages}
             colorInvert={colorInvert}

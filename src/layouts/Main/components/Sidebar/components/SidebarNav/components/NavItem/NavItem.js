@@ -25,17 +25,17 @@ const NavItem = ({ title, items }) => {
       <Accordion
         disableGutters
         elevation={0}
-        sx={{ backgroundColor: 'transparent' }}
+        sx={{ backgroundColor: 'transparent'}}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          sx={{ padding: 0 }}
+          sx={{ padding: 0, }}
         >
           <Typography
-            fontWeight={hasActiveLink() ? 600 : 400}
-            color={hasActiveLink() ? 'primary' : 'text.primary'}
+            fontWeight={400}
+            color={hasActiveLink() ? 'text.primary' : 'text.secondary'}
           >
             {title}
           </Typography>
@@ -53,13 +53,14 @@ const NavItem = ({ title, items }) => {
                     justifyContent: 'flex-start',
                     color:
                       activeLink === p.href
-                        ? theme.palette.primary.main
-                        : theme.palette.text.primary,
+                        ? theme.palette.primary?.main
+                        : theme.palette.text?.primary,
                     backgroundColor:
                       activeLink === p.href
-                        ? alpha(theme.palette.primary.main, 0.1)
+                        ? alpha(theme.palette.primary?.main, 0.1)
                         : 'transparent',
-                    fontWeight: activeLink === p.href ? 600 : 400,
+                    fontWeight: 400,
+                    fontWeight: activeLink === p.href ? 700 : 400,
                   }}
                 >{p.title}
                   {p.isNew && (
@@ -73,8 +74,7 @@ const NavItem = ({ title, items }) => {
                       <Typography
                         variant={'caption'}
                         sx={{ color: 'common.white', lineHeight: 1 }}
-                      >
-                        new
+                      >new
                       </Typography>
                     </Box>
                   )}

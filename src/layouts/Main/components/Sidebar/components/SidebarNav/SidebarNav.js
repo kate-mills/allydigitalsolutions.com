@@ -41,7 +41,7 @@ const SidebarNav = ({ pages }) => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'More'} items={landingPages} />
+          <NavItem title={'Services'} items={landingPages} />
         </Box>
         {/*<Box> <NavItem title={'Company'} items={companyPages} /> </Box>*/}
         {/*<Box> <NavItem title={'Pages'} items={secondaryPages} /> </Box>*/}

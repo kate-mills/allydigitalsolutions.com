@@ -43,7 +43,8 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
         onClick={(e) => handleClick(e, id)}
       >
         <Typography
-          fontWeight={(openedPopoverId === id || hasActiveLink()) ? 700 : 400}
+          //fontWeight={(openedPopoverId === id || hasActiveLink()) ? 400 : 400}
+          fontWeight={400}
           color={linkColor}
         >{title}
         </Typography>
@@ -80,7 +81,7 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
             borderTopLeftRadius: 0,
             borderBottomRightRadius: 8,
             borderBottomLeftRadius: 8,
-            borderTop: `3px solid ${theme.palette.primary.main}`,
+            borderTop: `3px solid ${theme.palette.primary?.main}`,
           },
         }}
       >
@@ -96,13 +97,13 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
                   justifyContent: 'flex-start',
                   color:
                     activeLink === p.href
-                      ? theme.palette.primary.main
-                      : theme.palette.text.primary,
+                      ? theme.palette.primary?.main
+                      : theme.palette.text?.primary,
                   backgroundColor:
                     activeLink === p.href
-                      ? alpha(theme.palette.primary.main, 0.1)
+                      ? alpha(theme.palette.primary?.main, 0.1)
                       : 'transparent',
-                  fontWeight: activeLink === p.href ? 600 : 400,
+                  fontWeight: activeLink === p.href ? 700 : 400,
                 }}
               >{p.title}
                 {p.isNew && (
