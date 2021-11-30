@@ -1,26 +1,13 @@
-const lightMint = {
+const lightGreen = {
   light: '#dde7dd',
   main: '#abb5ab',
   dark: '#8f988f',
   contrastText: '#000',
 }
-const lightApricot = {
+const lightPink = {
   light: '#f6d9c7',
   main: '#c3a896',
   dark: '#927968',
-  contrastText: '#000',
-}
-
-const darkApricot = {
-  light: '#ffeedd',
-  main: '#C3A896',
-  dark: '#a78c7c',
-  contrastText: '#000',
-}
-const darkMint = {
-  light: '#f4ffee',
-  main: '#cde0c8',
-  dark: '#9cae97',
   contrastText: '#000',
 }
 
@@ -32,8 +19,8 @@ export const light = {
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  primary: lightMint,
-  secondary: lightApricot,
+  primary: lightGreen,
+  secondary: lightPink,
   text: {
      primary: "#32332a",
     secondary: "#4F554D",
@@ -48,6 +35,21 @@ export const light = {
   },
 };
 
+
+const darkPink = {
+  light: '#ffeedd',
+  main: '#C3A896',
+  dark: '#a78c7c',
+  contrastText: '#000',
+}
+const darkGreen = {
+  light: '#f4ffee',
+  main: '#cde0c8',
+  dark: '#9cae97',
+  contrastText: '#000',
+}
+
+
 export const dark = {
   alternate: {
     main: '#121212', //#1a2121 #1a2138
@@ -60,8 +62,8 @@ export const dark = {
   },
 
   mode: 'dark',
-  primary: darkApricot,
-  secondary: darkMint,
+  primary: darkPink,
+  secondary: darkGreen,
 
   text: {
     primary: '#ffffff',
