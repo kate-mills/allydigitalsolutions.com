@@ -11,8 +11,8 @@ import Link from '@mui/material/Link';
 
 import BasicModal from 'components/BasicModal'
 
-import { useIdentityContext } from 'react-netlify-identity-gotrue'
-import {navigate} from 'gatsby'
+//import { useIdentityContext } from 'react-netlify-identity-gotrue'
+//import {navigate} from 'gatsby'
 
 const validationSchema = yup.object({
   firstName: yup
@@ -44,7 +44,7 @@ const Form = () => {
   const [modalHeadMsg, setModalHeadMsg] = React.useState('We\'re processing your form...')
   const [modalMsg, setModalMsg] = React.useState('Take a deep breath. It will be just a few moments.')
 
-  const identity = useIdentityContext()
+  //const identity = useIdentityContext()
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -53,9 +53,10 @@ const Form = () => {
   };
 
   const onSubmit = async (values, actions) => {
-    actions.setSubmitting(true)
+    //actions.setSubmitting(false)
+    console.log('thank you')
 
-    await identity.signup({
+    /*await identity.signup({
       password: values.password,
       email: values.email,
       user_metadata: {
@@ -75,7 +76,7 @@ const Form = () => {
       e =>{
         setModalHeadMsg('There was an error processing your form')
         setModalOpen(true)
-      })
+      })*/
   };
 
   const formik = useFormik({
@@ -100,7 +101,7 @@ const Form = () => {
         <Typography
           variant="h4"
           sx={{
-            fontWeight: 700,
+            fontWeight: 600,
           }}
         >
           Create an account
