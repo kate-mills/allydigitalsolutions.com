@@ -1,82 +1,42 @@
-const mint = {
-  light: '#f2fcf2',
-  main: '#abb5ab',
-  dark: '#8f988f',
-  contrastText: '#000',
-}
-const mint2 = {
+const lightMint = {
   light: '#dde7dd',
   main: '#abb5ab',
   dark: '#8f988f',
   contrastText: '#000',
 }
-const m2 = {
-  light: '#dcece7',
-  main: '#aabab5',
-  dark: '#7b8a85',
-  contrastText: '#000',
-}
-const grey = {
-  light: '#ebefef',
-  main: '#b9bdbd',
-  dark: '#898d8d',
-  contrastText: '#000',
-}
-const darkApricot = {
-  light: '#b68a67',
+const lightApricot = {
+  light: '#f6d9c7',
   main: '#c3a896',
-  dark: '#553314',
+  dark: '#927968',
   contrastText: '#000',
 }
-const darkGrey = {
-  light: '#bfc9bf',
-  main: '#8f988f', //#8f988f
-  dark: '#626a62',
-  contrastText: '#000',
-}
-const coolPink = {
-  light: '#fad7cd',
-  main: '#C7A69C',
-  dark: '#96776e',
-  contrastText: '#000',
-}
-const blueApricot = {
-  light: '#fffbfb',
-  main: '#d9c8c8',
-  dark: '#786969',
-  contrastText: '#000',
-}
-const hotelBackground = {
+
+const darkApricot = {
   light: '#ffeedd',
-  main: '#d9bcab',
+  main: '#C3A896',
   dark: '#a78c7c',
   contrastText: '#000',
 }
-const apricot = {
-  light: '#f6d9c7', //#fad5af
-  main: '#c3a896', //#c6a47f
-  dark: '#927968', //#947552
+const darkMint = {
+  light: '#f4ffee',
+  main: '#cde0c8',
+  dark: '#9cae97',
   contrastText: '#000',
 }
-const socialApricot = {
-  light: '#d1dccb', //#fad5af
-  main: '#a0aa9a',
-  dark: '#717b6c', //#947552
-  contrastText: '#000',
-}
+
+
 export const light = {
   alternate: {
-    light: "#f7f9fc",
-    main: "#f5f5f6",
-    dark: "#eeeeef",
+    main: "#f7f7f7", //#f7faff
+    dark: "#ededed", //#edf1f7
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  secondary:apricot,
-  primary:mint2,// darkGrey,
+  primary: lightMint,
+  secondary: lightApricot,
   text: {
-     primary: "#111405", //#32332a
-    secondary: "#4F554D", //#544d4e
+     primary: "#32332a",
+    secondary: "#4F554D",
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
@@ -90,27 +50,30 @@ export const light = {
 
 export const dark = {
   alternate: {
-    main: '#1a2138',
-    dark: '#151a30',
+    main: '#121212', //#1a2121 #1a2138
+    dark: '#0E0E0E', //#1a2121#151a30
   },
   cardShadow: 'rgba(0, 0, 0, .11)',
   common: {
-    black: '#333',
-    white: 'fefefe',
+    black: '#000',
+    white: 'ffffff',
   },
+
   mode: 'dark',
-  primary:hotelBackground,
-  secondary:darkGrey,
+  primary: darkApricot,
+  secondary: darkMint,
+
   text: {
-    primary: '#F7F7F7', //#FBFBFB#EEEEEF
-    secondary: '#B5B8B7', //#AEB0B4
+    primary: '#ffffff',
+    secondary: '#b5b8b7',
   },
+
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
-    paper: '#222B45',
-    default: '#222B45',
-    level2: '#333',
-    level1: '#2D3748',
+    paper: '#333330',
+    default: '#0B0B0B', //#222B45
+    level1: '#333', //#222B45
+    level2: '#423E35',
     footer: "#18181f",
   },
 };

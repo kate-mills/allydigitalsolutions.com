@@ -14,12 +14,28 @@ const images = [
   {
     group: [
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/social--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/social--black.jpg',
       },
       {
-        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--dark.jpg',
-        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--light.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/web-dev--black.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/webdev--white.jpg',
+      },
+    ],
+  },
+  {
+    group: [
+      {
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--black.jpg',
+      },
+      {
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/newsroom--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/newsroom--black.jpg',
+      },
+      {
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/e-commerce--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/e-commerce--black.jpg',
       },
     ],
   },
@@ -27,35 +43,19 @@ const images = [
     group: [
       {
         cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/social--black.jpg',
       },
       {
-        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--dark.jpg',
-        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--light.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/agency-lookup--white.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/agency-lookup--black.jpg',
       },
       {
-        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--dark.jpg',
-        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/index-view--light.jpg',
-      },
-    ],
-  },
-  {
-    group: [
-      {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--black.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
-      },
-      {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/desk-app--dark.jpg',
-      },
-      {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--light.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/mobile-app--dark.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/search--white.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/search--black.jpg',
       },
     ],
   },
@@ -88,7 +88,7 @@ const Hero = () => {
               color="text.primary"
               gutterBottom
               sx={{
-                fontWeight: 600,
+                fontWeight: 700,
               }}
             >A modern approach to digital management that
               <br />{' '}
@@ -96,7 +96,7 @@ const Hero = () => {
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
-                sx={{ background: `linear-gradient(180deg, transparent 62%, ${alpha(theme.palette.secondary?.main, 0.1)} 0%)`,}}
+                sx={{ background: `linear-gradient(180deg, transparent 87%, ${alpha(theme.palette.secondary?.dark, 0.4)} 0%)`,}}
               ><Typed strings={[
                     "is discoverable",
                     "inspires action",
@@ -126,7 +126,7 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                to={'/contact-page'}
+                to={'/contact-sidebar-map'}
               >
                Learn More
               </Button>

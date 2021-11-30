@@ -86,7 +86,7 @@ const About = () => {
               variant="h4"
               color="text.primary"
               sx={{
-                fontWeight: 600,
+                fontWeight: 700,
               }}
             >Connect and reveal your business's unique essence.
             </Typography>

@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import NavItem from './components/NavItem';
 import Link from 'components/Link'
 
-import logo from 'svg/logo.svg'
+import logo from 'svg/logo-dark.svg'
 
 const SidebarNav = ({ pages }) => {
   //const theme = useTheme();

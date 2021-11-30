@@ -21,7 +21,7 @@ const Payment = () => {
           <Box marginBottom={2}>
             <Typography
               variant="h4"
-              sx={{ fontWeight: 600 }}
+              sx={{ fontWeight: 700 }}
             >Make shopping simple with a Facebook and Instagram store.
             </Typography>
           </Box>
