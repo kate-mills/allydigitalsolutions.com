@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-top-layout',
     'gatsby-plugin-mui-emotion',
-    //'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,7 +18,14 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-sharp`,
-
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: [`Inter:400,500,600`]
+        }
+      }
+    },
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
     {
@@ -36,12 +43,7 @@ module.exports = {
         lang: `en`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-preconnect',
-      options: {
-        domains: ['https://fonts.googleapis.com', 'https://bar.com'],
-      },
-    },
+    //{ resolve: 'gatsby-plugin-preconnect', options: { domains: ['https://foo.com', 'https://bar.com'], }, },
     //`gatsby-plugin-offline`, //last
   ],
   siteMetadata: {

@@ -12,7 +12,7 @@ const getTheme = (mode, themeToggler) =>
         fontFamily: 'Inter, sans-serif',
         button: {
           textTransform: 'none',
-          fontWeight: 'medium',
+          fontWeight: 'regular',
         },
       },
       zIndex: {

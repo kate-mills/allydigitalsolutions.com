@@ -21,8 +21,7 @@ export default function TopLayout(props) {
         <meta charSet="utf-8" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <title>AllyDigital | Build a solid online presence, showcase your brand & inspire action.</title>
         <meta name="theme-color" content="#ffffff" />
@@ -38,9 +37,11 @@ export default function TopLayout(props) {
         <meta property="og:image" content="https://ally-ten.netlify.app/seoimage.jpg"/>
 
         <meta property="og:url" content="https://ally-ten.netlify.app" />
-
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+        {/*<link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />*/}
       </Helmet>
       <Page>
         {props.children}
