@@ -11,11 +11,10 @@ const lightPink = {
   contrastText: '#000',
 }
 
-
 export const light = {
   alternate: {
-    main: "#f7f7f7", //#f7faff
-    dark: "#ededed", //#edf1f7
+    main: "#f7f7f7",
+    dark: "#ededed",
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
@@ -35,11 +34,10 @@ export const light = {
   },
 };
 
-
 const darkPink = {
-  light: '#ffeedd',
-  main: '#C3A896',
-  dark: '#a78c7c',
+  light: '#ffeacf',
+  main: '#e7c5a9',
+  dark: '#b4957a',
   contrastText: '#000',
 }
 const darkGreen = {
@@ -49,16 +47,15 @@ const darkGreen = {
   contrastText: '#000',
 }
 
-
 export const dark = {
   alternate: {
-    main: '#121212', //#1a2121 #1a2138
-    dark: '#0E0E0E', //#1a2121#151a30
+    main: '#202021',
+    dark: '#212122',
   },
   cardShadow: 'rgba(0, 0, 0, .11)',
   common: {
     black: '#000',
-    white: 'ffffff',
+    white: '#fff',
   },
 
   mode: 'dark',
@@ -67,15 +64,15 @@ export const dark = {
 
   text: {
     primary: '#ffffff',
-    secondary: '#b5b8b7',
+    secondary: '#e3e3e3',
   },
 
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
-    paper: '#333330',
-    default: '#0B0B0B', //#222B45
-    level1: '#333', //#222B45
-    level2: '#423E35',
+    paper: '#4C4C4C',
+    default: '#040405', //#222B45
+    level1: '#020205', //#222B45
+    level2: '#040405',
     footer: "#18181f",
   },
 };

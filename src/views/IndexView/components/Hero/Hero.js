@@ -30,12 +30,12 @@ const images = [
         coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--black.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/newsroom--white.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/newsroom--black.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/final-index-view--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/final-index-view--black.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/e-commerce--white.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/e-commerce--black.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/agency-lookup--white.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/agency-lookup--black.jpg',
       },
     ],
   },
