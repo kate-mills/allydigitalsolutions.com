@@ -9,11 +9,11 @@ import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 import Container from 'components/Container';
-import { Topbar, Sidebar, Footer } from './components';
+import { Topbar, Sidebar, Footer, Seo } from './components';
 
 import pages from '../navigation';
 
-const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
+const Main = ({ children, colorInvert = false, bgcolor = 'transparent', title='Main Title' }) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -37,6 +37,8 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
   });
 
   return (
+    <React.Fragment>
+      <Seo title={title}/>
     <Box>
       <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
         <Container
@@ -44,8 +46,8 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           paddingBottom={'0 !important'}
         >
           <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>
-        {/*
 
+        {/*
             <Box marginRight={2}>
               <Link
                 underline="none"
@@ -88,6 +90,7 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         <Footer />
       </Container>
     </Box>
+    </React.Fragment>
   );
 };
 
