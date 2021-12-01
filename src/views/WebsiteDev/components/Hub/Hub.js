@@ -81,7 +81,7 @@ const Hero = () => {
             <Typography
               variant="h4"
               color="text.primary"
-              sx={{ fontWeight: 600 }}
+              sx={{ fontWeight: 700 }}
             >Excellence happens with code,{' '}
               <Typography
                 color={'primary'}
@@ -101,7 +101,7 @@ const Hero = () => {
               {mock.map((item, i) => (
                 <Grid key={i} item xs={12} md={4}>
                   <Typography variant="h3" gutterBottom>
-                    <Box fontWeight={600}>
+                    <Box fontWeight={700}>
                       <VisibilitySensor
                         onChange={(isVisible) =>
                           setViewPortVisibility(isVisible)

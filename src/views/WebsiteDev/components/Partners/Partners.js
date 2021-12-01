@@ -8,10 +8,11 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import testPng from 'images/test.png'
+
+//import testPng from 'images/test.png'
 import Link from 'components/Link'
 
-/*export const mock = [
+export const mock = [
   {
     logo: 'https://assets.maccarianagency.com/svg/logos/slack.svg',
     name: 'Slack',
@@ -36,7 +37,7 @@ import Link from 'components/Link'
     logo: 'https://assets.maccarianagency.com/svg/logos/atlassian.svg',
     name: 'Atlassian',
   },
-];*/
+];
 
 const Partners = () => {
   const theme = useTheme();
@@ -59,7 +60,7 @@ const Partners = () => {
           >
             Integrations
           </Typography>
-          <Typography variant="h4" gutterBottom sx={{ fontWeight: 600 }}>
+          <Typography variant="h4" gutterBottom sx={{ fontWeight: 700 }}>
             We love to explore new ways to engage with brands and reach
           </Typography>
           <Typography variant="h6" component="p" color="text.secondary">Our mission is to help you grow your business, ease your workflow, and connect you with others who share your passions.
@@ -93,7 +94,7 @@ const Partners = () => {
           </Box>
         </Box>
       </Grid>
-    {/*<Grid item container spacing={2} xs={12} md={6}>
+    <Grid item container spacing={2} xs={12} md={6}>
         {mock.map((item, i) => (
           <Grid
             item
@@ -137,7 +138,7 @@ const Partners = () => {
             </Box>
           </Grid>
         ))}
-      </Grid>*/}
+      </Grid>
     </Grid>
   );
 };

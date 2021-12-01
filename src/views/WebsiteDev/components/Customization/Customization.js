@@ -38,7 +38,7 @@ const Customization = () => {
           data-aos={'fade-up'}
           gutterBottom
           sx={{
-            fontWeight: 600,
+            fontWeight: 700,
           }}
         >
           Customize your website 

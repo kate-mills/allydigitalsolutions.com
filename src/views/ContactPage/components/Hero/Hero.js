@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import AllySvg from 'svg/Ally-Hello.svg'
+import AllySvg from 'svg/ally-girl.svg'
 
 const Hero = () => {
   const theme = useTheme();
@@ -51,7 +51,7 @@ const Hero = () => {
               height={1}
               sx={{
                 filter:
-                  theme.palette.mode === 'dark' ? 'brightness(0.8)' : 'none',
+                  theme.palette.mode === 'dark' ? 'brightness(0.95)' : 'none',
               }}
             />
           </Box>

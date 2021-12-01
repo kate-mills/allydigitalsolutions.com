@@ -13,7 +13,7 @@ const Application = () => {
           data-aos={'fade-up'}
           gutterBottom
           sx={{
-            fontWeight: 600,
+            fontWeight: 700,
           }}
         >
           Everything you need in a website.
@@ -28,7 +28,7 @@ const Application = () => {
         flexDirection={{ xs: 'column', sm: 'row' }}
       >
         <Box>
-          <Typography fontWeight={600} variant={'h6'} gutterBottom>
+          <Typography fontWeight={700} variant={'h6'} gutterBottom>
             Get started now
           </Typography>
           <Typography>

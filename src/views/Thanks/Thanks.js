@@ -46,7 +46,7 @@ const ThanksPage  = () => {
                     variant="h1"
                     component={'h1'}
                     align={isMd ? 'left' : 'center'}
-                    sx={{ fontWeight: 600 }}
+                    sx={{ fontWeight: 700 }}
                   >Thanks!
                   </Typography>
                   <Typography

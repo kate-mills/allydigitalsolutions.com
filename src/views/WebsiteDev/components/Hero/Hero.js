@@ -27,7 +27,7 @@ const Hero = () => {
             <Typography
               variant="h3"
               color="text.primary"
-              sx={{ fontWeight: 600 }}
+              sx={{ fontWeight: 700 }}
             >
               Web development for your{' '}
               <Typography
