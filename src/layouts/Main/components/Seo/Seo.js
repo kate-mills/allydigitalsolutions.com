@@ -5,13 +5,14 @@ import { useStaticQuery, graphql } from 'gatsby'
 //import SchemaOrg from './SchemaOrg'
 import { useLocation } from "@reach/router"
 
+//Build a solid online presence, showcase your brand & inspire action.
 function SEO({ description, lang, meta, title, image}) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
+            defaultTitle:title
             description
             author
             twitterUsername
@@ -23,12 +24,9 @@ function SEO({ description, lang, meta, title, image}) {
     `
   )
 
-  //const seoImg = image || site.siteMetadata.defaultImage
-
+  const seoImg = image || site.siteMetadata.defaultImage
   const { pathname } = useLocation()
-
   const url = `${site.siteMetadata.siteUrl}/${pathname}`
-
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -37,8 +35,8 @@ function SEO({ description, lang, meta, title, image}) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={(title.length < 31) ? `%s | ${site.siteMetadata.title}`: title}
+      title={(title.length > 0) ? title : site.siteMetadata.defaultTitle }
+
       meta={[
         {
           name: `description`,
@@ -82,13 +80,14 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title: ``,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

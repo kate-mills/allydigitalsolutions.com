@@ -13,7 +13,13 @@ import { Topbar, Sidebar, Footer, Seo } from './components';
 
 import pages from '../navigation';
 
-const Main = ({ children, colorInvert = false, bgcolor = 'transparent', title='Main Title' }) => {
+const Main = ({
+    children,
+    colorInvert = false,
+    bgcolor = 'transparent',
+    title=''
+  }) => {
+
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,

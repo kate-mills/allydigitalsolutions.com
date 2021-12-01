@@ -20,7 +20,12 @@ const IndexView = () => {
   const theme = useTheme();
   return (
     <Box sx={{ overflowX: 'hidden' }}>
-      <Main bgcolor={'background.paper'}>
+
+      <Main
+        bgcolor={'background.paper'}
+        title={'Ally Digital Solutions - A modern approach to digital management that inspires action.'}
+      >
+
         <Hero />
         <Container>
           <Services />
