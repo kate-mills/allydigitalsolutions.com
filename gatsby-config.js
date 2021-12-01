@@ -43,8 +43,6 @@ module.exports = {
         lang: `en`,
       },
     },
-    //{ resolve: 'gatsby-plugin-preconnect', options: { domains: ['https://foo.com', 'https://bar.com'], }, },
-    //`gatsby-plugin-offline`, //last
   ],
   siteMetadata: {
     title: `Ally Digital Solutions`,
