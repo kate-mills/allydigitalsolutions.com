@@ -23,7 +23,6 @@ export default function TopLayout(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <title>AllyDigital | Build a solid online presence, showcase your brand & inspire action.</title>
         <meta name="theme-color" content="#ffffff" />
         <meta name="description" content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."/>
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
