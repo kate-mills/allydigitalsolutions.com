@@ -45,7 +45,7 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: `Ally Digital Solutions`,
+    title: `Ally Digital Solutions - Build a solid online presence, showcase your brand & inspire action.`,
     titleTemplate: `%s | Ally Digital Solutions`,
     description: `Build a solid online presence, showcase your brand & inspire action.`,
     dateModified: `${new Date().toISOString()}`,
