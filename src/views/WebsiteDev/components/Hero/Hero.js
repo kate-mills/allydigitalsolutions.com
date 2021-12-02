@@ -28,17 +28,15 @@ const Hero = () => {
               variant="h3"
               color="text.primary"
               sx={{ fontWeight: 700 }}
-            >
-              Web development for your{' '}
+            >Web development for your{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
+                  background: `linear-gradient(180deg, transparent 86%, ${alpha(theme.palette.secondary.main, 0.55)} 0%)`,
                 }}
-              >
-                business or product
+              >business & product.
               </Typography>
             </Typography>
           </Box>

@@ -10,6 +10,9 @@ import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import Link from 'components/Link'
 
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 /*const mock = [
   {
     name: 'Clara Bertoletti',
@@ -34,6 +37,12 @@ import Link from 'components/Link'
 ];*/
 
 const Support = () => {
+  const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
+
+
   return (
     <Box>
       <Box marginBottom={2}>
@@ -66,7 +75,9 @@ const Support = () => {
             to={'/contact-page-cover'}
             color={'primary'}
             variant={'contained'}
-            size={'large'}>
+            size={'large'}
+            fullWidth={isMd ? false : true}
+          >
             Contact us
           </Button>
         </Box>

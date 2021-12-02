@@ -3,6 +3,11 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
+import webDeveloper from 'images/web-developer-01.jpg'
+
+
+import {useSrcImages} from 'hooks/use-src-images'
+
 import {
   Customization,
   Download,
@@ -15,9 +20,16 @@ import {
 } from './components';
 
 const DesktopApp = () => {
+
   const theme = useTheme();
+  const {webDevOne:{publicURL}} = useSrcImages()
+
   return (
-    <Main>
+    <Main
+      title={'Ally Digital Solutions: New! Modern web designs for your small business.'}
+      description={'Do you need a brand new website or just a makeover?  We develop everything from landing pages to custom web apps, plus everything in between.' }
+      image={publicURL}
+    >
       <Box position={'relative'} sx={{ backgroundColor: theme.palette.alternate.main, marginTop: -13, paddingTop: 13 }}>
 
 

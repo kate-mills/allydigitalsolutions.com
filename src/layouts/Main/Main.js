@@ -17,7 +17,9 @@ const Main = ({
     children,
     colorInvert = false,
     bgcolor = 'transparent',
-    title=''
+    title='',
+    image='',
+    description='',
   }) => {
 
   const theme = useTheme();
@@ -44,7 +46,7 @@ const Main = ({
 
   return (
     <React.Fragment>
-      <Seo title={title}/>
+      <Seo title={title} image={image} description={description}/>
     <Box>
       <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
         <Container

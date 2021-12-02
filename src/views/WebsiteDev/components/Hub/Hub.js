@@ -93,7 +93,7 @@ const Hero = () => {
             </Typography>
           </Box>
           <Box marginBottom={4}>
-            <Typography variant="h6" component="p" color="text.secondary">We employ artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
+            <Typography variant="h6" component="p" color="text.secondary">We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
             </Typography>
           </Box>
           <Box>
