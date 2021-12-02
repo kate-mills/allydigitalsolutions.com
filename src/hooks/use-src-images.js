@@ -21,7 +21,7 @@ export const useSrcImages = () => {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
-        socialMedia: file(relativePath: { eq: "mobile-app.jpg" }) {
+        socialMedia: file(relativePath: { eq: "social-media.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
@@ -33,4 +33,4 @@ export const useSrcImages = () => {
 };
 //import { GatsbyImage, getImage } from "gatsby-plugin-image";
 //import {useSrcImages} from 'hooks/use-src-images'
-//const {katePng, office}  = useSrcImages()
+//const { katePng, office, webDevOne, webDevTwo, socialMedia }  = useSrcImages()

@@ -12,11 +12,19 @@ import {
   Download,
 } from './components';
 
+import {useSrcImages} from 'hooks/use-src-images'
+
+
 const MobileApp = () => {
   const theme = useTheme();
+  const {socialMedia: {publicURL}}  = useSrcImages()
 
   return (
-    <Main>
+    <Main
+      title="Ally Digital Solutions: Motivate change and inspire action with social media management for your small business."
+      description="Lead the conversation and inspire action with a solid online presence and engaging online community."
+      image={publicURL}
+    >
       <Box
         position={'relative'}
         sx={{
