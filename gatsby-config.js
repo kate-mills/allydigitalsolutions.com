@@ -39,7 +39,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon-square.png`,
         crossOrigin: `use-credentials`,
-        description: `We help businesses establish a solid online presence, showcase their brand, and build an online community.`,
+        description: `We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.`,
         lang: `en`,
       },
     },

@@ -99,11 +99,14 @@ const Hero = () => {
                 sx={{ background: `linear-gradient(180deg, transparent 87%, ${alpha(theme.palette.secondary?.dark, 0.4)} 0%)`,}}
               ><Typed strings={[
                     "is discoverable",
-                    "inspires action",
                     "elevates engagment",
-                    "motivates change",
-                    "drives movement",
+                    "inspires action",
                     "leads innovation",
+                    "motivates movement", //drives movement
+                    "promotes change",
+                    "shapes conversation",
+                    "shifts the mood",
+                    //"motivates change",
                   ]}typeSpeed={40} backSpeed={50} loop/></Typography>
             </Typography>
             <Typography
@@ -111,8 +114,7 @@ const Hero = () => {
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >
-              We help businesses establish a solid online presence, showcase their brand, and build an online community.
+            >We transform businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.
             </Typography>
             <Box
               display="flex"

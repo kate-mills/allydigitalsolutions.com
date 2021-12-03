@@ -9,15 +9,21 @@ import CardContent from '@mui/material/CardContent';
 
 //import box from 'svg/box.svg'
 
+const icon = (<svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />{" "} </svg>
+)
+
+
+
 const mock = [
   { title: 'Michele Corley Clinical Skincare', subtitle: 'Kate did a beautiful job designing my website.  Her ability to interpret my wants and needs was very appreciated.  I could not be happier!',
-    //icon: box,
+    icon,
   },
   { title: 'Skincare By Hilary', subtitle: 'Ally Digital Solutions has helped my business enormously with optimizing my website, SEO, and social media marketing. They do excellent work, offer reasonable rates, and have exceptional communication. I highly recommend them!',
-    //icon: box
+    icon,
   },
   { title: 'Hide & Wild', subtitle: 'I loved working with Kate on my e-commerce website! Her communication was excellent every step of the way. She listened to my vision and brought her artistic ideas and vision to the process, which made it feel like a real collaboration. I am thrilled with the result and all her advice along the way.',
-    //icon: box,
+    icon,
   },
   //{ title: 'Skincare By Hilary', subtitle: 'Establish your identity and show your visitors what you do. But, of course, we will make sure the essentials are significant and remarkable to your visitors.', icon: box, },
   //{ title: 'Hide & Wild', subtitle: 'You are letting your visitors know your location and how they can reach you can seriously reduce frustration and possible loss of clientele, which is always a good thing.', icon: box, },
@@ -64,12 +70,12 @@ const Reviews = () => {
                   }}
                 >
                   <Box
-                    //component={Avatar}
-                    sx={{background: '#b9bdbd'}}
-                    width={{ xs: 20, md: 30 }}
-                    height={{ xs: 20, md: 30 }}
+                    component={Avatar}
+                    bgcolor="secondary.dark"
+                    width={{ xs: 50, md: 50 }}
+                    height={{ xs: 50, md: 50 }}
                     marginBottom={2}
-                  />
+                  >{item.icon}</Box>
                   <Typography
                     variant={'h6'}
                     gutterBottom

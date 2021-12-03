@@ -61,7 +61,7 @@ const Features = () => {
           <Box marginBottom={4}>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>Less work. More time.
             </Typography>
-            <Typography variant={'h6'} component={'p'} color={'text.secondary'}>Our mission is to increase your business, ease your workflow, and connect you with people who share your passions.
+            <Typography variant={'h6'} component={'p'} color={'text.secondary'}>We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.
             </Typography>
           </Box>
           <Grid container spacing={2}>

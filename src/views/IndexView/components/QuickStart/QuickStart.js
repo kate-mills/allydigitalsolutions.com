@@ -18,7 +18,7 @@ const QuickStart = () => {
             align={'center'}
             gutterBottom
             sx={{ fontWeight: 700 }}>
-            Dominate Your Industry
+           Let's Dominate Your Industry! 
           </Typography>
           <Typography
             variant="h6"
@@ -26,7 +26,8 @@ const QuickStart = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >We help businesses establish a solid online presence, showcase their brand, and build an online community.
+          >
+           We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
           </Typography>
         </Box>
       </Box>

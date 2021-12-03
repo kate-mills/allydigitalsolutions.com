@@ -32,32 +32,18 @@ const mock = [
     ),
   },
   {
-    title: "Photo Retouching",
-    subtitle:
-      "Improve the overall look and style of your product, social media, and website images.  A little fine-tuning can level up your photographs significantly.",
+    title: "Branding",
+    subtitle: "We transform businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
         {" "}
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-        />{" "}
-      </svg>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />{" "} </svg>
     ),
   },
   {
     title: "Social Media",
 
-    subtitle: "We help businesses establish a solid online presence, showcase their brand, and build an online community.",
+    subtitle: "We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.",
     icon: (
       <svg
         height={24}
@@ -99,8 +85,8 @@ const mock = [
     ),
   },
   {
-    title: "Branding",
-    subtitle: "We transform businesses into brands through high-quality logo design.",
+    title: "Photo Retouching",
+    subtitle: "Improve the overall look and style of your product, social media, and website images.  A little fine-tuning can level up your photographs significantly.",
     icon: (
       <svg
         height={24}
@@ -114,14 +100,14 @@ const mock = [
         <path strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
         />{" "}
       </svg>
     ),
   },
 
   {
-    title: "Modern",
+    title: "Go Live",
     subtitle:
       "Having a digital presence is a vital factor in the success of your brand.  We make you look modern and professional while saving you valuable time.",
     icon: (

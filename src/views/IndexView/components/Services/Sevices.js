@@ -89,7 +89,7 @@ const Services = () => {
             sx={{
               fontWeight: 700,
             }}
-          >Synthesis of development and design
+          >Shape the conversation and inspire action.
           </Typography>
           <Typography
             variant="h6"
@@ -97,8 +97,7 @@ const Services = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >We employ artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
-           
+          >Our mission is to increase your business, ease your workflow, and connect you with people who share your passions.
           </Typography>
         </Box>
       </Box>

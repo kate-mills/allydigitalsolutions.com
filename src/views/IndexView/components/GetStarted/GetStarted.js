@@ -30,7 +30,7 @@ const GetStarted = () => {
         color="text.secondary"
         sx={{ fontWeight: 400 }}
         align={'center'}
-      >Our mission is to you increase your business, ease your workflow, and connect you with people who share your passions.</Typography>
+      >Our mission is to increase your business, ease your workflow, and connect you with people who share your passions.</Typography>
       <Box
         display="flex"
         flexDirection={{ xs: 'column', sm: 'row' }}
