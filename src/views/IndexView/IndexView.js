@@ -23,9 +23,7 @@ const IndexView = () => {
 
       <Main
         bgcolor={'background.paper'}
-        title={'Ally Digital Solutions - A modern approach to digital management that inspires action.'}
-      >
-
+        title={'Grow Your Business Faster: Shape the conversation with Ally Digital Solutions.'}>
         <Hero />
         <Container>
           <Services />

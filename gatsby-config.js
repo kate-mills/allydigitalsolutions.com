@@ -39,7 +39,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon-square.png`,
         crossOrigin: `use-credentials`,
-        description: `We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.`,
+        description: `A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.`,
         lang: `en`,
       },
     },
