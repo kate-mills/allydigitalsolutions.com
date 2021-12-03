@@ -83,7 +83,7 @@ const Support = () => {
         </Box>
       </Box>
       <Box
-        marginBottom={4}
+        marginBottom={0}
         width={1}
         display={'flex'}
         justifyContent={'center'}
