@@ -45,7 +45,6 @@ const DesktopApp = () => {
         </Box>
 
       </Box>
-
       <Container>
         <Support />
       </Container>
