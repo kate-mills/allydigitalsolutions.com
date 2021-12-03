@@ -78,7 +78,7 @@ const Support = () => {
             size={'large'}
             fullWidth={isMd ? false : true}
           >
-            Contact us
+            Get help
           </Button>
         </Box>
       </Box>
@@ -95,10 +95,9 @@ const Support = () => {
         >
           {[
             'All features',
-            'Online Scheduling',
+            'Ask a question',
             'Images',
             'Logos',
-            'Icons',
             'Fonts',
             'Colors',
           ].map((item, i) => (
