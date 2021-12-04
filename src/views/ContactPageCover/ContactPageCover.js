@@ -57,7 +57,7 @@ const ContactPageCover = () => {
     </Box>
   );
   return (
-    <Main>
+    <Main image={office.publicURL}>
       <Box position={'relative'} minHeight={'100vh'} display={'flex'} marginTop={-13}>
         {isMd ? <Sidebar /> : null}
         <Box

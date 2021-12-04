@@ -60,6 +60,7 @@ const mock = [
 
 const Contact = () => {
   const theme = useTheme();
+  const {palette:{mode}} = theme
 
   return (
     <Box>
@@ -73,7 +74,7 @@ const Contact = () => {
           Contact details
         </Typography>
         <Typography color="text.secondary" align={'center'}>
-          Get in touch.  Our goal is to be as helpful as possible.
+          Please reach out.  Our goal is to be as helpful as possible.
         </Typography>
       </Box>
       <Box
@@ -97,7 +98,7 @@ const Contact = () => {
             >
               <Box
                 component={Avatar}
-                bgcolor={theme.palette.secondary.main}
+                bgcolor={(mode==='light')? theme.palette.secondary.dark:theme.palette.primary.dark}
                 width={40}
                 height={40}
               >

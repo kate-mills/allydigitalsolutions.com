@@ -65,8 +65,7 @@ const Contact = () => {
           <Typography variant={'h3'} sx={{ fontWeight: 600 }} gutterBottom>
             Get in touch!
           </Typography>
-          <Typography color="text.secondary">We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
-          </Typography>
+          <Typography color="text.secondary">Our mission is to increase your business, ease your workflow, and connect you with people who share your passions. Let's get started!</Typography>
         </Box>
         <Box>
           <form noValidate onSubmit={formik.handleSubmit} name="basic-contact-form" data-netlify="true" data-netlify-honeypot="bot-field">

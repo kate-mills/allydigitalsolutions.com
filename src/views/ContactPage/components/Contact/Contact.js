@@ -54,8 +54,7 @@ const Contact = () => {
           <Typography variant={'h4'} sx={{ fontWeight: 600 }} gutterBottom>
             Contact details
           </Typography>
-          <Typography color="text.secondary">
-            We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
+          <Typography color="text.secondary">Our mission is to increase your business, ease your workflow, and connect you with people who share your passions. Let's get started!
           </Typography>
         </Box>
         <Box
@@ -78,7 +77,7 @@ const Contact = () => {
               >
                 <Box
                   component={Avatar}
-                  bgcolor={theme.palette.secondary.main}
+                  bgcolor={theme.palette.secondary.dark}
                   width={40}
                   height={40}
                 >

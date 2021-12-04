@@ -6,11 +6,13 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Contact, Form, Hero, Newsletter } from './components';
 
+import {useSrcImages} from 'hooks/use-src-images'
+
 const ContactPage = () => {
   const theme = useTheme();
+  const {contactPage:{publicURL}} = useSrcImages()
 
-  return (
-    <Main>
+  return (<Main title={`Ally Digital Solutions: Get started with a stunning website plus modern digital management for your small business.`} image={publicURL}>
       <Box
         sx={{
           position: 'relative',

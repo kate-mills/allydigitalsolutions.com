@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 export const useSrcImages = () => {
-  const {katePng, office, webDevOne, webDevTwo, socialMedia} = useStaticQuery(
+  const {katePng, office, webDevOne, webDevTwo, socialMedia, contactPage} = useStaticQuery(
     graphql`
       {
 
@@ -25,11 +25,15 @@ export const useSrcImages = () => {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
+        contactPage: file(relativePath: { eq: "contact-page.png" }) {
+          publicURL
+          img: childImageSharp { gatsbyImageData }
+        }
 
       }
     `
   );
-  return {katePng, office, webDevOne, webDevTwo, socialMedia};
+  return {katePng, office, webDevOne, webDevTwo, socialMedia, contactPage};
 };
 //import { GatsbyImage, getImage } from "gatsby-plugin-image";
 //import {useSrcImages} from 'hooks/use-src-images'

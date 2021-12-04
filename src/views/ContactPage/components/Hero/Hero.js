@@ -30,7 +30,7 @@ const Hero = () => {
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >We help businesses establish a solid online presence, showcase their brand, and build an online community. Let's get started!
+            >We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.<br/>Let's do this! 
             </Typography>
           </Box>
         </Box>
