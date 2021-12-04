@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-//import { useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import NavItem from './components/NavItem';
 import Link from 'components/Link'
 
-import logo from 'svg/logo-dark.svg'
+import logo from 'svg/logo.svg'
+import logoDark from 'svg/logo-dark.svg'
 
 const SidebarNav = ({ pages }) => {
-  //const theme = useTheme();
-  //const { mode } = theme.palette;
+  const theme = useTheme();
+  const { palette: {mode} } = theme;
 
   const {
     landings: landingPages,
@@ -33,7 +34,7 @@ const SidebarNav = ({ pages }) => {
         >
           <Box
             component={'img'}
-            src={logo}
+            src={mode==='light'? logo: logoDark}
             height={1}
             width={1}
           />
