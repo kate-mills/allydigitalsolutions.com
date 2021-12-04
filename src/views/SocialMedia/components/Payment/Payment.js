@@ -10,6 +10,7 @@ import Link from 'components/Link'
 
 const Payment = () => {
   const theme = useTheme();
+  const {palette:{mode}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -52,7 +53,7 @@ const Payment = () => {
               fullWidth={!isMd}
               marginTop={{ xs: 1, sm: 0 }}
               marginLeft={{ sm: 2 }}
-            ><Link to="/contact-page-cover" sx={{color: '#000'}}>Get Started</Link>
+            ><Link to="/contact-page-cover" sx={{color: `${mode==='dark'? '#000': '#fff'}`}}>Get Started</Link>
             </Box>
           </Box>
         </Box>

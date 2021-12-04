@@ -1,15 +1,28 @@
 const lightGreen = {
-  light: '#dde7dd',
-  main: '#abb5ab',
-  dark: '#8f988f',
-  contrastText: '#000',
+  light: '#959b9b',
+  main: '#435849', //#abb5ab
+  dark: '#37383a', //#8f988f
+  contrastText: '#fff',
 }
 const lightPink = {
-  light: '#f6d9c7',
-  main: '#c3a896',
-  dark: '#927968',
+  light: '#f8f8f8', //#f6d9c7
+  main: '#fabfb9', //#c3a896
+  dark: '#959b9b', //#927968
   contrastText: '#000',
 }
+
+/*const darkPink = {
+  light: '#ffeacf',
+  main: '#e7c5a9',
+  dark: '#b4957a',
+  contrastText: '#000',
+}
+const darkGreen = {
+  light: '#6e8575',
+  main: '#435849', //#abb5ab
+  dark: '#37383a', //#8f988f
+  contrastText: '#fff',
+}*/
 
 export const light = {
   alternate: {
@@ -34,18 +47,6 @@ export const light = {
   },
 };
 
-const darkPink = {
-  light: '#ffeacf',
-  main: '#e7c5a9',
-  dark: '#b4957a',
-  contrastText: '#000',
-}
-const darkGreen = {
-  light: '#f4ffee',
-  main: '#cde0c8',
-  dark: '#9cae97',
-  contrastText: '#000',
-}
 
 export const dark = {
   alternate: {
@@ -59,8 +60,8 @@ export const dark = {
   },
 
   mode: 'dark',
-  primary: darkPink,
-  secondary: darkGreen,
+  primary: lightPink,
+  secondary: lightGreen,
 
   text: {
     primary: '#ffffff',
@@ -70,9 +71,9 @@ export const dark = {
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
     paper: '#3a383d',
-    default: '#040405', //#222B45
+    default: '#111214', //#040405
     level1: '#020205', //#222B45
-    level2: '#040405',
+    level2: '#111214', //#040405
     footer: "#18181f",
   },
 };

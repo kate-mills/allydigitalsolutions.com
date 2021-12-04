@@ -37,7 +37,7 @@ const Hero = () => {
                 component={'span'}
                 variant={'inherit'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.main, 0.8)} 0%)`,
                 }}
               >revealed
               </Typography>
@@ -68,6 +68,7 @@ const Hero = () => {
           </Box>
         </Box>
       </Grid>
+      {isMd && (
       <Grid
         item
         xs={12}
@@ -137,6 +138,7 @@ const Hero = () => {
           </Box>
         </Box>
       </Grid>
+      )}
     </Grid>
   );
 };
