@@ -16,7 +16,7 @@ import {
   Partners,
   Pricings,
   Reviews,
-  Support,
+  Strategy,
 } from './components';
 
 const DesktopApp = () => {
@@ -46,7 +46,7 @@ const DesktopApp = () => {
 
       </Box>
       <Container>
-        <Support />
+        <Strategy />
       </Container>
       <Box bgcolor={'alternate.main'} position={'relative'}>
         <Container position="relative" zIndex={2}>

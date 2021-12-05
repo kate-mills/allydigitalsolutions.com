@@ -42,21 +42,32 @@ const SidebarNav = ({ pages }) => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Services'} items={landingPages} />
+          <NavItem title={'Our Services'} items={landingPages} />
         </Box>
         {/*<Box> <NavItem title={'Company'} items={companyPages} /> </Box>*/}
         {/*<Box> <NavItem title={'Pages'} items={secondaryPages} /> </Box>*/}
         {/*<Box> <NavItem title={'Account'} items={accountPages} /> </Box>*/}
         {/*<Box> <NavItem title={'Blog'} items={blogPages} /> </Box>*/}
         {/*<Box> <NavItem title={'Portfolio'} items={portfolioPages} /> </Box>*/}
+
+        <Box marginTop={2}>
+          <Button
+            size={'large'}
+            fullWidth
+            variant="outlined"
+            component={Link}
+            to="/web-development"
+          >Web Design & Development
+          </Button>
+        </Box>
         <Box marginTop={2}>
           <Button
             size={'large'}
             variant="outlined"
             fullWidth
             component={Link}
-            to="/contact-page-cover"
-          >Contact Sales
+            to="/social-media"
+          >Social Media Marketing
           </Button>
         </Box>
         <Box marginTop={1}>

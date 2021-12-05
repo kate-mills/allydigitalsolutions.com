@@ -46,7 +46,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Services'}
+            title={'Our Services'}
             id={'landing-pages'}
             items={landingPages}
             colorInvert={colorInvert}
@@ -63,9 +63,9 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             variant="contained"
             color="primary"
             component={Link}
-            to="/contact-page-cover"
+            to="/contact-page"
             size="large"
-          >Contact Sales
+          >Contact Our Team
           </Button>
         </Box>
       </Box>

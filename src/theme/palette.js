@@ -1,4 +1,4 @@
-const green = {
+/*const green = {
   light: '#959b9b',
   main: '#435849',
   dark: '#37383a',
@@ -22,16 +22,34 @@ const grey = {
   dark: '#676d6d',
   contrastText: '#fff',
 }
+const glamour = {
+  light: '#ffffff',
+  main: '#fbf7ea',
+  dark: '#c8c4b8',
+  contrastText: '#0c0c0c',
+}*/
+const gold = {
+  light: '#f0da8d',
+  main: '#b99541',
+  dark: '#977021',
+  contrastText: '#0c0c0c',
+}
+const taupe = {
+  light: '#fbf7ea',
+  main: '#c8c4b8',
+  dark: '#979488',
+  contrastText: '#0c0c0c',
+}
 
 export const light = {
   alternate: {
-    main: "#f7f7f7",
-    dark: "#ededed",
+    main: "#f9f9f7", //#ebebeb
+    dark: "#ebebeb",
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  primary: green,
-  secondary: lightPink,
+  primary: taupe,
+  secondary: gold,
   text: {
      primary: "#32332a",
     secondary: "#4F554D",
@@ -59,8 +77,8 @@ export const dark = {
   },
 
   mode: 'dark',
-  primary: pink,
-  secondary: grey,
+  primary: taupe,
+  secondary: gold,
 
   text: {
     primary: '#ffffff',

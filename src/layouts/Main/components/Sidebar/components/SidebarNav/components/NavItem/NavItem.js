@@ -21,7 +21,7 @@ const NavItem = ({ title, items }) => {
   const hasActiveLink = () => items.find(i => i.href === activeLink);
 
   return (
-    <Box>
+    <Box bgcolor='transparent'>
       <Accordion
         disableGutters
         elevation={0}

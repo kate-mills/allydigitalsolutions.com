@@ -96,7 +96,7 @@ const Hero = () => {
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
-                sx={{ background: `linear-gradient(180deg, transparent 87%, ${alpha(theme.palette.secondary?.dark, 0.4)} 0%)`,}}
+                sx={{ background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary?.dark, 0.7)} 0%)`,}}
               ><Typed strings={[
                     "is discoverable",
                     "elevates engagment",
@@ -118,8 +118,8 @@ const Hero = () => {
             </Typography>
             <Box
               display="flex"
-              flexDirection={{ xs: 'column', sm: 'row' }}
-              alignItems={{ xs: 'stretched', sm: 'flex-start' }}
+              flexDirection={{ xs: 'column', md: 'row' }}
+              alignItems={{ xs: 'stretched', md: 'flex-start' }}
               marginTop={4}
             >
               <Button
@@ -127,24 +127,26 @@ const Hero = () => {
                 variant="contained"
                 color="primary"
                 size="large"
+                textAlign="center"
                 fullWidth={isMd ? false : true}
-                to={'/contact-sidebar-map'}
+                to={'/web-development'}
               >
-               Learn More
+               Web Design & Development
               </Button>
               <Box
-                marginTop={{ xs: 2, sm: 0 }}
-                marginLeft={{ sm: 2 }}
+                marginTop={{ xs: 2, md: 0 }}
+                marginLeft={{ md: 2 }}
                 width={{ xs: '100%', md: 'auto' }}
               >
                 <Button
                   component={Link}
-                  to={'/contact-page-cover'}
+                  to={'/social-media'}
                   variant="outlined"
                   color="primary"
                   size="large"
+                  textAlign="center"
                   fullWidth={isMd ? false : true}
-                >Get Started
+                >Social Media Marketing
                 </Button>
               </Box>
             </Box>

@@ -36,8 +36,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
   },
 ];*/
 
-const Support = () => {
+const Strategy = () => {
   const theme = useTheme();
+  const {palette: {mode}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -55,10 +56,10 @@ const Support = () => {
           color={'secondary'}
           align={'center'}
         >
-          GET SUPPORT
+         strategy
         </Typography>
         <Typography variant={'h4'} sx={{ fontWeight: 600 }} align={'center'}>
-          Our friendly support team will help you with anything
+We've got your back when it comes to style and optimization.
         </Typography>
         <Typography
           variant="h6"
@@ -67,18 +68,18 @@ const Support = () => {
           align={'center'}
         >Do you need a brand new website, or just a makeover?
           <br />
-          We'll be there to lend a helping hand.
+          Allow us to take the lead or lend a helping hand.
         </Typography>
         <Box marginTop={2} display={'flex'} justifyContent={'center'}>
           <Button
             component={Link}
-            to={'/contact-page-cover'}
+            to={'/contact-page'}
             color={'primary'}
             variant={'contained'}
             size={'large'}
             fullWidth={isMd ? false : true}
           >
-            Get help
+            Let's strategize!
           </Button>
         </Box>
       </Box>
@@ -91,12 +92,15 @@ const Support = () => {
         <Box
           paddingBottom={{ xs: 1, md: 0 }}
           display={'flex'}
-          overflow={'auto'}
+          justifyContent={'center'}
+          flexWrap={'wrap'}
+          overflow={'visible'}
         >
           {[
-            'All features',
-            'Ask a question',
-            'Images',
+            'Website Optimization',
+            'Search Engine Optimization',
+            'Content Strategy Development',
+            'Image Optimization',
             'Logos',
             'Fonts',
             'Colors',
@@ -105,7 +109,9 @@ const Support = () => {
               key={i}
               display={'flex'}
               alignItems={'center'}
+              justifyContent={'center'}
               flexDirection={'column'}
+              flexWrap={'wrap'}
               flex={'0 0 auto'}
               marginX={2}
             >
@@ -122,7 +128,7 @@ const Support = () => {
                 >
                   <Box
                     component={Avatar}
-                    bgcolor={'secondary.main'}
+                    bgcolor={mode==="dark" ? 'primary.dark':'secondary.dark'}
                     width={20}
                     height={20}
                   >
@@ -180,4 +186,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Strategy;

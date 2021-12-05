@@ -34,7 +34,7 @@ const Hero = () => {
                 component={'span'}
                 variant={'inherit'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 86%, ${alpha(theme.palette.secondary.main, 0.55)} 0%)`,
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.70)} 0%)`,
                 }}
               >business & product.
               </Typography>

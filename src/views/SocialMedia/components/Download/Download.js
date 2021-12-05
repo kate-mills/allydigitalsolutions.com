@@ -35,12 +35,12 @@ const Download = () => {
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Box display="flex" marginTop={1}>
 
-            <Box component={Avatar} bgcolor={'primary.main'} width={{ xs: 40, sm: 50 }} height={{ xs: 40, sm: 50 }} >
+            <Box component={Avatar} bgcolor={'primary.dark'} width={{ xs: 40, sm: 50 }} height={{ xs: 40, sm: 50 }} >
               <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
-              bgcolor={'primary.main'}
+              bgcolor={'primary.dark'}
               marginLeft={1}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}

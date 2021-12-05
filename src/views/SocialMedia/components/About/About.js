@@ -98,7 +98,7 @@ const About = () => {
           <Box display="flex" marginTop={1}>
             <Box
               component={Avatar}
-              bgcolor={'primary.main'}
+              bgcolor={'primary.dark'}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}>
 
@@ -106,7 +106,7 @@ const About = () => {
             </Box>
             <Box
               component={Avatar}
-              bgcolor={'primary.main'}
+              bgcolor={'primary.dark'}
               marginLeft={1}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}

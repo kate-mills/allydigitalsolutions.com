@@ -37,7 +37,7 @@ const Hero = () => {
                 component={'span'}
                 variant={'inherit'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.main, 0.8)} 0%)`,
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.7)} 0%)`,
                 }}
               >revealed
               </Typography>
@@ -51,14 +51,14 @@ const Hero = () => {
           <Box display="flex" marginTop={1}>
             <Box
               component={Avatar}
-              bgcolor={'primary.main'}
+              bgcolor={'primary.dark'}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}>
               <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
-              bgcolor={'primary.main'}
+              bgcolor={'primary.dark'}
               marginLeft={1}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}

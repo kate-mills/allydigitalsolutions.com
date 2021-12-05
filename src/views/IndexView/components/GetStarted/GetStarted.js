@@ -22,15 +22,15 @@ const GetStarted = () => {
         sx={{
           fontWeight: 700,
         }}
-      >Get started with AllyDigital today!
+      >Get started with Ally Digital today!
       </Typography>
       <Typography
-        variant="h6"
+        variant="body1"
         component="p"
         color="text.secondary"
         sx={{ fontWeight: 400 }}
         align={'center'}
-      >Our mission is to increase your business, ease your workflow, and connect you with people who share your passions.</Typography>
+      >Ally Digital Solutions is a national Digital Marketing, Web Design & App Development Agency located in Napa, CA.</Typography>
       <Box
         display="flex"
         flexDirection={{ xs: 'column', sm: 'row' }}
@@ -44,8 +44,9 @@ const GetStarted = () => {
           color="primary"
           size="large"
           fullWidth={isMd ? false : true}
-          to={'/contact-page'}
-        >Get Started
+          to={'/social-media'}
+          textAlign="center"
+        >Learn more
         </Button>
         <Box
           marginTop={{ xs: 2, sm: 0 }}
@@ -54,12 +55,12 @@ const GetStarted = () => {
         >
           <Button
             component={Link}
-            to={'/contact-page-cover'}
+            to={'/contact-page'}
             variant="outlined"
             color="primary"
             size="large"
             fullWidth={isMd ? false : true}
-          >Learn More
+          >Contact our team
           </Button>
         </Box>
       </Box>
