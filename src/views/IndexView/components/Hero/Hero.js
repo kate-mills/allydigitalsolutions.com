@@ -25,10 +25,7 @@ const images = [
   },
   {
     group: [
-      {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--white.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--black.jpg',
-      },
+      { cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/webdev--white.jpg', coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/web-dev--black.jpg', },
       {
         cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/final-index-view--white.jpg',
         coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/final-index-view--black.jpg',
@@ -46,12 +43,12 @@ const images = [
         coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/social--black.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/agency-lookup--white.jpg',
-        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/agency-lookup--black.jpg',
+        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/newsroom--white.jpg',
+        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/newsroom--black.jpg',
       },
       {
-        cover:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--white.jpg',
-        coverDark:'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/cloud-hosting--black.jpg',
+        coverDark: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/social--black.jpg',
+        cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/social--white.jpg',
       },
       {
         cover: 'https://raw.githubusercontent.com/kate-mills/assets.ally/master/landing-pages/search--white.jpg',

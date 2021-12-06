@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import AllySvg from 'svg/ally-girl.svg'
+import AllySvg from 'svg/hello.svg'
 
 const Hero = () => {
   const theme = useTheme();
