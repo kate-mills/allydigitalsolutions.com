@@ -6,77 +6,33 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 
+import {vitalFactor} from 'theme/slogans'
+import {icons} from 'theme/icons'
+
 const mock = [
   {
     title: "Website Development",
     subtitle:
       "We help you gain the advantage and efficiency through intelligent automation and always follow the latest developer best practices to enhance the experience for all users visiting our sites.",
-    icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-        />
-      </svg>
-    ),
+    icon: icons.closeBracket,
   },
   {
     title: "Social Media Management",
-    subtitle:
-      "Having a digital presence is a vital factor in the success of your brand. Therefore, we monitor, execute, filter, and measure our client's product, brand, and business's social media presence.",
-    icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-        />
-      </svg>
-    ),
+    subtitle: vitalFactor.weMonitor,
+    icon: icons.shell,
   },
   {
     title: "Digital Brand Management",
     subtitle:
       "Even if your business already has a web presence, a Google My Business listing account ensures you are discoverable and much more.  According to Google, customers are 70% more likely to visit businesses with a complete Google My Business listing.",
-    icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-        />
-      </svg>
-    ),
+    icon: icons.pointer,
   },
 ];
 
 const Services = () => {
   const theme = useTheme();
+  const {ally:{ourMission}}=theme
+
   return (
     <Box>
       <Box marginBottom={4}>
@@ -89,7 +45,7 @@ const Services = () => {
             sx={{
               fontWeight: 700,
             }}
-          >Shape the conversation and inspire action.
+          >Shape the conversation & elevate engagement.
           </Typography>
           <Typography
             variant="h6"
@@ -97,7 +53,7 @@ const Services = () => {
             color="text.secondary"
             sx={{ fontWeight: 400 }}
             align={'center'}
-          >Our mission is to increase your business, ease your workflow, and connect you with people who share your passions.
+          >{ourMission}
           </Typography>
         </Box>
       </Box>

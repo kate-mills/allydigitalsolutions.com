@@ -25,6 +25,7 @@ const mock = [
 const Features = () => {
   const {katePng}  = useSrcImages()
   const theme = useTheme();
+  const {ally: {weAssistBusinesses}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -34,7 +35,6 @@ const Features = () => {
     if (viewPortEntered) {
       return;
     }
-
     setViewPortEntered(isVisible);
   };
 
@@ -59,9 +59,11 @@ const Features = () => {
 
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
-            <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>Less work. More time.
+            <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>Clear your schedule.
             </Typography>
-            <Typography variant={'h6'} component={'p'} color={'text.secondary'}>We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.
+            <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
+              {weAssistBusinesses}
+              <br/>As a result, our clients enjoy extra productive and fruitful time.
             </Typography>
           </Box>
           <Grid container spacing={2}>

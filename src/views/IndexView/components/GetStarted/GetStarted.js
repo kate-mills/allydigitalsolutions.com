@@ -8,6 +8,7 @@ import Link from 'components/Link'
 
 const GetStarted = () => {
   const theme = useTheme();
+  const {ally: {allyDigitalSolutionsIs}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -30,7 +31,7 @@ const GetStarted = () => {
         color="text.secondary"
         sx={{ fontWeight: 400 }}
         align={'center'}
-      >Ally Digital Solutions is a national Digital Marketing, Web Design & App Development Agency located in Napa, CA.</Typography>
+      >{allyDigitalSolutionsIs}</Typography>
       <Box
         display="flex"
         flexDirection={{ xs: 'column', sm: 'row' }}

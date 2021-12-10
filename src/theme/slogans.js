@@ -2,25 +2,22 @@ import {icons} from './icons'
 
 export const ally = {
 
-  allyDigitalSolutionsIs: 'Ally Digital Solutions is a national Digital Marketing, Web Design & App Development Agency located in Napa, CA.',
+  allyDigitalSolutionsIs: 'Ally Digital Solutions is a national Digital Marketing, Web Design & App Development Agency located in Napa, CA.',//IndexView-GetStarted
 
-  assignYour: 'Assign your digital projects to a pro and clear your schedule for more productive tasks as your virtual brand shifts into high gear.',
+  assignYour: 'Assign your digital projects to a pro and clear your schedule for more productive tasks as your virtual brand shifts into high gear.',//IndexView-Hero
 
   ourMission: 'Our mission is to enrich your business, ease your workflow, and connect you with people who share your objectives and passions.',//IndexView-Services
 
-  weUtilize: 'We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.',
+  weUtilize: 'We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.',//IndexView-QuickStart
 
-  weAssistBusinessesList: [
-    `We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.`,
-    'As a result, our clients enjoy extra productive and fruitful time.'
-  ],//IndexView-Features
-
-  weAssistBusinesses: 'We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.',
+  weAssistBusinesses: 'We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.',//IndexView-Features
 
 }
 
 export const vitalFactor = {
-  weMonitor: 'Having a digital presence is a vital factor in the success of your brand. Therefore, we monitor, execute, filter, and measure our client\'s product, brand, and business\'s social media presence.',//IndexView-Services
+
+  weMonitor: 'Having a digital presence is a vital factor in the success of your brand. Therefore, we monitor, execute, filter, and measure our client\'s product, brand, and social media presence.',//IndexView-Services
+
   saveTime: 'Having a digital presence is a vital factor in the success of your brand. We make you look modern and professional while saving you valuable time.',//IndexView-Benefits
 };
 
@@ -53,7 +50,7 @@ export const sixServices = [ //IndexView-Benefits
   },
   {
     title: "Go Live",
-    subtitle:'Having a digital presence is a vital factor in the success of your brand. We make you look modern and professional while saving you valuable time.',
+    subtitle:vitalFactor.saveTime,
     icon: icons.shell,
   },
 ];

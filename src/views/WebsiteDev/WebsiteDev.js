@@ -19,7 +19,7 @@ import {
   Strategy,
 } from './components';
 
-const DesktopApp = () => {
+const WebsiteDev = () => {
 
   const theme = useTheme();
   const {webDevOne:{publicURL}} = useSrcImages()
@@ -75,14 +75,6 @@ const DesktopApp = () => {
           />
         </Box>
       </Box>
-    {/*<Container>
-        <Partners />
-      </Container>
-      <Box bgcolor={'alternate.main'}>
-        <Container>
-          <Pricings />
-        </Container>
-      </Box> */}
       <Container>
         <Download />
       </Container>
@@ -90,4 +82,4 @@ const DesktopApp = () => {
   );
 };
 
-export default DesktopApp;
+export default WebsiteDev;

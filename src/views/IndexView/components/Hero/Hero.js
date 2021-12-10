@@ -62,6 +62,7 @@ const images = [
 
 const Hero = () => {
   const theme = useTheme();
+  const {ally:{assignYour}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -111,7 +112,7 @@ const Hero = () => {
               component="p"
               color="text.secondary"
               sx={{ fontWeight: 400 }}
-            >We transform businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.
+            >{assignYour}
             </Typography>
             <Box
               display="flex"
