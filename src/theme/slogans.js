@@ -2,7 +2,7 @@ import {icons} from './icons'
 
 export const ally = {
 
-  allyDigitalSolutionsIs: 'Ally Digital Solutions is a national Digital Marketing, Web Design & App Development Agency located in Napa, CA.',//IndexView-GetStarted
+  allyDigitalSolutionsIs: 'Ally Digital Solutions is a national Digital Marketing & Web Design Agency located in Napa, CA.',//IndexView-GetStarted
 
   assignYour: 'Assign your digital projects to a pro and clear your schedule for more productive tasks as your virtual brand shifts into high gear.',//IndexView-Hero
 
