@@ -16,6 +16,7 @@ import TagIcon from '@mui/icons-material/Tag';
 
 const Hero = () => {
   const theme = useTheme();
+  const {socialMedia:{hero}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -31,7 +32,7 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >Popular social media trends. The truth{' '}
+            >Connect and reveal your business's{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -39,12 +40,13 @@ const Hero = () => {
                 sx={{
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.7)} 0%)`,
                 }}
-              >revealed
+              >unique essence.
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary" sx={{fontWeight: 400}}>We help businesses establish a solid online presence, showcase their brand, and build an online community.
+            <Typography variant="h6" component="p" color="text.secondary" sx={{fontWeight: 400}}>
+              {hero}
               <br />
             </Typography>
           </Box>

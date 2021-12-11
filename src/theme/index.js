@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 import shadows from './shadows';
 import { light, dark } from './palette';
 
-import {ally} from './slogans';
+import {ally, socialMedia} from './slogans';
 
 const getTheme = (mode, themeToggler) =>
   responsiveFontSizes(
@@ -60,6 +60,7 @@ const getTheme = (mode, themeToggler) =>
       },
       themeToggler,
       ally,
+      socialMedia,
     }),
   );
 

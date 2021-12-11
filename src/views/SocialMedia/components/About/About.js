@@ -15,6 +15,7 @@ import TagIcon from '@mui/icons-material/Tag';
 
 const About = () => {
   const theme = useTheme();
+  const {socialMedia:{about,aboutHeading}} = theme
 
   return (
     <Grid container spacing={4}>
@@ -88,12 +89,11 @@ const About = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >Connect and reveal your business's unique essence.
+            >{aboutHeading}
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">Sharing videos on social media is a valuable tool to express your individuality and creativity. In addition, social media video ads will get your message out to a larger targeted group instantly.
-            </Typography>
+            <Typography variant="h6" component="p" color="text.secondary">{about}</Typography>
           </Box>
           <Box display="flex" marginTop={1}>
             <Box
@@ -101,8 +101,7 @@ const About = () => {
               bgcolor={'primary.dark'}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}>
-
-              <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
+              <Box component={TagIcon} alt={'Hash Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
@@ -111,7 +110,6 @@ const About = () => {
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}
             >
-
               <Box component={AlternateEmailIcon} alt={'Alternate Email Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
           </Box>

@@ -6,7 +6,7 @@ export const ally = {
 
   assignYour: 'Assign your digital projects to a pro and clear your schedule for more productive tasks as your virtual brand shifts into high gear.',//IndexView-Hero
 
-  ourMission: 'Our mission is to enrich your business, ease your workflow, and connect you with people who share your objectives and passions.',//IndexView-Services
+  ourMission: 'Our mission is to enrich your business, ease your workflow, and connect you with people who share your objectives & passions.',//IndexView-Services
 
   weUtilize: 'We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.',//IndexView-QuickStart
 
@@ -54,3 +54,11 @@ export const sixServices = [ //IndexView-Benefits
     icon: icons.shell,
   },
 ];
+
+export const socialMedia = {
+  heroHead:'Connect and reveal your business\'s unique essence',
+  hero:'We help small businesses establish a solid online presence, showcase their brand, and build an online community.',
+  aboutHeading: 'Reveal your originality through short videos.',
+  about: 'Social media is a valuable tool to express your individuality and creativity. In addition, social media video ads will instantly get your message out to a larger targeted group.',
+
+};
