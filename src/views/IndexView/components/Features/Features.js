@@ -25,7 +25,7 @@ const mock = [
 const Features = () => {
   const {katePng}  = useSrcImages()
   const theme = useTheme();
-  const {ally: {weAssistBusinesses}} = theme
+  const {ally: {ourClientsClear}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -62,8 +62,7 @@ const Features = () => {
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>Clear your schedule.
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              {weAssistBusinesses}
-              <br/>As a result, our clients enjoy extra productive and fruitful time.
+              {ourClientsClear}
             </Typography>
           </Box>
           <Grid container spacing={2}>

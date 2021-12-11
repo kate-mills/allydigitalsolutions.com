@@ -6,11 +6,11 @@ export const ally = {
 
   assignYour: 'Assign your digital projects to a pro and clear your schedule for more productive tasks as your virtual brand shifts into high gear.',//IndexView-Hero
 
+  ourClientsClear: 'Our clients clear their schedules for more productive tasks as we establish a solid online presence, showcase their brand and build an online community. ',//IndexView-Features
+
   ourMission: 'Our mission is to enrich your business, ease your workflow, and connect you with people who share your objectives & passions.',//IndexView-Services
 
   weUtilize: 'We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.',//IndexView-QuickStart
-
-  weAssistBusinesses: 'We assist businesses in establishing a solid online presence, showcasing their brand, and building an online community.',//IndexView-Features
 
 }
 
