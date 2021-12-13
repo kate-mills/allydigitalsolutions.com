@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
-//import webDeveloper from 'images/web-developer-01.jpg'
 import webDeveloper from 'images/web-developer-01.jpg'
 
 import Link from 'components/Link'
@@ -30,10 +29,11 @@ const Hero = () => {
               sx={{ fontWeight: 700 }}
             >Web development for your{' '}
               <Typography
-                color={'primary'}
+                color={'primary.dark'}
                 component={'span'}
                 variant={'inherit'}
                 sx={{
+                  fontFamily: 'relation-one, sans-serif',
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.70)} 0%)`,
                 }}
               >business & product.

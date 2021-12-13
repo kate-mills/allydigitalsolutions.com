@@ -34,10 +34,11 @@ const Hero = () => {
               }}
             >Connect and reveal your business's{' '}
               <Typography
-                color={'primary'}
+                color={'primary.dark'}
                 component={'span'}
                 variant={'inherit'}
                 sx={{
+                  fontFamily: 'relation-one,sans-serif',
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.7)} 0%)`,
                 }}
               >unique essence.
