@@ -12,7 +12,7 @@ const getTheme = (mode, themeToggler) =>
       palette: mode === 'light' ? light : dark,
       shadows: shadows(mode),
       typography: {
-        fontFamily: '"Lato", sans-serif',
+        fontFamily: '"lato", sans-serif',
         button: {
           textTransform: 'none',
           fontWeight: 'regular',
@@ -26,7 +26,7 @@ const getTheme = (mode, themeToggler) =>
         MuiButton: {
           styleOverrides: {
             root: {
-              fontWeight: 400,
+              fontWeight: 500,
               borderRadius: 5,
               paddingTop: 10,
               paddingBottom: 10,
@@ -63,9 +63,10 @@ const getTheme = (mode, themeToggler) =>
       ally,
       socialMedia,
       cursiveSx: {
-        fontFamily: 'learning-curve, sans-serif',
-        fontSize: '1.45em',
+        fontFamily: 'calliope-mvb, sans-serif',
+        fontSize: '1.1em',
         fontWeight: '400',
+        lineHeight: '1.1em',
       },
     }),
   );

@@ -31,7 +31,7 @@ const Hero = () => {
               variant="h3"
               color="text.primary"
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
               }}
             >Connect and reveal your business's<Typography
                 color={'primary'}

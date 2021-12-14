@@ -87,7 +87,7 @@ const Hero = () => {
               color="text.primary"
               gutterBottom
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
               }}
             >A modern approach to digital management that<br/>
               <Typography color={'primary'}
