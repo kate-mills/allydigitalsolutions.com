@@ -4,16 +4,19 @@ const gold = {
   dark: '#977021',
   contrastText: '#0c0c0c',
 }
-const taupe = {
+
+// Another passable light option #CFCABE
+const taupeForDarkBG = {
   light: '#fbf7ea',
-  main: '#c8c4b8',
+  main: '#A6A298',
   dark: '#979488',
-  contrastText: '#0f0f0f',
+  contrastText: 'rgba(0, 0, 0 ,.8)',
 }
-const buttons = {
-  light: '#c8c4b8',
-  main: '#979488',
-  dark: '#4e4c3f',
+
+const taupe = {
+  light: '#a6a49a',
+  main: '#78756c',
+  dark: '#4b4941',
   contrastText: '#fff',
 }
 
@@ -26,7 +29,6 @@ export const light = {
   mode: 'light',
   primary: taupe,
   secondary: gold,
-  buttons,
   text: {
      primary: "#32332a",
     secondary: "#4F554D",
@@ -52,9 +54,8 @@ export const dark = {
     white: '#fff',
   },
   mode: 'dark',
-  primary: taupe,
+  primary: taupeForDarkBG,
   secondary: gold,
-  buttons,
   text: {
     primary: '#ffffff',
     secondary: '#e3e3e3',
