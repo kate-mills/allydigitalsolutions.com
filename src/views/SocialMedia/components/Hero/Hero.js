@@ -16,7 +16,8 @@ import TagIcon from '@mui/icons-material/Tag';
 
 const Hero = () => {
   const theme = useTheme();
-  const {socialMedia:{hero}} = theme
+  const {cursiveSx, socialMedia:{hero}} = theme
+
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -32,16 +33,15 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >Connect and reveal your business's{' '}
-              <Typography
-                color={'primary.dark'}
+            >Connect and reveal your business's<Typography
+                color={'primary'}
                 component={'span'}
                 variant={'inherit'}
                 sx={{
-                  fontFamily: 'relation-one,sans-serif',
+                  ...cursiveSx,
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.7)} 0%)`,
                 }}
-              >unique essence.
+              >{` unique essence.`}
               </Typography>
             </Typography>
           </Box>

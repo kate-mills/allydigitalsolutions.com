@@ -62,7 +62,8 @@ const images = [
 
 const Hero = () => {
   const theme = useTheme();
-  const {ally:{assignYour}} = theme
+
+  const {cursiveSx, ally:{assignYour}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -88,23 +89,23 @@ const Hero = () => {
               sx={{
                 fontWeight: 700,
               }}
-            >A modern approach to digital management that
-              <br />{' '}
-              <Typography
-                color={'primary'}
+            >A modern approach to digital management that<br/>
+              <Typography color={'primary'}
                 component={'span'}
                 variant={'inherit'}
                 sx={{
-                  fontFamily: 'relation-one,sans-serif', background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary?.dark, 0.7)} 0%)`,}}
-              ><Typed strings={[
-                    "is discoverable",
-                    "elevates engagment",
-                    "inspires action",
-                    "leads innovation",
-                    "motivates movement",
-                    "promotes change",
-                    "shapes conversation",
-                    "shifts the mood",
+                  ...cursiveSx,
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary?.dark, 0.7)} 0%)`,}}>
+                    <Typed strings={[
+                  ` is discoverable.`,
+                  ` elevates engagment.`,
+                  ` inspires action.`,
+                  ` leads innovation.`,
+                  ` motivates movement.`,
+                  ` promotes change.`,
+                  ` creates conversation.`,
+                  ` shapes ideas.`,
+                  ` shifts the mood.`,
                   ]}typeSpeed={40} backSpeed={50} loop/></Typography>
             </Typography>
             <Typography

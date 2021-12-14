@@ -5,6 +5,7 @@ import { light, dark } from './palette';
 
 import {ally, socialMedia} from './slogans';
 
+
 const getTheme = (mode, themeToggler) =>
   responsiveFontSizes(
     createTheme({
@@ -61,6 +62,11 @@ const getTheme = (mode, themeToggler) =>
       themeToggler,
       ally,
       socialMedia,
+      cursiveSx: {
+        fontFamily: 'learning-curve, sans-serif',
+        fontSize: '1.45em',
+        fontWeight: '400',
+      },
     }),
   );
 
