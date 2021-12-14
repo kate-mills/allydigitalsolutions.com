@@ -52,7 +52,6 @@
     "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sharp": "^3.14.3",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-airtable": "^2.2.1",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",

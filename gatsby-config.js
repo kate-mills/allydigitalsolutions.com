@@ -18,14 +18,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-sharp`,
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: [ `Lato:700` ]
-        }
-      }
-    },
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
     {
