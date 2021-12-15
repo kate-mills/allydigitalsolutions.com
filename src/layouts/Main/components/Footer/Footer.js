@@ -67,6 +67,7 @@ const Footer = () => {
       <Grid item xs={12}>
         <Typography
           align={'center'}
+          component={'p'}
           variant={'subtitle2'}
           color="text.secondary"
           gutterBottom
