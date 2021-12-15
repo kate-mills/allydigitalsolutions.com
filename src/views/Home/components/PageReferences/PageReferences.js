@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-const data = [
+/*const data = [
   {
     title: 'Landing pages',
     subtitle:
@@ -427,13 +427,13 @@ const data = [
       },
     ],
   },
-];
+];*/
 
 const PageReferences = () => {
   const theme = useTheme();
   return (
     <Box>
-      {data.map((item, i) => (
+      {[].map((item, i) => (
         <Box
           key={i}
           sx={{

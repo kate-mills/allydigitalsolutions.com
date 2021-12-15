@@ -51,11 +51,6 @@ const Topbar = ({ onSidebarOpen, pages }) => {
             items={landingPages}
           />
         </Box>
-        {/*<Box marginLeft={2.5}> <NavItem title={'Company'} id={'company-pages'} items={companyPages} /> </Box>*/}
-        {/*<Box marginLeft={2.5}> <NavItem title={'Account'} id={'account-pages'} items={accountPages} /> </Box>*/}
-        {/*<Box marginLeft={2.5}> <NavItem title={'Pages'} id={'secondary-pages'} items={secondaryPages} /> </Box>*/}
-        {/*<Box marginLeft={2.5}> <NavItem title={'Blog'} id={'blog-pages'} items={blogPages} /> </Box>*/}
-        {/*<Box marginLeft={2.5}> <NavItem title={'Portfolio'} id={'portfolio-pages'} items={portfolioPages} /> </Box>*/}
         <Box marginLeft={2.5}>
           <Link
             underline="none"
