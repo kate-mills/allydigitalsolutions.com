@@ -31,7 +31,7 @@ const contactBasic = (values, {resetForm}) => {
 const contactDemo = async (values, actions) => {
 
   actions.setSubmitting(true)
-  console.log(actions)
+  //console.log(actions)
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
