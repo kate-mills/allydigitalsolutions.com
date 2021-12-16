@@ -85,6 +85,7 @@ const Contact = () => {
               <TextField
                 sx={{ height: 54 }}
                 label="First name"
+                aria-label="First name"
                 variant="outlined"
                 color="primary"
                 size="medium"
@@ -102,6 +103,7 @@ const Contact = () => {
               <TextField
                 sx={{ height: 54 }}
                 label="Last name"
+                aria-label="Last name"
                 variant="outlined"
                 color="primary"
                 size="medium"
@@ -119,6 +121,7 @@ const Contact = () => {
               <TextField
                 sx={{ height: 54 }}
                 label="Email"
+                aria-label="Email"
                 type="email"
                 variant="outlined"
                 color="primary"
@@ -134,6 +137,7 @@ const Contact = () => {
             <Grid item xs={12}>
               <TextField
                 label="Message"
+                aria-label="Message"
                 multiline
                 rows={6}
                 variant="outlined"
