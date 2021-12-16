@@ -38,6 +38,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       >
         <Box
           component={'img'}
+          alt="Ally Digital Solutions Logo"
           src={ mode === "light" ? logo : logoDark }
           height={1}
           width={1}
