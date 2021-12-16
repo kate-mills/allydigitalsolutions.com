@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import webDeveloper from 'images/web-developer-02.jpg'
+import {useSrcImages} from 'hooks/use-src-images'
 
 
 const mock = [
@@ -33,6 +33,10 @@ const mock = [
 
 const Hero = () => {
   const theme = useTheme();
+
+
+  const { officeGals:{publicURL} }  = useSrcImages()
+
 
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -64,8 +68,8 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={webDeveloper}
-          alt="..."
+          src={publicURL}
+          alt="Web Developers are sitting at a table with their laptops smiling, discussing website development."
           effect="blur"
           boxShadow={3}
           borderRadius={2}

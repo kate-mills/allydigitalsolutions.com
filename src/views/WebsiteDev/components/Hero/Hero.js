@@ -7,12 +7,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
-import webDeveloper from 'images/web-developer-01.jpg'
+//import webDeveloper from 'images/web-developer-01.jpg'
+import {useSrcImages} from 'hooks/use-src-images'
 
 import Link from 'components/Link'
 
 const Hero = () => {
   const theme = useTheme();
+  const {webDevOne:{publicURL:publicURLOne}} = useSrcImages()
   const {cursiveSx} = theme
 
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -85,8 +87,8 @@ const Hero = () => {
           component={LazyLoadImage}
           height={1}
           width={1}
-          src={webDeveloper}
-          alt="..."
+          src={publicURLOne}
+          alt="Web Developer wearing a hat, sitting on steps of an office building with a leather jacket over her shoulder."
           effect="blur"
           boxShadow={3}
           borderRadius={2}

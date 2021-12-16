@@ -9,14 +9,20 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Link from 'components/Link'
 
-import webDeveloperOne from 'images/web-developer-02.jpg'
-import webDeveloperTwo from 'images/web-developer-01.jpg'
+import {useSrcImages} from 'hooks/use-src-images'
 
 const Customization = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+
+  const {
+    webDevOne:{publicURL:publicURLOne},
+    webDevTwo:{publicURL:publicURLTwo}
+  } = useSrcImages()
+
+
 
   return (
     <Box>
@@ -92,8 +98,8 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={webDeveloperTwo}
-              alt=""
+              src={publicURLTwo}
+              alt="Web Developer wearing shades, sitting on steps of an office building alongside her purse."
               effect="blur"
               boxShadow={3}
               borderRadius={2}
@@ -117,8 +123,8 @@ const Customization = () => {
               component={LazyLoadImage}
               height={1}
               width={1}
-              src={webDeveloperOne}
-              alt=""
+              src={publicURLOne}
+              alt="Web Developer wearing a hat, sitting on steps of an office building with a leather jacket over her shoulder."
               effect="blur"
               boxShadow={3}
               borderRadius={2}
