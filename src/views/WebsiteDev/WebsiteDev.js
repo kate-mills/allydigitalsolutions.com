@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import webDeveloper from 'images/web-developer-01.jpg'
+import webDeveloper from 'images/web-developer-01-x2.jpg'
 
 
 import {useSrcImages} from 'hooks/use-src-images'
