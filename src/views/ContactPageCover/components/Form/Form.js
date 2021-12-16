@@ -82,13 +82,14 @@ const Contact = () => {
 
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
+              <label htmlFor="firstName" className="visuallyhidden">First name</label>
               <TextField
                 sx={{ height: 54 }}
                 label="First name"
-                aria-label="First name"
                 variant="outlined"
                 color="primary"
                 size="medium"
+                id="firstName"
                 name="firstName"
                 fullWidth
                 value={formik.values.firstName}
@@ -100,13 +101,14 @@ const Contact = () => {
               />
             </Grid>
             <Grid item xs={12} sm={6}>
+              <label htmlFor="lastName" className="visuallyhidden">Last name</label>
               <TextField
                 sx={{ height: 54 }}
                 label="Last name"
-                aria-label="Last name"
                 variant="outlined"
                 color="primary"
                 size="medium"
+                id="lastName"
                 name="lastName"
                 fullWidth
                 value={formik.values.lastName}
@@ -118,14 +120,15 @@ const Contact = () => {
               />
             </Grid>
             <Grid item xs={12}>
+              <label htmlFor="email" className="visuallyhidden">Email</label>
               <TextField
                 sx={{ height: 54 }}
                 label="Email"
-                aria-label="Email"
                 type="email"
                 variant="outlined"
                 color="primary"
                 size="medium"
+                id="email"
                 name="email"
                 fullWidth
                 value={formik.values.email}
@@ -135,14 +138,15 @@ const Contact = () => {
               />
             </Grid>
             <Grid item xs={12}>
+              <label htmlFor="message" className="visuallyhidden">Message</label>
               <TextField
                 label="Message"
-                aria-label="Message"
                 multiline
                 rows={6}
                 variant="outlined"
                 color="primary"
                 size="medium"
+                id="message"
                 name="message"
                 fullWidth
                 value={formik.values.message}
