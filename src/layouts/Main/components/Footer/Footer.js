@@ -43,7 +43,7 @@ const Footer = () => {
                 underline="none"
                 to="/"
                 color="text.primary"
-                variant={'subtitle2'}
+                variant={'caption'}
               >
                 Home
               </Link>
@@ -53,13 +53,13 @@ const Footer = () => {
                 underline="none"
                 to="/company-terms"
                 color="text.primary"
-                variant={'subtitle2'}
+                variant={'caption'}
               >Privacy
               </Link>
             </Box>
             <Box marginTop={1}>
-            <Button to="/contact-page-cover" color="primary" marginTop={1} size="small" variant="outlined" component={Link}>
-              Learn More
+              <Button to="/contact-page" color="primary" marginTop={1} size="small" variant="outlined" component={Link} title="Contact Our Design & Development Team">
+                <Typography  variant={'caption'}>Contact Us</Typography>
             </Button>
             </Box>
           </Box>
