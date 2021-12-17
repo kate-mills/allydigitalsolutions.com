@@ -53,7 +53,7 @@ const Strategy = () => {
             fontWeight: 'medium',
           }}
           gutterBottom
-          color={'secondary'}
+          color={'secondary.seoText'}
           align={'center'}
         >
          strategy
@@ -128,7 +128,7 @@ We've got your back when it comes to style and optimization.
                 >
                   <Box
                     component={Avatar}
-                    bgcolor={mode==="dark" ? 'primary.dark':'secondary.dark'}
+                    bgcolor={mode==="dark" ? 'secondary.light':'secondary.dark'}
                     width={20}
                     height={20}
                   >

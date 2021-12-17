@@ -6,6 +6,7 @@ const redMono = {
   bright: '#BF1F49',
   darkest: '#400A18',
   contrastText: '#fff',
+  seoText: '#ffacc3',
 }
 const redMonoForDarkBg = {
   lightest: '#8A4053',
@@ -15,6 +16,7 @@ const redMonoForDarkBg = {
   bright: '#F47094',
   darkest: '#661027',
   contrastText: '#fff',
+  seoText: '#ffacc3',
 }
 const greenMono = {
   lightest: '#70A6B5',
@@ -23,6 +25,7 @@ const greenMono = {
   dark: '#6A7173', // text ok on white backgroung
   bright: '#96DEF2',
   contrastText: '#000',
+  seoText: '#53595b',
 }
 
 export const light = {

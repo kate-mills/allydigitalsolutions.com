@@ -33,7 +33,7 @@ const Customization = () => {
             fontWeight: 'medium',
           }}
           gutterBottom
-          color={'secondary'}
+          color={'secondary.seoText'}
           align={'center'}
         >
           CUSTOMIZATION

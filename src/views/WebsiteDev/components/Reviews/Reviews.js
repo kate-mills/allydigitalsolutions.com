@@ -71,7 +71,7 @@ const Reviews = () => {
                 >
                   <Box
                     component={Avatar}
-                    bgcolor="secondary.dark"
+                    bgcolor={theme.palette.mode === 'light'? "secondary.dark": "secondary.light"}
                     width={{ xs: 50, md: 50 }}
                     height={{ xs: 50, md: 50 }}
                     marginBottom={2}
