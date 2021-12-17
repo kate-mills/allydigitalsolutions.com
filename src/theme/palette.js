@@ -1,23 +1,28 @@
-const gold = {
-  light: '#f0da8d',
-  main: '#b99541',
-  dark: '#977021',
-  contrastText: '#0c0c0c',
-}
-
-// Another passable light option #CFCABE
-const taupeForDarkBG = {
-  light: '#fbf7ea',
-  main: '#A6A298',
-  dark: '#979488',
-  contrastText: 'rgba(0, 0, 0 ,.8)',
-}
-
-const taupe = {
-  light: '#a6a49a',
-  main: '#78756c',
-  dark: '#4b4941',
+const redMono = {
+  lightest: '#8A4053',
+  light: '#8A4053',
+  main: '#73122C',
+  dark: '#400A18',
+  bright: '#BF1F49',
+  darkest: '#400A18',
   contrastText: '#fff',
+}
+const redMonoForDarkBg = {
+  lightest: '#8A4053',
+  light: '#8A4053',
+  main: '#BF5874',
+  dark: '#BF1F49',
+  bright: '#F47094',
+  darkest: '#661027',
+  contrastText: '#fff',
+}
+const greenMono = {
+  lightest: '#70A6B5',
+  light: '#DFEEF2',
+  main: '#98A3A6',
+  dark: '#6A7173', // text ok on white backgroung
+  bright: '#96DEF2',
+  contrastText: '#000',
 }
 
 export const light = {
@@ -27,8 +32,8 @@ export const light = {
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  primary: taupe,
-  secondary: gold,
+  primary: redMono,
+  secondary: greenMono,
   text: {
      primary: "#32332a",
     secondary: "#4F554D",
@@ -42,30 +47,37 @@ export const light = {
     footer: "#1b1642",
   },
 };
+const complementaryGreen = {
+  light: '#B4BDBF',
+  main: '#BFB9B4',
+  dark: '#606F73',
+  contrastText: '#fff',
+}
 
 export const dark = {
   alternate: {
-    main: '#37383a',
-    dark: '#212122',
+    main: '#333436',
+    dark: '#222324',
   },
   cardShadow: 'rgba(0, 0, 0, .11)',
   common: {
     black: '#000',
     white: '#fff',
+    red:'#400A18',
   },
   mode: 'dark',
-  primary: taupeForDarkBG,
-  secondary: gold,
+  primary: greenMono,
+  secondary:   redMonoForDarkBg,
   text: {
     primary: '#ffffff',
     secondary: '#e3e3e3',
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
-    paper: '#3a383d',
-    default: '#111214',
-    level1: '#020205',
-    level2: '#111214',
-    footer: "#18181f",
+    default: '#0D0D0D',
+    paper: '#262223',
+    level1: '#2C1B1D',
+    level2: '#19060B',
+    footer: "#2D2428",
   },
 };
