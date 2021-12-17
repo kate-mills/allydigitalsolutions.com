@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from 'svg/logo.svg'
-import logoDark from 'svg/logo-dark.svg'
 import Link from 'components/Link'
 
 import { NavItem, ThemeModeToggler} from './components';
@@ -39,7 +38,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         <Box
           component={'img'}
           alt="Ally Digital Solutions Logo"
-          src={ mode === "light" ? logo : logoDark }
+          src={logo}
           height={1}
           width={1}
         />

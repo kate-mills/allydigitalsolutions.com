@@ -2,19 +2,21 @@ const redMono = {
   lightest: '#8A4053',
   light: '#8A4053',
   main: '#73122C',
-  dark: '#400A18',
+  //dark: '#400A18',
+  dark: '#661027',
   bright: '#BF1F49',
   darkest: '#400A18',
   contrastText: '#fff',
-  seoText: '#ffacc3',
+  seoText: '#734e58',
 }
 const redMonoForDarkBg = {
   lightest: '#8A4053',
   light: '#8A4053',
   main: '#BF5874',
-  dark: '#BF1F49',
+  darkest: '#400A18',
+  //dark: '#BF1F49',
   bright: '#F47094',
-  darkest: '#661027',
+  dark: '#661027',
   contrastText: '#fff',
   seoText: '#ffacc3',
 }
@@ -24,7 +26,7 @@ const greenMono = {
   main: '#98A3A6',
   dark: '#6A7173', // text ok on white backgroung
   bright: '#96DEF2',
-  contrastText: '#000',
+  contrastText: 'rgba(0, 0, 0, .8)',
   seoText: '#53595b',
 }
 
@@ -35,11 +37,11 @@ export const light = {
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  primary: redMono,
-  secondary: greenMono,
+  primary: greenMono,
+  secondary: redMono,
   text: {
-     primary: "#32332a",
-    secondary: "#4F554D",
+     primary: "#354051",
+    secondary: "#253746",
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
@@ -50,12 +52,8 @@ export const light = {
     footer: "#1b1642",
   },
 };
-const complementaryGreen = {
-  light: '#B4BDBF',
-  main: '#BFB9B4',
-  dark: '#606F73',
-  contrastText: '#fff',
-}
+
+//const complementaryGreen = { light: '#B4BDBF', main: '#BFB9B4', dark: '#606F73', contrastText: '#fff', }
 
 export const dark = {
   alternate: {
@@ -72,8 +70,8 @@ export const dark = {
   primary: greenMono,
   secondary:   redMonoForDarkBg,
   text: {
-    primary: '#ffffff',
-    secondary: '#e3e3e3',
+    primary: '#fff',
+    secondary: '#bcc5c9',
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {

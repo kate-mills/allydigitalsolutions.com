@@ -6,7 +6,6 @@ import Link from 'components/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import logo from 'svg/logo.svg'
-import logoDark from 'svg/logo-dark.svg'
 
 const Footer = () => {
   const theme = useTheme();
@@ -32,7 +31,7 @@ const Footer = () => {
             <Box
               component={'img'}
               alt="Ally Digital Solutions Logo"
-              src={ mode === "light" ? logo : logoDark }
+              src={logo}
               height={1}
               width={1}
             />
