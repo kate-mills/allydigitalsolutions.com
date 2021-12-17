@@ -88,11 +88,10 @@ const Hero = () => {
               sx={{ fontWeight: 700 }}
             >Excellence happens with code,{' '}
               <Typography
-                color={'primary'}
+                color={'primary.dark'}
                 component={'span'}
                 variant={'inherit'}
-              >
-                not by chance.
+              >not by chance.
               </Typography>
             </Typography>
           </Box>
