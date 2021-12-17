@@ -11,13 +11,14 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-import officeImg from 'images/office.jpg'
+import {useSrcImages} from 'hooks/use-src-images'
 
 const NotFoundCover = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+  const {office:{publicURL} }  = useSrcImages()
 
   return (
     <Main>
@@ -135,7 +136,7 @@ const NotFoundCover = () => {
                       <Box
                         component={LazyLoadImage}
                         effect="blur"
-                        src={officeImg}
+                        src={publicURL}
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}

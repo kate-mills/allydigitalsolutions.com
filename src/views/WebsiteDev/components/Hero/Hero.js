@@ -94,7 +94,7 @@ const Hero = () => {
           borderRadius={2}
           maxWidth={600}
           sx={{
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+            filter: theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
           }}
         />
       </Grid>

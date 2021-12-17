@@ -8,7 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
-import mobileImage from 'images/mobile-app.jpg'
+import mobileImage from 'images/social-media-mobile.jpg'
 
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import TagIcon from '@mui/icons-material/Tag';
@@ -71,7 +71,9 @@ const Hero = () => {
           </Box>
         </Box>
       </Grid>
-      {isMd && (
+
+
+
       <Grid
         item
         xs={12}
@@ -141,7 +143,9 @@ const Hero = () => {
           </Box>
         </Box>
       </Grid>
-      )}
+
+
+
     </Grid>
   );
 };

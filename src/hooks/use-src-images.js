@@ -25,19 +25,19 @@ export const useSrcImages = () => {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
-        officeGals: file(relativePath: { eq: "office-gals-x2.jpg" }) {
+        officeGals: file(relativePath: { eq: "web-developers-in-office.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
-        socialMedia: file(relativePath: { eq: "social-media.jpg" }) {
+        socialMedia: file(relativePath: { eq: "social-media-x2.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
-        webDevOne: file(relativePath: { eq: "web-developer-01-x2.jpg" }) {
+        webDevOne: file(relativePath: { eq: "web-developer-01r-x2.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
-        webDevTwo: file(relativePath: { eq: "web-developer-02-x2.jpg" }) {
+        webDevTwo: file(relativePath: { eq: "web-developer-02r-x2.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }

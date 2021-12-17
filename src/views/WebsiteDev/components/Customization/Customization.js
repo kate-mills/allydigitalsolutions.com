@@ -35,19 +35,16 @@ const Customization = () => {
           gutterBottom
           color={'secondary.seoText'}
           align={'center'}
-        >
-          CUSTOMIZATION
+        >CUSTOMIZATION
         </Typography>
         <Typography
+          color={'text.primary'}
           variant="h4"
           align={'center'}
           data-aos={'fade-up'}
           gutterBottom
-          sx={{
-            fontWeight: 700,
-          }}
-        >
-          Customize your website 
+          sx={{ fontWeight: 700 }}
+        >Customize your website 
         </Typography>
         <Typography
           variant="h6"
@@ -106,7 +103,7 @@ const Customization = () => {
               maxWidth={600}
               sx={{
                 filter:
-                  theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+                  theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
               }}
             />
           </Grid>
@@ -131,7 +128,7 @@ const Customization = () => {
               maxWidth={600}
               sx={{
                 filter:
-                  theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+                  theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
               }}
             />
           </Grid>
