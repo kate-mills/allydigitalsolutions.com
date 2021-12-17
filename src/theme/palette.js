@@ -78,7 +78,7 @@ export const dark = {
   secondary:   redMonoForDarkBg,
   text: {
     primary: '#fff',
-    secondary: '#bcc5c9',
+    secondary: '#bec7cb',
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {

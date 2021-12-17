@@ -33,8 +33,7 @@ const mock = [
 
 const Hero = () => {
   const theme = useTheme();
-
-
+  const {cursiveSx} = theme
   const { officeGals:{publicURL} }  = useSrcImages()
 
 
@@ -91,6 +90,7 @@ const Hero = () => {
                 color={'primary.dark'}
                 component={'span'}
                 variant={'inherit'}
+                sx={{...cursiveSx}}
               >not by chance.
               </Typography>
             </Typography>
