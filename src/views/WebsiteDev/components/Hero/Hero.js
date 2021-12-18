@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
-//import webDeveloper from 'images/web-developer-01.jpg'
 import {useSrcImages} from 'hooks/use-src-images'
 
 import Link from 'components/Link'
