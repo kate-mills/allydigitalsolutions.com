@@ -45,9 +45,9 @@ const GetStarted = () => {
           color="primary"
           size="large"
           fullWidth={isMd ? false : true}
-          to={'/social-media'}
+          to={'/social-media/'}
           textAlign="center"
-        >Learn more
+        >Showcase your brand
         </Button>
         <Box
           marginTop={{ xs: 2, sm: 0 }}
@@ -56,12 +56,12 @@ const GetStarted = () => {
         >
           <Button
             component={Link}
-            to={'/contact-page'}
+            to={'/web-development/'}
             variant="outlined"
             color="primary"
             size="large"
             fullWidth={isMd ? false : true}
-          >Contact our team
+          >Your online presence
           </Button>
         </Box>
       </Box>
