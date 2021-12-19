@@ -63,7 +63,7 @@ const images = [
 const Hero = () => {
   const theme = useTheme();
 
-  const {cursiveSx, ally:{assignYour}} = theme
+  const {ally:{assignYour}} = theme
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -87,14 +87,14 @@ const Hero = () => {
               color="text.primary"
               gutterBottom
               sx={{
-                fontWeight: 600,
+                fontWeight: 400,
               }}
             >A modern approach to digital management that<br/>
-              <Typography color={'primary'}
+              <Typography
+                color={'primary.seoText'}
+                variant={'cursive'}
                 component={'span'}
-                variant={'inherit'}
                 sx={{
-                  ...cursiveSx,
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary?.dark, 0.7)} 0%)`,}}>
                     <Typed strings={[
                   ` is discoverable.`,
