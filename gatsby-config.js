@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 
+require("dotenv").config()
 const currentUrl = `https://ally-ten.netlify.app`
 
 module.exports = {
@@ -53,6 +54,14 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon-square.png`,
         crossOrigin: `use-credentials`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
       },
     },
   ],

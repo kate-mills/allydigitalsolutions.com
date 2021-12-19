@@ -9,7 +9,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 //import 'react-image-lightbox/style.css';
 import 'aos/dist/aos.css';
 
-//import '../../src/css/index.css'
+import '../../src/css/index.css'
 
 import Page from '../../src/components/Page';
 
