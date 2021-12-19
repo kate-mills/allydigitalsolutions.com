@@ -74,13 +74,6 @@ const getTheme = (mode, themeToggler) =>
       themeToggler,
       ally,
       socialMedia,
-      cursiveSx: {
-        fontFamily: 'calliope-mvb, sans-serif',
-        fontSize: '1.1em',
-        fontWeight: '400',
-        lineHeight: '1.1em',
-        color: 'primary.seoText',
-      },
     }),
   );
 
