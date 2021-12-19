@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import Link from 'components/Link';
+//import Link from 'components/Link';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -53,19 +53,7 @@ const Main = ({
           paddingTop={'8px !important'}
           paddingBottom={'0 !important'}
         >
-          <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>
-
-        {/*
-            <Box marginRight={2}>
-              <Link
-                underline="none"
-                to="/docs/colors"
-                color={colorInvert ? 'common.white' : 'text.primary'}
-              >Developers</Link>
-            </Box>
-            <Box><ThemeModeToggler /></Box>
-      */}
-          </Box>
+          <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}></Box>
         </Container>
       </Box>
       <AppBar

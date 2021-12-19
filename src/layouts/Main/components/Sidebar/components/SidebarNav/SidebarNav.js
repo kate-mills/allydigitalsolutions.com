@@ -56,8 +56,8 @@ const SidebarNav = ({ pages }) => {
             fullWidth
             variant="outlined"
             component={Link}
-            to="/web-development"
-          >Web Design & Development
+            to="/web-development/"
+          >Web Design
           </Button>
         </Box>
         <Box marginTop={2}>
@@ -66,7 +66,7 @@ const SidebarNav = ({ pages }) => {
             variant="outlined"
             fullWidth
             component={Link}
-            to="/social-media"
+            to="/social-media/"
           >Social Media Marketing
           </Button>
         </Box>
@@ -77,7 +77,7 @@ const SidebarNav = ({ pages }) => {
             color="primary"
             fullWidth
             component={Link}
-            to="/contact-page"
+            to="/contact-page/"
           >Get Started
           </Button>
         </Box>

@@ -47,7 +47,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         <Box>
           <NavItem
             title={'Our Services'}
-            id={'landing-pages'}
+            id={'our-services'}
             items={landingPages}
             colorInvert={colorInvert}
           />
@@ -58,7 +58,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             variant="contained"
             color="primary"
             component={Link}
-            to="/contact-page"
+            to="/contact-page/"
             size="large"
           >Contact Our Team
           </Button>

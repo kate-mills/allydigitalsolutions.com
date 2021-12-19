@@ -50,14 +50,14 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                to="/company-terms"
+                to="/company-terms/"
                 color="text.primary"
                 variant={'caption'}
               >Privacy
               </Link>
             </Box>
             <Box marginTop={1}>
-              <Button to="/contact-page" color="primary" marginTop={1} size="small" variant="outlined" component={Link} title="Contact Our Design & Development Team">
+              <Button to="/contact-sidebar-map/" color="primary" marginTop={1} size="small" variant="outlined" component={Link} title="Contact Our Design & Development Team">
                 <Typography  variant={'caption'}>Contact Us</Typography>
             </Button>
             </Box>

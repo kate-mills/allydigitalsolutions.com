@@ -47,7 +47,7 @@ const NavItem = ({ title, items }) => {
                 <Button
                   size={'large'}
                   component={Link}
-                  to={p.href}
+                  to={`${p.href}/`}
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',
