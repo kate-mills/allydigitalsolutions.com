@@ -2,7 +2,6 @@ const redMono = {
   lightest: '#8A4053',
   light: '#8A4053',
   main: '#73122C',
-  //dark: '#400A18',
   dark: '#661027',
   bright: '#BF1F49',
   darkest: '#400A18',
@@ -14,19 +13,18 @@ const redMonoForDarkBg = {
   light: '#8A4053',
   main: '#BF5874',
   darkest: '#400A18',
-  //dark: '#BF1F49',
   bright: '#F47094',
   dark: '#661027',
   contrastText: '#fff',
   seoText: '#ffacc3',
 }
 const greenMono = {
-  lightest: '#70A6B5',
-  light: '#DFEEF2',
-  main: '#AAB6BA',
-  dark: '#6A7173', // text ok on white backgroung
-  bright: '#96DEF2',
-  contrastText: 'rgba(0, 0, 0, .8)',
+  lightest: '#e5f7ff',
+  light: '#566678',
+  main: '#2C3C4C',
+  dark: '#031624',
+  bright: '#9BA4A8',
+  contrastText: 'rgba(225, 225, 225, .9)',
   seoText: '#53595b',
 }
 const greenMonoForDarkBg = {
@@ -49,8 +47,8 @@ export const light = {
   primary: greenMono,
   secondary: redMono,
   text: {
-     primary: "#354051",
-    secondary: "#253746",
+     primary: "#031624",
+    secondary: "#53595b",
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
