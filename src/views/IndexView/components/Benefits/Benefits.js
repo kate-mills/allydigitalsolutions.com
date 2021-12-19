@@ -35,10 +35,9 @@ const Benefits = () => {
                 {item.icon}
               </Box>
               <Typography
-                variant={'h6'}
-                gutterBottom
-                sx={{ fontWeight: 500 }}
-              >
+                variant={'seoH5'}
+                marginBottom={1}
+                gutterBottom>
                 {item.title}
               </Typography>
               <Typography color="text.secondary">{item.subtitle}</Typography>

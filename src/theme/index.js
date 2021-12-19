@@ -13,6 +13,11 @@ const getTheme = (mode, themeToggler) =>
       shadows: shadows(mode),
       typography: {
         fontFamily: '"lato", sans-serif',
+        seoH5: {
+          lineHeight: 1.6,
+          fontSize: '1.25rem',
+          fontWeight: 500,
+        },
         button: {
           textTransform: 'none',
           fontWeight: 'regular',
