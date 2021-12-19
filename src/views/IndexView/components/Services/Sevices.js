@@ -80,9 +80,9 @@ const Services = () => {
                   {item.icon}
                 </Box>
                 <Typography
-                  variant={'h6'}
+                  variant={'p'}
                   gutterBottom
-                  sx={{ fontWeight: 500 }}
+                  sx={{ fontWeight: 500, lineHeight: 1.6, fontSize: '1.25rem' }}
                   align={'center'}
                 >
                   {item.title}
