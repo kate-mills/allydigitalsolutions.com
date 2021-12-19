@@ -51,7 +51,7 @@ const Hero = () => {
               variant="contained"
               color="primary"
               size="large"
-              to={'/contact-page-cover'}
+              to={'/contact-page-cover/'}
               fullWidth={isMd ? false : true}
             >
               Start now
@@ -64,7 +64,7 @@ const Hero = () => {
               marginTop={{ xs: 2, sm: 0 }}
               marginLeft={{ sm: 2 }}
               fullWidth={isMd ? false : true}
-            ><Link to={'/contact-page-cover'} color="primary" >Learn more</Link>
+            ><Link to={'/contact-sidebar-map/'} color="primary">Contact Sales</Link>
             </Box>
           </Box>
         </Box>

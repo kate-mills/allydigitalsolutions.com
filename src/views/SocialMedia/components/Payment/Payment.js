@@ -43,7 +43,7 @@ const Payment = () => {
               size="large"
               fullWidth={!isMd}
             >
-              <Link to="/contact-page-cover">Contact sales</Link>
+              <Link to="/contact-page-cover/">Contact sales</Link>
             </Box>
             <Box
               component={Button}
@@ -53,7 +53,7 @@ const Payment = () => {
               fullWidth={!isMd}
               marginTop={{ xs: 1, sm: 0 }}
               marginLeft={{ sm: 2 }}
-            ><Link to="/contact-page-cover" sx={{color: `${mode==='dark'? '#000': '#fff'}`}}>Get Started</Link>
+            ><Link to="/contact-sidebar-map/" sx={{color: `${mode==='dark'? '#000': '#fff'}`}}>Get Started</Link>
             </Box>
           </Box>
         </Box>

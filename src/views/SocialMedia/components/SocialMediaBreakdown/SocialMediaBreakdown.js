@@ -15,7 +15,7 @@ const mock = [
     title: 'Facebook',
     price: 'Business Page',
     action: 'Your digital storefront',
-    btnText: 'Learn More',
+    btnText: 'Get Package Info',
     features: [
       { title: 'Establish your business\'s online presence', isIncluded: 'true' },
       { title: 'Tell your business\'s story', isIncluded: 'true' },
@@ -32,7 +32,7 @@ const mock = [
     title: 'Instagram',
     price: 'Business Profile',
     action: 'Showcase your brand',
-    btnText: 'Learn More',
+    btnText: 'Get Package Info',
     features: [
       { title: 'Showcase your brand through powerful visuals', isIncluded: true, },
       { title: 'Tell the story of your business', isIncluded: true, },
@@ -48,7 +48,7 @@ const mock = [
     title: 'WhatsApp',
     price: 'Business Profile',
     action: 'Serve customers around the world',
-    btnText: 'Learn More',
+    btnText: 'Get Package Info',
     features: [
       { title: 'Communicate with customers over free and secure text messages and voice & video calls', isIncluded: true, },
       { title: 'Build & maintain a catalog of products that serves as a mobile storefront', isIncluded: true,},
@@ -164,7 +164,7 @@ const SocialMediaBreakdown = () => {
                   component={Link}
                   size={'large'}
                   variant={item.isHighlighted ? 'contained' : 'outlined'}
-                  to={'/contact-page-cover'}
+                  to={'/contact-sidebar-map/'}
                 >{item.btnText}
                 </Button>
               </CardActions>

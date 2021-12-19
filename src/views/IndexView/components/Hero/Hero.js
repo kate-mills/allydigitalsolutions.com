@@ -128,7 +128,7 @@ const Hero = () => {
                 size="large"
                 textAlign="center"
                 fullWidth={isMd ? false : true}
-                to={'/web-development'}
+                to={'/web-development/'}
               >
                Web Design & Development
               </Button>
@@ -139,7 +139,7 @@ const Hero = () => {
               >
                 <Button
                   component={Link}
-                  to={'/social-media'}
+                  to={'/social-media/'}
                   variant="outlined"
                   color="primary"
                   size="large"

@@ -73,11 +73,11 @@ We've got your back when it comes to style and optimization.
         <Box marginTop={2} display={'flex'} justifyContent={'center'}>
           <Button
             component={Link}
-            to={'/contact-page'}
+            to={'/contact-page/'}
             color={'primary'}
             variant={'contained'}
             size={'large'}
-            fullWidth={isMd ? false : true}
+            fullWidth={isMd ? false : true} 
           >
             Let's strategize!
           </Button>

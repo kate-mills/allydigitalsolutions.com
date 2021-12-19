@@ -38,7 +38,7 @@ const Application = () => {
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Button
             component={Link}
-            to={'/contact-page-cover'}
+            to={'/contact-page-cover/'}
             variant="contained"
             color="primary"
             size="large"

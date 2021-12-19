@@ -67,13 +67,14 @@ const Customization = () => {
         >
           <Button
             component={Link}
-            to={'/contact-page-cover'}
+            to={'/contact-page-cover/'}
             variant="contained"
             color="primary"
             size="large"
             fullWidth={isMd ? false : true}
           >
             Start now
+
           </Button>
           <Box
             component={Button}
@@ -84,7 +85,7 @@ const Customization = () => {
             marginLeft={{ sm: 2 }}
             fullWidth={isMd ? false : true}
           >
-            <Link to={'/contact-page-cover'}>Learn more</Link>
+            <Link to={'/contact-sidebar-map/'}>Contact Sales</Link>
           </Box>
         </Box>
       </Box>

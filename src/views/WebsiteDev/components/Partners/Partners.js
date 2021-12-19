@@ -68,7 +68,7 @@ const Partners = () => {
           <Box marginTop={2}>
             <Button
               component={Link}
-              to={'/contact-page-cover'}
+              to={'/contact-page-cover/'}
               size={'large'}
               endIcon={
                 <Box
