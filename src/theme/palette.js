@@ -1,22 +1,28 @@
+const apricot  = {
+  red: '#AA1B36',
+  light: '#DFAF99',
+  dark: '#7D5D50',
+  darker: '#B98E79',
+}
 const redMono = {
-  lightest: '#8A4053',
-  light: '#8A4053',
-  main: '#73122C',
-  dark: '#661027',
-  bright: '#BF1F49',
+  lightest: '#e15360',
+  light: '#a51a35',
+  main: '#AA1B36',
+  dark: '#89182C',
+  bright: '#e15360',
   darkest: '#400A18',
   contrastText: '#fff',
-  seoText: '#734e58',
+  seoText: '#661B23',
 }
 const redMonoForDarkBg = {
-  lightest: '#8A4053',
-  light: '#8A4053',
-  main: '#BF5874',
+  lightest: '#ecbea8',
+  light: '#b98e79',
+  main: '#89182c',
   darkest: '#400A18',
   bright: '#F47094',
-  dark: '#661027',
+  dark: '#560001',
   contrastText: '#fff',
-  seoText: '#ffacc3',
+  seoText: '#B98E79', //#ffacc3
 }
 const greenMono = {
   lightest: '#e5f7ff',

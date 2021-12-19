@@ -33,7 +33,6 @@ const mock = [
 
 const Hero = () => {
   const theme = useTheme();
-  const {cursiveSx} = theme
   const { officeGals:{publicURL} }  = useSrcImages()
 
 
@@ -87,10 +86,10 @@ const Hero = () => {
               sx={{ fontWeight: 700 }}
             >Excellence happens with code,{' '}
               <Typography
-                color={'primary.dark'}
+                color={'secondary.seoText'}
+                fontSize={'1.2em'}
                 component={'span'}
-                variant={'inherit'}
-                sx={{...cursiveSx}}
+                variant={'cursive'}
               >not by chance.
               </Typography>
             </Typography>
@@ -103,7 +102,7 @@ const Hero = () => {
             <Grid container spacing={2}>
               {mock.map((item, i) => (
                 <Grid key={i} item xs={12} md={4}>
-                  <Typography variant="h3" gutterBottom>
+                  <Typography variant="h3" gutterBottom color="text.primary">
                     <Box fontWeight={700}>
                       <VisibilitySensor
                         onChange={(isVisible) =>

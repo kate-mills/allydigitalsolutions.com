@@ -14,7 +14,6 @@ import Link from 'components/Link'
 const Hero = () => {
   const theme = useTheme();
   const {webDevOne:{publicURL:publicURLOne}} = useSrcImages()
-  const {cursiveSx} = theme
 
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -30,13 +29,12 @@ const Hero = () => {
               color="text.primary"
               sx={{ fontWeight: 600 }}
             >Web development for your<Typography
-                color={'primary'}
                 component={'span'}
-                variant={'inherit'}
+                variant={'cursive'}
                 sx={{
-                  ...cursiveSx,
-                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.dark, 0.70)} 0%)`
-                }}>{' business & product.'}</Typography>
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.main, 0.70)} 0%)`
+                }}
+            >{' business & product.'}</Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
