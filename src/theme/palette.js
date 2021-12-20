@@ -31,7 +31,7 @@ const greenMono = {
   dark: '#031624',
   bright: '#9BA4A8',
   contrastText: 'rgba(225, 225, 225, .9)',
-  seoText: '#53595b',
+  seoText: '#505658',
 }
 const greenMonoForDarkBg = {
   lightest: '#70A6B5',

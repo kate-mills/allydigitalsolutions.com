@@ -33,6 +33,7 @@ const mock = [
 
 const Hero = () => {
   const theme = useTheme();
+  const {palette:{mode}} = theme
   const { officeGals:{publicURL} }  = useSrcImages()
 
 
@@ -73,7 +74,7 @@ const Hero = () => {
           borderRadius={2}
           maxWidth={600}
           sx={{
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
+            filter: mode === 'dark' ? 'brightness(0.9)' : 'none',
           }}
         />
       </Grid>
@@ -95,7 +96,8 @@ const Hero = () => {
             </Typography>
           </Box>
           <Box marginBottom={4}>
-            <Typography variant="h6" component="p" color="text.secondary">We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
+            <Typography variant="h6" component="p" 
+              color={mode ==='light'?'primary.seoText': 'text.secondary'}>We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
             </Typography>
           </Box>
           <Box>
@@ -119,7 +121,7 @@ const Hero = () => {
                       </VisibilitySensor>
                     </Box>
                   </Typography>
-                  <Typography color="text.secondary" component="p">
+                  <Typography color={mode === 'dark'? "text.secondary": "primary.seoText"} component="p">
                     {item.subtitle}
                   </Typography>
                 </Grid>

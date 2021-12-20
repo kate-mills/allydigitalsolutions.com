@@ -77,9 +77,8 @@ const Reviews = () => {
                     marginBottom={2}
                   >{item.icon}</Box>
                   <Typography
-                    variant={'h6'}
-                    gutterBottom
-                    sx={{ fontWeight: 600 }}>
+                    variant={'seoH5'}
+                    gutterBottom>
                     {item.title}
                   </Typography>
                   <Typography color="text.secondary">{item.subtitle}</Typography>
