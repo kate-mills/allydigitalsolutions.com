@@ -65,10 +65,8 @@ const TypographyComponent = () => {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>
-      theFront | UI Kit by Maccarian Agency.
+      Ally Digital Solutions
     </title>
   </head>
   <body>
