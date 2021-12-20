@@ -7,6 +7,7 @@ export const useSrcImages = () => {
     office,
     officeGals,
     socialMedia,
+    socialMediaMobile,
     webDevOne,
     webDevTwo
   } = useStaticQuery(
@@ -33,6 +34,15 @@ export const useSrcImages = () => {
           publicURL
           img: childImageSharp { gatsbyImageData }
         }
+        socialMediaMobile: file(relativePath: { eq: "social-media-mobile.jpg" }) {
+          publicURL
+          img: childImageSharp {
+            gatsbyImageData(
+            placeholder: BLURRED
+            quality: 100
+            )
+          }
+        }
         webDevOne: file(relativePath: { eq: "web-developer-01r-x2.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData }
@@ -45,7 +55,7 @@ export const useSrcImages = () => {
       }
     `
   );
-  return {contactPage, katePng, office, officeGals, socialMedia, webDevOne, webDevTwo};
+  return {contactPage, katePng, office, officeGals, socialMedia, socialMediaMobile, webDevOne, webDevTwo};
 };
 
 

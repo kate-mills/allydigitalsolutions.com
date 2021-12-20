@@ -1,21 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
-import mobileImage from 'images/social-media-mobile.jpg'
+import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
 
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import TagIcon from '@mui/icons-material/Tag';
 
-const About = () => {
+const About = ({img}) => {
   const theme = useTheme();
   const {socialMedia:{about,aboutHeading}} = theme
+
 
   return (
     <Grid container spacing={4}>
@@ -53,16 +54,16 @@ const About = () => {
                 width={'92.4%'}
                 height={'96%'}
                 sx={{
-                  '& .lazy-load-image-loaded': {
+                  '& [data-gatsby-image-wrapper]': {
                     height: 1,
                     width: 1,
                   },
                 }}
               >
                 <Box
-                  component={LazyLoadImage}
+                  component={GatsbyImage}
                   effect="blur"
-                  src={mobileImage}
+                  image={getImage(img)}
                   alt="Woman wearing black leather jacket holding flowers above her head."
                   width={1}
                   height={1}

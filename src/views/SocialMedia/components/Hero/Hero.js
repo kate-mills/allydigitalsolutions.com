@@ -1,20 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
-import mobileImage from 'images/social-media-mobile.jpg'
 
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import TagIcon from '@mui/icons-material/Tag';
 
+import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
+import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
-const Hero = () => {
+
+const Hero = ({img}) => {
   const theme = useTheme();
   const {socialMedia:{hero}} = theme
 
@@ -71,8 +71,6 @@ const Hero = () => {
         </Box>
       </Grid>
 
-
-
       <Grid
         item
         xs={12}
@@ -115,17 +113,19 @@ const Hero = () => {
                 width={'92.4%'}
                 height={'96%'}
                 sx={{
-                  '& .lazy-load-image-loaded': {
+                  '& [data-gatsby-image-wrapper]': {
                     height: 1,
                     width: 1,
                   },
                 }}
               >
                 <Box
-                  component={LazyLoadImage}
-                  src={mobileImage}
+                  component={GatsbyImage}
+                  image={getImage(img)}
                   alt="Woman wearing black leather jacket holding flowers above her head."
                   effect="blur"
+                  placeholder="blurred"
+                  layout="constrained"
                   width={1}
                   height={1}
                   sx={{
