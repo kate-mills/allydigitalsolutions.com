@@ -121,6 +121,7 @@ const Hero = ({img}) => {
               >
                 <Box
                   component={GatsbyImage}
+                  loading="eager"
                   image={getImage(img)}
                   alt="Woman wearing black leather jacket holding flowers above her head."
                   effect="blur"
