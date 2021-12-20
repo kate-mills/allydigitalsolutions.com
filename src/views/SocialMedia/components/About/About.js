@@ -126,9 +126,7 @@ const About = () => {
               width="100%"
               height="100%"
               minHeight={250}
-              src="https://www.youtube.com/embed/videoseries?list=PLKkEPyi2HaPQRsjq0fS0Bn_ZBTjW_07iT"
-              //src="https://www.youtube.com/embed/UzzB6vPRqBY"
-              //src="https://www.youtube.com/embed/ClIbn_IF31U"
+              src="https://www.youtube.com/embed/?listType=playlist&list=PLKkEPyi2HaPQRsjq0fS0Bn_ZBTjW_07iT&fs=0&loop=1&modestbranding=1&playsinline=1"
               frameBorder="0"
               allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
               boxShadow={4}
