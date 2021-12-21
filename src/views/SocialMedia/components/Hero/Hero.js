@@ -15,10 +15,13 @@ import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
 
 const Hero = ({img}) => {
-  const theme = useTheme();
-  const {socialMedia:{hero}} = theme
+  const {
+    breakpoints,
+    socialMedia:{hero},
+    palette:{mode, secondary},
+  } = useTheme()
 
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const isMd = useMediaQuery(breakpoints.up('md'), {
     defaultMatches: true,
   });
 
@@ -38,7 +41,7 @@ const Hero = ({img}) => {
                 component={'span'}
                 variant={'cursive'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.main, 0.70)} 0%)`
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(secondary.main, 0.70)} 0%)`
                 }}
               >{` unique essence.`}
               </Typography>
@@ -133,7 +136,7 @@ const Hero = ({img}) => {
                     objectFit: 'cover',
                     borderRadius: '2.5rem',
                     filter:
-                      theme.palette.mode === 'dark'
+                      mode === 'dark'
                         ? 'brightness(0.7)'
                         : 'none',
                   }}

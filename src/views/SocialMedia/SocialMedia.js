@@ -17,7 +17,10 @@ import {useSrcImages} from 'hooks/use-src-images'
 
 const MobileApp = () => {
   const theme = useTheme();
-  const {socialMedia: {publicURL}, socialMediaMobile:{img} }  = useSrcImages()
+  const {
+    socialMedia: {publicURL},
+    socialMediaMobile:{img:socialImg}
+  }  = useSrcImages()
 
   return (
     <Main
@@ -35,7 +38,7 @@ const MobileApp = () => {
         }}
       >
         <Container>
-          <Hero img={img}/>
+          <Hero img={socialImg}/>
         </Container>
         <Box
           component={'svg'}
@@ -74,7 +77,7 @@ const MobileApp = () => {
           }}
         >
           <Box position={'relative'} zIndex={2}>
-            <About img={img} />
+            <About img={socialImg} />
           </Box>
         </Box>
       </Container>

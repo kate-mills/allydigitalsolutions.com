@@ -13,9 +13,10 @@ import Link from 'components/Link'
 
 const Hero = () => {
   const theme = useTheme();
+  const {breakpoints, palette:{mode, secondary}} = theme
   const {webDevOne:{publicURL:publicURLOne}} = useSrcImages()
 
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const isMd = useMediaQuery(breakpoints.up('md'), {
     defaultMatches: true,
   });
 
@@ -27,12 +28,14 @@ const Hero = () => {
             <Typography
               variant="h3"
               color="text.primary"
-              sx={{ fontWeight: 600 }}
-            >Web development for your<Typography
+              sx={{ fontWeight: 600 }}>Web development for your
+              <Typography
                 component={'span'}
                 variant={'cursive'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary.main, 0.70)} 0%)`
+                  background: mode === 'light'
+                    ?`linear-gradient(180deg, transparent 90%, ${alpha(secondary.main, 0.70)} 0%)`
+                    :`linear-gradient(180deg, transparent 90%, ${alpha(secondary.light, 0.70)} 0%)`
                 }}
             >{' business & product.'}</Typography>
             </Typography>

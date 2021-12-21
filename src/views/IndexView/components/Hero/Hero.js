@@ -86,13 +86,12 @@ const Hero = () => {
               variant="h3"
               color="text.primary"
               gutterBottom
-              sx={{
-                fontWeight: 400,
-              }}
+              sx={{ fontWeight: 600, }}
             >A modern approach to digital management that<br/>
               <Typography
                 color={'primary.seoText'}
                 variant={'cursive'}
+                fontWeight={400}
                 component={'span'}
                 sx={{
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary?.main, 0.7)} 0%)`,}}>
