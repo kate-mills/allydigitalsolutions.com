@@ -67,7 +67,7 @@ const SocialMediaBreakdown = () => {
     <Box>
       <Box marginBottom={4}>
         <Typography
-          sx={{ fontWeight: 700 }}
+          sx={{ fontWeight: 600 }}
           variant={'h4'}
           align={'center'}
           gutterBottom
@@ -113,7 +113,7 @@ const SocialMediaBreakdown = () => {
                   alignItems={'center'}
                 >
                   <Typography variant={'h4'} gutterBottom>
-                    <Box component={'span'} fontWeight={700}>
+                    <Box component={'span'} fontWeight={600}>
                       {item.title}
                     </Box>
                   </Typography>
@@ -121,13 +121,12 @@ const SocialMediaBreakdown = () => {
                     <Typography variant={'h4'} color={'primary'}>
                       <Box
                         component={'span'}
-                        fontWeight={700}
                         marginRight={1 / 2}
                       >
                       </Box>
                     </Typography>
-                    <Typography variant={'h6'} color={'primary'} gutterBottom>
-                      <Box component={'span'} fontWeight={700}>
+                    <Typography variant={'seoH5'} color={'primary.seoText'} gutterBottom textAlign={'center'}>
+                      <Box component={'span'} fontWeight={600}>
                         {item.action}
                       </Box>
                     </Typography>
