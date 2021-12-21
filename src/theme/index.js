@@ -13,7 +13,6 @@ const getTheme = (mode, themeToggler) =>
       shadows: shadows(mode),
       typography: {
         fontFamily: '"lato", sans-serif',
-        fontDisplay: 'swap',
         cursive: {
           fontFamily: 'calliope-mvb, sans-serif',
           fontSize: '1.1em',
