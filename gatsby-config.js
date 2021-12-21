@@ -64,5 +64,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: ['https://foo.com', 'https://bar.com'],
+      },
+    },
   ],
 };
