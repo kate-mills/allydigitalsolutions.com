@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 
 require("dotenv").config()
-const currentUrl = `https://ally-ten.netlify.app`
+const currentUrl = `https://allydigitalsolutions.com`
 
 module.exports = {
   siteMetadata: {
@@ -11,11 +11,11 @@ module.exports = {
     dateModified: `${new Date().toISOString()}`,
     author: `Ally Digital Solutions`,
     twitterUsername: `@katie_napa`,
-    image: `/seoimage.jpg`,
+    image: `/seoimg.jpg`,
     url: `${currentUrl}`,
     baseUrl: `${currentUrl}`,
     siteUrl: `${currentUrl}`,//keep for sitemap-plugin
-    defaultImage: `${currentUrl}/seoimage.jpg`,
+    defaultImage: `${currentUrl}/seoimg.jpg`,
     organization: {
       name: `Ally Digital Solutions`,
       url: `${currentUrl}`,
