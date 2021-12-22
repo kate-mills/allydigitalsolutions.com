@@ -49,7 +49,6 @@ module.exports = {
         description: `A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.`,
         lang: `en`,
         start_url: `/`,
-        id: `https://allydigitalsolutions.com/`,
         background_color:`#B6BFC3`,
         theme_color: `#B6BFC3`,
         display: `standalone`,
