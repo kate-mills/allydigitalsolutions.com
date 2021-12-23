@@ -45,7 +45,7 @@ const Services = () => {
             sx={{
               fontWeight: 700,
             }}
-          >Shape the conversation.
+          >Create Conversation.
           </Typography>
           <Typography
             variant="h6"
