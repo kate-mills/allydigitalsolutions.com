@@ -91,7 +91,6 @@ const Hero = () => {
               <Typography
                 color={'primary.seoText'}
                 variant={'cursive'}
-                fontWeight={400}
                 component={'span'}
                 sx={{
                   background: `linear-gradient(180deg, transparent 90%, ${alpha(theme.palette.secondary?.main, 0.7)} 0%)`,}}>

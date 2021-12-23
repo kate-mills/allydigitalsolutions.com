@@ -12,11 +12,11 @@ const getTheme = (mode, themeToggler) =>
       palette: mode === 'light' ? light : dark,
       shadows: shadows(mode),
       typography: {
-        fontFamily: '"lato", sans-serif',
+        fontFamily: 'lato, sans-serif',
         cursive: {
           fontFamily: 'calliope-mvb, sans-serif',
           fontSize: '1.1em',
-          fontWeight: '400',
+          fontWeight: 400,
           lineHeight: '1.1em',
           color: mode === 'light' ? light.primary.dark: dark.primary.light,
         },
