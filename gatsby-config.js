@@ -10,7 +10,7 @@ module.exports = {
     description: `A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.`,
     dateModified: `${new Date().toISOString()}`,
     author: `Ally Digital Solutions`,
-    twitterUsername: `@katie_napa`,
+    twitterUsername: `@katepycoder `,
     image: `/seoimg.jpg`,
     url: `${currentUrl}`,
     baseUrl: `${currentUrl}`,
@@ -18,6 +18,7 @@ module.exports = {
     defaultImage: `${currentUrl}/seoimg.jpg`,
     organization: {
       name: `Ally Digital Solutions`,
+      email: `hello@allydigitalsolutions.com`,
       url: `${currentUrl}`,
       logo: `${currentUrl}/images/logo.svg`,
       telephone: `707-266-8106`,

@@ -1,0 +1,60 @@
+import React from 'react'
+import  navLinks from 'layouts/navigation'
+import { Helmet } from 'react-helmet'
+
+export default React.memo(
+  ({
+    url,
+    compoundTitle,
+    defaultTitle,
+    pageTitle,
+    image,
+    description,
+    baseUrl,
+    author,
+    organization,
+    dateModified,
+  }) => {
+  const linkCrumbs = navLinks.landings.map((link, id) => {
+      return {
+        type: 'ListItem',
+        name: link.title,
+        position: id + 1,
+        item: `${baseUrl}${link.href}`,
+        image,
+
+      }
+    })
+    console.log('organization', organization)
+    const baseSchema = [
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "@id":
+        organization.url,
+        description: organization.description,
+        email: organization.email,
+        image: image,
+        logo: organization.logo,
+        name: organization.name,
+        priceRange: organization.priceRange,
+        sameAs: organization.otherUrls,
+        telephone: organization.telephone,
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        name: 'navigation',
+        itemListElement: linkCrumbs,
+      },
+    ]
+
+
+    return (
+      <Helmet>
+        {/* Schema.org tags */}
+        <script type="application/ld+json">{JSON.stringify(baseSchema)}</script>
+      </Helmet>
+    )
+  }
+)
