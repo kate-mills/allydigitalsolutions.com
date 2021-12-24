@@ -37,6 +37,18 @@ module.exports = {
         path: `${__dirname}/src/images`, // needed for graphql
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://allydigitalsolutions.com',
+        sitemap: 'https://allydigitalsolutions.com/sitemap/sitemap-index.xml',
+        policy: [
+          { userAgent: '*', allow: '/' },
+          {userAgent: '*', disallow: '/thanks'},
+          {userAgent: '*', disallow: '/404'},
+        ],
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-sharp`,
@@ -64,9 +76,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-    },
+    { resolve: `gatsby-plugin-sitemap`, },
     {
       resolve: 'gatsby-plugin-preconnect',
       options: {
