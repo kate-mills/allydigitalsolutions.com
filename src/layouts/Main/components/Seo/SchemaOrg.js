@@ -25,13 +25,12 @@ export default React.memo(
 
       }
     })
-    console.log('organization', organization)
     const baseSchema = [
       {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
-        "@id":
-        organization.url,
+        "@id": organization.url,
+        url: organization.url,
         description: organization.description,
         email: organization.email,
         image: image,
