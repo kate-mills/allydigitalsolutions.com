@@ -10,19 +10,25 @@ import { ContactCard, PrivacyPolicy } from './components';
 
 const CompanyTerms = () => {
   const theme = useTheme();
+  const {palette:{
+    background:{paper},
+    primary:{main},
+    mode,
+    common:{black, white},
+  }} = theme
 
   return (
     <Main>
       <Container>
         <Box boxShadow={4} borderRadius={2}>
-          <Box bgcolor={theme.palette.primary.main} borderRadius={2}>
+          <Box bgcolor={main} borderRadius={2}>
             <Container paddingX={{ xs: 2, sm: 4 }}>
               <Typography
                 variant={'h4'}
                 gutterBottom
                 sx={{
-                  fontWeight: 700,
-                  color: theme.palette.common.white,
+                  fontWeight: 600,
+                  color: mode === 'dark'? black: white,
                 }}
               >
                 Company Terms & Privacy Policy
@@ -30,7 +36,7 @@ const CompanyTerms = () => {
               <Typography
                 gutterBottom
                 sx={{
-                  color: theme.palette.common.white,
+                  color: mode === 'dark'? black: white,
                 }}
               >Last updated: October 22, 2021.
               </Typography>
@@ -46,7 +52,7 @@ const CompanyTerms = () => {
               marginBottom={-1}
             >
               <path
-                fill={theme.palette.background.paper}
+                fill={paper}
                 d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
               ></path>
             </Box>

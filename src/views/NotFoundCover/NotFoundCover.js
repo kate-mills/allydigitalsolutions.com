@@ -47,7 +47,7 @@ const NotFoundCover = () => {
                     variant="h1"
                     component={'h1'}
                     align={isMd ? 'left' : 'center'}
-                    sx={{ fontWeight: 700 }}
+                    sx={{ fontWeight: 600 }}
                   >
                     Sorry!
                   </Typography>
