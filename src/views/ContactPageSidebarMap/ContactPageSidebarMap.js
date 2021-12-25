@@ -10,7 +10,7 @@ const ContactPageSidebarMap = () => {
   const theme = useTheme();
 
   return (
-    <Main title={`Ally Digital Solutions: Contact Details`}>
+    <Main title={`Our Contact Info!`}>
       <Form />
       <Box position={'relative'} bgcolor={'alternate.main'}>
         <Container>

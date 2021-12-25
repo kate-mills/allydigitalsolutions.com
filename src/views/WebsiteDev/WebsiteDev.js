@@ -25,7 +25,7 @@ const WebsiteDev = () => {
 
   return (
     <Main
-      title={'Ally Digital Solutions: New! Modern web designs for your small business.'}
+      title={'New! Modern web designs for your small business.'}
       description={'Do you need a brand new website or just a makeover?  We develop everything from landing pages to custom web apps, plus everything in between.' }
       image={publicURL}
     >

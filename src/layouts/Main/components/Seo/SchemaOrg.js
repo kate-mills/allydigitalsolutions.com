@@ -5,33 +5,28 @@ import { Helmet } from 'react-helmet'
 export default React.memo(
   ({
     url,
-    compoundTitle,
-    defaultTitle,
-    pageTitle,
     image,
     description,
     baseUrl,
-    author,
     organization,
     dateModified,
   }) => {
-  const linkCrumbs = navLinks.landings.map((link, id) => {
+  const linkCrumbs = navLinks.schema.map(link => {
       return {
         type: 'ListItem',
         name: link.title,
-        position: id + 1,
+        position: link.id,
         item: `${baseUrl}${link.href}`,
         image,
-
       }
     })
     const baseSchema = [
       {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
-        "@id": organization.url,
-        url: organization.url,
-        description: organization.description,
+        "@id": url,
+        url:url,
+        description: description,
         email: organization.email,
         image: image,
         logo: organization.logo,

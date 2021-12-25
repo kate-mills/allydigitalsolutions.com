@@ -46,11 +46,12 @@ function SEO({ description, lang, meta, title, image, noindex, snippet, article 
   }
 
 
-
   return (
     <React.Fragment>
-    <Helmet title={seo.title}
-      htmlAttributes={{lang: 'en'}}>
+    <Helmet
+      htmlAttributes={{lang: 'en'}}
+      title={title ? `Ally Digital Solutions | ${seo.title}`: defaultTitle}
+    >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.img} />
       <meta name="facebook-domain-verification" content="5ebqill113nayj0tomnlii6luehjko" />
@@ -79,9 +80,6 @@ function SEO({ description, lang, meta, title, image, noindex, snippet, article 
     </Helmet>
 
     <SchemaOrg
-      compoundTitle={`${seo.title} | Ally Digital Solutions`}
-      defaultTitle={'Ally Digital Solutions'}
-      pageTitle={seo.title}
       description={seo.description}
       baseUrl={siteUrl}
       image={seo.img}

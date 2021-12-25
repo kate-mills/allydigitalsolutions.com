@@ -12,7 +12,7 @@ const ContactPage = () => {
   const theme = useTheme();
   const {contactPage:{publicURL}} = useSrcImages()
 
-  return (<Main title={`Ally Digital Solutions: Get started with a stunning website plus modern digital management for your small business.`} image={publicURL}>
+  return (<Main title={`Get started with a stunning website plus modern digital management for your small business.`} image={publicURL}>
       <Box
         sx={{
           position: 'relative',

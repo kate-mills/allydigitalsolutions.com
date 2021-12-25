@@ -57,7 +57,7 @@ const ContactPageCover = () => {
     </Box>
   );
   return (
-    <Main image={office.publicURL}>
+    <Main image={office.publicURL} title={`Contact our team for more on our digital marketing services.`}>
       <Box position={'relative'} minHeight={'100vh'} display={'flex'} marginTop={-13}>
         {isMd ? <Sidebar /> : null}
         <Box

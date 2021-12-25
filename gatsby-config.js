@@ -5,8 +5,7 @@ const currentUrl = `https://allydigitalsolutions.com`
 
 module.exports = {
   siteMetadata: {
-    title: `Ally Digital Solutions - Build a solid online presence, showcase your brand & inspire action.`,
-    titleTemplate: `%s | Ally Digital Solutions`,
+    title: `Ally Digital Solutions`,
     description: `A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.`,
     dateModified: `${new Date().toISOString()}`,
     author: `Ally Digital Solutions`,
@@ -77,19 +76,9 @@ module.exports = {
         },
       },
     },
-    { resolve: `gatsby-plugin-sitemap`,
-    options:{
-        exclude: [
-          `/contact-page-cover/`
-          `/contact-sidebar-map/`
-          `/not-found-cover/`
-          `/thanks/`,
-        ],
-      }, },
     {
       resolve: 'gatsby-plugin-preconnect',
       options: {
-
         domains: ['https://foo.com', 'https://bar.com'],
       },
     },
@@ -109,6 +98,17 @@ module.exports = {
         // Enables Google Optimize Experiment ID
         //experimentId: "nfa82CprS161s3tAv5DHEg",
       }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options:{
+        excludes: [
+          `/contact-page-cover/`,
+          `/contact-sidebar-map/`,
+          `/not-found-cover/`,
+          `/thanks/`,
+        ],
+      },
     },
   ],
 };
