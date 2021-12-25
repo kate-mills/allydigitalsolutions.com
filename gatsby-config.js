@@ -102,7 +102,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options:{
+        query: ` { allSitePage( filter: {path: { nin: [ "/404/", "/404.html", "/dev-404-page/", "/not-found-cover/", "/thanks/", "/company-terms/", "/contact-page-cover/", "/contact-page/"]} }) { nodes { path } } } `,
+        resolveSiteUrl: () => currentUrl,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+        }) => {
+          return allPages.map(page => {
+            return { ...page, }
+          })
+        },
+        serialize: ({ path, modifiedGmt }) => { return { url: path, lastmod: modifiedGmt, } },
         excludes: [
+          `/company-terms/`,
           `/contact-page-cover/`,
           `/contact-sidebar-map/`,
           `/not-found-cover/`,
