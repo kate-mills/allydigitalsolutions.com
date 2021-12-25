@@ -46,6 +46,7 @@ module.exports = {
           { userAgent: '*', allow: '/' },
           {userAgent: '*', disallow: '/thanks'},
           {userAgent: '*', disallow: '/404'},
+          {userAgent: '*', disallow: '/not-found-cover'},
         ],
       }
     },
@@ -76,7 +77,15 @@ module.exports = {
         },
       },
     },
-    { resolve: `gatsby-plugin-sitemap`, },
+    { resolve: `gatsby-plugin-sitemap`,
+    options:{
+        exclude: [
+          `/contact-page-cover/`
+          `/contact-sidebar-map/`
+          `/not-found-cover/`
+          `/thanks/`,
+        ],
+      }, },
     {
       resolve: 'gatsby-plugin-preconnect',
       options: {
