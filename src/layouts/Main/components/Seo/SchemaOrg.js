@@ -24,8 +24,8 @@ export default React.memo(
       {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
-        "@id": url,
-        url:url,
+        "@id": organization.url,
+        url: organization.url,
         description: description,
         email: organization.email,
         image: image,
