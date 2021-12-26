@@ -44,9 +44,12 @@ module.exports = {
         policy: [
           { userAgent: '*', allow: '/' },
           {userAgent: '*', disallow: '/404'},
+          {userAgent: '*', disallow: '/about-us'},
           {userAgent: '*', disallow: '/company-terms'},
           {userAgent: '*', disallow: '/contact-page-cover'},
-          {userAgent: '*', disallow: '/contact-sidebar-map'},
+          {userAgent: '*', disallow: '/contact-page'},
+          {userAgent: '*', disallow: '/discover-new-colors'},
+          {userAgent: '*', disallow: '/free-website-images'},
           {userAgent: '*', disallow: '/not-found-cover'},
           {userAgent: '*', disallow: '/thanks'},
         ],
