@@ -43,15 +43,19 @@ module.exports = {
         sitemap: 'https://allydigitalsolutions.com/sitemap/sitemap-0.xml',
         policy: [
           { userAgent: '*', allow: '/' },
-          {userAgent: '*', disallow: '/thanks'},
           {userAgent: '*', disallow: '/404'},
+          {userAgent: '*', disallow: '/company-terms'},
+          {userAgent: '*', disallow: '/contact-page-cover'},
+          {userAgent: '*', disallow: '/contact-sidebar-map'},
           {userAgent: '*', disallow: '/not-found-cover'},
+          {userAgent: '*', disallow: '/thanks'},
         ],
       }
     },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
     {
@@ -98,28 +102,6 @@ module.exports = {
         // Enables Google Optimize Experiment ID
         //experimentId: "nfa82CprS161s3tAv5DHEg",
       }
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options:{
-        query: ` { allSitePage( filter: {path: { nin: [ "/404/", "/404.html", "/dev-404-page/", "/not-found-cover/", "/thanks/", "/company-terms/", "/contact-page-cover/", "/contact-page/"]} }) { nodes { path } } } `,
-        resolveSiteUrl: () => currentUrl,
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-        }) => {
-          return allPages.map(page => {
-            return { ...page, }
-          })
-        },
-        serialize: ({ path, modifiedGmt }) => { return { url: path, lastmod: modifiedGmt, } },
-        excludes: [
-          `/company-terms/`,
-          `/contact-page-cover/`,
-          `/contact-sidebar-map/`,
-          `/not-found-cover/`,
-          `/thanks/`,
-        ],
-      },
     },
   ],
 };
