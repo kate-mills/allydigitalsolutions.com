@@ -20,7 +20,7 @@ module.exports = {
       email: `hello@allydigitalsolutions.com`,
       url: `${currentUrl}`,
       logo: `${currentUrl}/images/logo.svg`,
-      telephone: `707-266-8106`,
+      telephone: `+17072668106`,
       priceRange: `$$$`,
     }
   },
@@ -40,7 +40,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://allydigitalsolutions.com',
-        sitemap: 'https://allydigitalsolutions.com/sitemap/sitemap-index.xml',
+        sitemap: 'https://allydigitalsolutions.com/sitemap/sitemap-0.xml',
         policy: [
           { userAgent: '*', allow: '/' },
           {userAgent: '*', disallow: '/thanks'},
