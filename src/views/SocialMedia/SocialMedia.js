@@ -24,7 +24,7 @@ const MobileApp = () => {
 
   return (
     <Main
-      title="Motivate change and inspire action with social media management for your small business."
+      title="Social Media For Your Small Business"
       description="Lead the conversation and inspire action with a solid online presence and engaging online community."
       image={publicURL}
     >
