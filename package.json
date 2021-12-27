@@ -7,6 +7,7 @@
   "scripts": {
     "develop": "npx gatsby develop",
     "build": "npx gatsby build",
+    "serve": "npx gatsby serve",
     "clean": "npx gatsby clean",
     "prettier:fix": "prettier './src/**/*.js' --write",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
