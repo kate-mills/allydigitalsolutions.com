@@ -33,11 +33,11 @@ const mock = [
 
 const Hero = () => {
   const theme = useTheme();
-  const {palette:{mode}} = theme
+  const {palette:{mode}, breakpoints} = theme
   const { officeGals:{publicURL} }  = useSrcImages()
 
 
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const isMd = useMediaQuery(breakpoints.up('md'), {
     defaultMatches: true,
   });
 
@@ -87,7 +87,7 @@ const Hero = () => {
               sx={{ fontWeight: 700 }}
             >Excellence happens with code,{' '}
               <Typography
-                color={'secondary.seoText'}
+                color={'primary.light'}
                 fontSize={'1.2em'}
                 component={'span'}
                 variant={'cursive'}

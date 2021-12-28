@@ -128,7 +128,7 @@ We've got your back when it comes to style and optimization.
                 >
                   <Box
                     component={Avatar}
-                    bgcolor={mode==="dark" ? 'secondary.light':'secondary.dark'}
+                    bgcolor={mode==="dark" ? 'primary.main':'secondary.dark'}
                     width={20}
                     height={20}
                   >

@@ -16,11 +16,11 @@ const redMono = {
 }
 const redMonoForDarkBg = {
   lightest: '#ecbea8',
-  light: '#b98e79',
-  main: '#89182c',
+  light: '#ffdee2', //#b98e79
+  main: '#ffacb0', //#89182c
   darkest: '#400A18',
   bright: '#F47094',
-  dark: '#560001',
+  dark: '#ca7c81', //#560001
   contrastText: '#fff',
   seoText: '#B98E79', //#ffacc3
 }
@@ -35,10 +35,10 @@ const greenMono = {
 }
 const greenMonoForDarkBg = {
   lightest: '#70A6B5',
-  light: '#DFEEF2',
-  main: '#98A3A6',
-  dark: '#B2B6BD',
-  bright: '#96DEF2',
+  light: '#e5f7ff', //#DFEEF2
+  main: '#b3c4d8', //#98A3A6
+  dark: '#8394a7', //#B2B6BD
+  bright: '#f9ffff',
   contrastText: 'rgba(0, 0, 0, .8)',
   seoText: '#DAE9EF',
 }
@@ -79,7 +79,7 @@ export const dark = {
   },
   mode: 'dark',
   primary: greenMonoForDarkBg,
-  secondary:   redMonoForDarkBg,
+  secondary:greenMonoForDarkBg,
   text: {
     primary: '#fff',
     secondary: '#bec7cb',
