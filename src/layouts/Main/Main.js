@@ -20,6 +20,8 @@ const Main = ({
     title='',
     image='',
     description='',
+    noindex=false,
+    snippet='',
   }) => {
 
   const theme = useTheme();
@@ -46,7 +48,7 @@ const Main = ({
 
   return (
     <React.Fragment>
-      <Seo title={title} image={image} description={description}/>
+      <Seo title={title} image={image} description={description} snippet={snippet} noindex={noindex}/>
     <Box>
       <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
         <Container
@@ -94,6 +96,11 @@ Main.propTypes = {
   children: PropTypes.node,
   colorInvert: PropTypes.bool,
   bgcolor: PropTypes.string,
+  title:PropTypes.string,
+  image:PropTypes.string,
+  description:PropTypes.string,
+  noindex: PropTypes.bool,
+  snippet:PropTypes.string,
 };
 
 export default Main;

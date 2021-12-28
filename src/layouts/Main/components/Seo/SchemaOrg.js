@@ -22,18 +22,34 @@ export default React.memo(
     })
     const baseSchema = [
       {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
+        "@context" : "https://schema.org",
+        "@type" : "Organization",
         "@id": organization.url,
         url: organization.url,
+        name: organization.name,
         description: description,
         email: organization.email,
-        image: image,
-        logo: organization.logo,
-        name: organization.name,
-        priceRange: organization.priceRange,
         sameAs: organization.otherUrls,
-        telephone: organization.telephone,
+        image: image,
+        "logo": [{
+          "@type": "ImageObject",
+          name: 'logo',
+          "url": organization.logo,
+        }],
+        "brand": {
+          "@type": "Brand",
+          name: organization.name,
+          url: organization.url,
+          logo: organization.logo,
+        },
+        "contactPoint" : [
+          { "@type" : "ContactPoint",
+            "telephone" : "+1-707-266-8106",
+            "contactType" : "customer service",
+            "areaServed" : "US",
+            "availableLanguage" : "English",
+          }
+        ]
       },
       {
         '@context': 'https://schema.org',

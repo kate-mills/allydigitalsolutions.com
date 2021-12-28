@@ -20,12 +20,12 @@ function SEO({ description, lang, meta, title, image, noindex, snippet, article 
             twitterUsername
             dateModified
             organization{
-              name
-              url
-              logo
-              priceRange
-              telephone
               email
+              logo
+              name
+              otherUrls
+              telephone
+              url
             }
           }
         }

@@ -16,12 +16,12 @@ module.exports = {
     siteUrl: `${currentUrl}`,//keep for sitemap-plugin
     defaultImage: `${currentUrl}/seoimg.jpg`,
     organization: {
-      name: `Ally Digital Solutions`,
-      email: `hello@allydigitalsolutions.com`,
-      url: `${currentUrl}`,
+      email: `hello@${currentUrl}`,
       logo: `${currentUrl}/images/logo.svg`,
+      name: `Ally Digital Solutions`,
+      otherUrls: [ `https://www.instagram.com/allydigitalsolutions`, ],
       telephone: `+17072668106`,
-      priceRange: `$$$`,
+      url: `${currentUrl}`,
     }
   },
   plugins: [
@@ -39,8 +39,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://allydigitalsolutions.com',
-        sitemap: 'https://allydigitalsolutions.com/sitemap/sitemap-0.xml',
+        host: `${currentUrl}`,
+        sitemap: `${currentUrl}/sitemap/sitemap-0.xml`,
         policy: [
           { userAgent: '*', allow: '/' },
           {userAgent: '*', disallow: '/404'},

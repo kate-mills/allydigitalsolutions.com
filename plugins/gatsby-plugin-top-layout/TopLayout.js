@@ -24,15 +24,22 @@ export default function TopLayout(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <meta name="theme-color" content="#ffffff" />
-        <meta name="description" content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."/>
+
+        <meta name="description" content="A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation."/>
+
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
         <meta property="og:locale" content="en_US" />
+
         <meta property="og:type" content="website" />
 
-        <meta property="og:title" content="Ally Digital Solutions | Build a solid online presence, showcase your brand & inspire action." />
-        <meta property="og:description" content="A modern approach to digital management that showcases your brand elevates engagement and inspires action."/>
-        <meta property="og:url" content="https://ally-ten.netlify.app" />
+        <link rel="icon" type="image/png" href="https://allydigitalsolutions.com/icon.png"/>
+
+        <meta property="og:title" content="Ally Digital Solutions"/>
+
+        <meta property="og:description" content="A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation."/>
+
+        <meta property="og:url" content="https://allydigitalsolutions.com" />
       </Helmet>
       <Page>
         {props.children}
