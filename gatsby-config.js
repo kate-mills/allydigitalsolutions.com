@@ -84,6 +84,19 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
+        concurrency: 5,
+        tables: [
+          {
+            baseId: process.env.GATSBY_AIRTABLE_ALLY_BASE_ID,
+            tableName: `Illustrations`,
+          },
+        ],
+      }
+    },
+    {
       resolve: 'gatsby-plugin-preconnect',
       options: {
         domains: ['https://foo.com', 'https://bar.com'],
