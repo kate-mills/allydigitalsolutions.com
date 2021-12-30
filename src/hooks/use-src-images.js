@@ -2,7 +2,6 @@ import { useStaticQuery, graphql } from "gatsby";
 
 export const useSrcImages = () => {
   const {
-    contactPage,
     katePng,
     office,
     officeGals,
@@ -14,10 +13,6 @@ export const useSrcImages = () => {
     graphql`
       {
 
-        contactPage: file(relativePath: { eq: "contact-page.png" }) {
-          publicURL
-          img: childImageSharp { gatsbyImageData }
-        }
         katePng: file(relativePath: { eq: "meet-kate.png" }) {
           publicURL
           img: childImageSharp { gatsbyImageData(backgroundColor: "silver") }
@@ -55,13 +50,13 @@ export const useSrcImages = () => {
       }
     `
   );
-  return {contactPage, katePng, office, officeGals, socialMedia, socialMediaMobile, webDevOne, webDevTwo};
+  return {katePng, office, officeGals, socialMedia, socialMediaMobile, webDevOne, webDevTwo};
 };
 
 
 //import { GatsbyImage, getImage } from "gatsby-plugin-image";
 //import {useSrcImages} from 'hooks/use-src-images'
-//const {contactPage, katePng, office, officeGals, webDevOne, webDevTwo, socialMedia }  = useSrcImages()
+//const { katePng, office, officeGals, webDevOne, webDevTwo, socialMedia }  = useSrcImages()
 
 
 //web-dev-02: Web Developer wearing shades, sitting on steps of an office building alongside her purse.

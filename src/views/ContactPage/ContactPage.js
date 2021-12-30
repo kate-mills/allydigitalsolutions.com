@@ -10,7 +10,7 @@ import {useSrcImages} from 'hooks/use-src-images'
 
 const ContactPage = () => {
   const theme = useTheme();
-  const {contactPage:{publicURL}} = useSrcImages()
+  const {office:{publicURL}} = useSrcImages()
 
   return (<Main title={`Get In Touch`} image={publicURL}>
       <Box
