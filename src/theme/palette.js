@@ -1,47 +1,30 @@
-const apricot  = {
-  red: '#AA1B36',
-  light: '#DFAF99',
-  dark: '#7D5D50',
-  darker: '#B98E79',
+const darkP = {
+  light: '#2196f3',
+  main: '#1976d2',
+  dark: '#0d47a1',
+  contrastText: '#ffffff'
 }
-const redMono = {
-  lightest: '#e15360',
-  light: '#a51a35',
-  main: '#AA1B36',
-  dark: '#89182C',
-  bright: '#e15360',
-  darkest: '#400A18',
-  contrastText: '#fff',
-  seoText: '#661B23',
+
+const darkS = {
+  light: '#FFEA41',
+  main: '#FFE102',
+  dark: '#DBBE01',
+  contrastText: '#000000'
 }
-const redMonoForDarkBg = {
-  lightest: '#ecbea8',
-  light: '#ffdee2', //#b98e79
-  main: '#ffacb0', //#89182c
-  darkest: '#400A18',
-  bright: '#F47094',
-  dark: '#ca7c81', //#560001
-  contrastText: '#fff',
-  seoText: '#B98E79', //#ffacc3
+
+const lightP = {
+  light: '#467de3',
+  main: '#377dff',
+  dark: '#2f6ad9',
+  contrastText: '#FFFFFF'
 }
-const greenMono = {
-  lightest: '#e5f7ff',
-  light: '#566678',
-  main: '#2C3C4C',
-  dark: '#031624',
-  bright: '#9BA4A8',
-  contrastText: 'rgba(225, 225, 225, .9)',
-  seoText: '#505658',
+const lightS = {
+  light: '#ffb74d',
+  main: '#f9b934',
+  dark: '#FF9800',
+  contrastText: '#000000'
 }
-const greenMonoForDarkBg = {
-  lightest: '#70A6B5',
-  light: '#e5f7ff', //#DFEEF2
-  main: '#b3c4d8', //#98A3A6
-  dark: '#8394a7', //#B2B6BD
-  bright: '#f9ffff',
-  contrastText: 'rgba(0, 0, 0, .8)',
-  seoText: '#DAE9EF',
-}
+
 
 export const light = {
   alternate: {
@@ -50,8 +33,8 @@ export const light = {
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
-  primary: greenMono,
-  secondary: redMono,
+  primary: lightP,
+  secondary: lightS,
   text: {
      primary: "#031624",
     secondary: "#53595b",
@@ -68,8 +51,8 @@ export const light = {
 
 export const dark = {
   alternate: {
-    main: '#253746',
-    dark: '#354051',
+    main: '#1a2138',
+    dark: '#151a30',
   },
   cardShadow: 'rgba(0, 0, 0, .11)',
   common: {
@@ -78,18 +61,18 @@ export const dark = {
     red:'#400A18',
   },
   mode: 'dark',
-  primary: greenMonoForDarkBg,
-  secondary:greenMonoForDarkBg,
+  primary: darkP,// greenMonoForDarkBg,
+  secondary:darkS,
   text: {
     primary: '#fff',
     secondary: '#bec7cb',
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
-    default: '#28292B',
-    paper: '#18181A', //#262223
-    level1: '#2C1B1D',
-    level2: '#19060B',
+    default: '#222B45', //#28292B
+    paper: '#222B45', //#262223
+    level1: '#2D3748',
+    level2: '#333',
     footer: "#2D2428",
   },
 };
