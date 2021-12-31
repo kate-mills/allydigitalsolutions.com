@@ -10,3 +10,6 @@ export { default as NotFoundCover } from './NotFoundCover';
 export { default as SocialMedia } from './SocialMedia';
 export { default as Thanks } from './Thanks';
 export { default as WebsiteDev } from './WebsiteDev';
+
+export { default as Illustrations } from './Illustrations';
+export { default as Colors } from './Colors';
