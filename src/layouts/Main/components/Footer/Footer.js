@@ -40,11 +40,11 @@ const Footer = () => {
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
-                to="/"
+                to="/colors/"
                 color="text.primary"
                 variant={'caption'}
               >
-                Home
+                Dev Team
               </Link>
             </Box>
             <Box marginTop={1} marginRight={2}>
