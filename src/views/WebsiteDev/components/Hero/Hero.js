@@ -12,11 +12,11 @@ import {useSrcImages} from 'hooks/use-src-images'
 import Link from 'components/Link'
 
 const Hero = () => {
-  const theme = useTheme();
-  const {breakpoints, palette:{mode, primary, secondary}} = theme
+
+  const {breakpoints:{up}, palette:{secondary:{main:mainColor}}} = useTheme() 
   const {webDevOne:{publicURL:publicURLOne}} = useSrcImages()
 
-  const isMd = useMediaQuery(breakpoints.up('md'), {
+  const isMd = useMediaQuery(up('md'), {
     defaultMatches: true,
   });
 
@@ -33,9 +33,7 @@ const Hero = () => {
                 component={'span'}
                 variant={'cursive'}
                 sx={{
-                  background: mode === 'light'
-                    ?`linear-gradient(180deg, transparent 90%, ${alpha(secondary.main, 0.70)} 0%)`
-                    :`linear-gradient(180deg, transparent 90%, ${alpha(primary.main, 0.70)} 0%)`
+                  background:`linear-gradient(180deg, transparent 90%, ${alpha(mainColor, 0.70)} 0%)`
                 }}
             >{' business & product.'}</Typography>
             </Typography>
@@ -94,7 +92,7 @@ const Hero = () => {
           borderRadius={2}
           maxWidth={600}
           sx={{
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
+            filter: 'brightness(0.9)',
           }}
         />
       </Grid>

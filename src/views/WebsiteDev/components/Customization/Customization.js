@@ -12,8 +12,9 @@ import Link from 'components/Link'
 import {useSrcImages} from 'hooks/use-src-images'
 
 const Customization = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const {breakpoints:{up}} = useTheme()
+
+  const isMd = useMediaQuery(up('md'), {
     defaultMatches: true,
   });
 
@@ -21,8 +22,6 @@ const Customization = () => {
     webDevOne:{publicURL:publicURLOne},
     webDevTwo:{publicURL:publicURLTwo}
   } = useSrcImages()
-
-
 
   return (
     <Box>
@@ -102,10 +101,7 @@ const Customization = () => {
               boxShadow={3}
               borderRadius={2}
               maxWidth={600}
-              sx={{
-                filter:
-                  theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
-              }}
+              sx={{ filter: 'brightness(0.9)' }}
             />
           </Grid>
         </Grid>
@@ -127,10 +123,7 @@ const Customization = () => {
               boxShadow={3}
               borderRadius={2}
               maxWidth={600}
-              sx={{
-                filter:
-                  theme.palette.mode === 'dark' ? 'brightness(0.9)' : 'none',
-              }}
+              sx={{ filter: 'brightness(0.9)' }}
             />
           </Grid>
         </Grid>

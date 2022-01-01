@@ -8,8 +8,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 
-const icon = (<svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gainsboro">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />{" "} </svg>
+const icon = (<svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />{" "}</svg>
 )
 
 
@@ -24,13 +24,12 @@ const mock = [
   { title: 'Hide & Wild', subtitle: 'I loved working with Kate on my e-commerce website! Her communication was excellent every step of the way. She listened to my vision and brought her artistic ideas and vision to the process, which made it feel like a real collaboration. I am thrilled with the result and all her advice along the way.',
     icon,
   },
-  //{ title: 'Skincare By Hilary', subtitle: 'Establish your identity and show your visitors what you do. But, of course, we will make sure the essentials are significant and remarkable to your visitors.', icon: box, },
-  //{ title: 'Hide & Wild', subtitle: 'You are letting your visitors know your location and how they can reach you can seriously reduce frustration and possible loss of clientele, which is always a good thing.', icon: box, },
-  //{ title: 'Details', subtitle: 'Give your visitors a more personal look into your business and what makes your services or product unique.', icon: box, },
 ];
 
 const Reviews = () => {
-  const theme = useTheme();
+  //const theme = useTheme();
+  const {spacing:themeSpacing} = useTheme()
+  //console.log(theme)
 
   return (
     <Box>
@@ -46,7 +45,7 @@ const Reviews = () => {
                 textDecoration: 'none',
                 transition: 'all .2s ease-in-out',
                 '&:hover': {
-                  transform: `translateY(-${theme.spacing(1 / 2)})`,
+                  transform: `translateY(-${themeSpacing(1 / 2)})`,
                 },
               }}
             >
@@ -70,7 +69,7 @@ const Reviews = () => {
                 >
                   <Box
                     component={Avatar}
-                    bgcolor={theme.palette.mode === 'light'? "secondary.dark": "primary.darkest"}
+                    bgcolor={'secondary.main'}
                     width={{ xs: 50, md: 50 }}
                     height={{ xs: 50, md: 50 }}
                     marginBottom={2}

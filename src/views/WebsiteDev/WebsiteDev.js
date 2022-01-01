@@ -12,45 +12,34 @@ import {
   Download,
   Hero,
   Hub,
-  Partners,
-  Pricings,
   Reviews,
   Strategy,
 } from './components';
 
 const WebsiteDev = () => {
-
-  const theme = useTheme();
+  const {palette:{background:{paper}, alternate:{main:mainColor}}, spacing} = useTheme();
   const {webDevOne:{publicURL}} = useSrcImages()
-
   return (
     <Main
-      title={'New! Modern web designs for your small business.'}
+      title={'Modern web designs for your small business.'}
       description={'Do you need a brand new website or just a makeover?  We develop everything from landing pages to custom web apps, plus everything in between.' }
-      image={publicURL}
-    >
-      <Box position={'relative'} sx={{ backgroundColor: theme.palette.alternate.main, marginTop: -13, paddingTop: 13 }}>
+      image={publicURL}>
 
 
-        <Container><Hero /></Container>
+      <Box position={'relative'} sx={{ backgroundColor: mainColor, marginTop: -13, paddingTop: 13 }}>
+          <Container><Hero /></Container>
 
-        <Container paddingY={'0 !important'}><Reviews /></Container>
+          <Container paddingY={'0 !important'}><Reviews /></Container>
 
-        <Container><Hub /></Container>
+          <Container><Hub /></Container>
 
-
-        <Box component={'svg'} preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1" sx={{ width: '100%', marginBottom: theme.spacing(-1) }} >
-          <path fill={theme.palette.background.paper} d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z" ></path>
-        </Box>
-
+          <Box component={'svg'} preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1" sx={{ width: '100%', marginBottom: spacing(-1) }}><path fill={paper} d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path></Box>
       </Box>
-      <Container>
-        <Strategy />
-      </Container>
+
+      <Container><Strategy /></Container>
+
       <Box bgcolor={'alternate.main'} position={'relative'}>
-        <Container position="relative" zIndex={2}>
-          <Customization />
-        </Container>
+        <Container position="relative" zIndex={2}><Customization /></Container>
         <Box
           component={'svg'}
           preserveAspectRatio="none"
@@ -66,12 +55,7 @@ const WebsiteDev = () => {
             right: 0,
             zIndex: 1,
             height: '35%',
-          }}
-        >
-          <polygon
-            fill={theme.palette.background.paper}
-            points="0,273 1921,273 1921,0 "
-          />
+          }}><polygon fill={paper} points="0,273 1921,273 1921,0 "/>
         </Box>
       </Box>
       <Container>

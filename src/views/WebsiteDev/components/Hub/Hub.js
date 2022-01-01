@@ -32,16 +32,14 @@ const mock = [
 ];
 
 const Hero = () => {
-  const theme = useTheme();
-  const {palette:{mode}, breakpoints} = theme
+
+  const {breakpoints:{up}} = useTheme() 
   const { officeGals:{publicURL} }  = useSrcImages()
 
-
-  const isMd = useMediaQuery(breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+  const isMd = useMediaQuery(up('md'),{defaultMatches: true});
 
   const [viewPortEntered, setViewPortEntered] = useState(false);
+
   const setViewPortVisibility = (isVisible) => {
     if (viewPortEntered) {
       return;
@@ -73,9 +71,7 @@ const Hero = () => {
           boxShadow={3}
           borderRadius={2}
           maxWidth={600}
-          sx={{
-            filter: mode === 'dark' ? 'brightness(0.9)' : 'none',
-          }}
+          sx={{ filter: 'brightness(0.9)' }}
         />
       </Grid>
       <Grid item container xs={12} md={6} alignItems={'center'}>
@@ -84,7 +80,7 @@ const Hero = () => {
             <Typography
               variant="h4"
               color="text.primary"
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >Excellence happens with code,{' '}
               <Typography
                 color={'primary.light'}
@@ -97,7 +93,7 @@ const Hero = () => {
           </Box>
           <Box marginBottom={4}>
             <Typography variant="h6" component="p" 
-              color={mode ==='light'?'primary.seoText': 'text.secondary'}>We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
+              color={'text.secondary'}>We utilize artistic tools, code, and trusted online branding principles to build sophisticated solutions for our clients.
             </Typography>
           </Box>
           <Box>
@@ -105,7 +101,7 @@ const Hero = () => {
               {mock.map((item, i) => (
                 <Grid key={i} item xs={12} md={4}>
                   <Typography variant="h3" gutterBottom color="text.primary">
-                    <Box fontWeight={700}>
+                    <Box fontWeight={600}>
                       <VisibilitySensor
                         onChange={(isVisible) =>
                           setViewPortVisibility(isVisible)
@@ -121,7 +117,7 @@ const Hero = () => {
                       </VisibilitySensor>
                     </Box>
                   </Typography>
-                  <Typography color={mode === 'dark'? "text.secondary": "primary.seoText"} component="p">
+                  <Typography color={"text.primary"} component="p">
                     {item.subtitle}
                   </Typography>
                 </Grid>
