@@ -8,7 +8,6 @@ import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 import CardActions from '@mui/material/CardActions';
 import Link from 'components/Link'
-//https://certifications.facebookblueprint.com/student/collection/248399/path/225171/activity/206430?skip_interstitial=true#/page/5faa24e91f435f7ed766a4fa
 
 const mock = [
   {
@@ -17,11 +16,11 @@ const mock = [
     action: 'Your digital storefront',
     btnText: 'Get Package Info',
     features: [
-      { title: 'Establish your business\'s online presence', isIncluded: 'true' },
-      { title: 'Tell your business\'s story', isIncluded: 'true' },
-      { title: 'Build a community', isIncluded: 'true' },
-      { title: 'Find new customers', isIncluded: 'true' },
-      { title: 'Keep people updated', isIncluded: 'true' },
+      { title: 'Establish your business\'s online presence', isIncluded: true },
+      { title: 'Tell your business\'s story', isIncluded: true },
+      { title: 'Build a community', isIncluded: true },
+      { title: 'Find new customers', isIncluded: true },
+      { title: 'Keep people updated', isIncluded: true },
       { title: 'Host Events', isIncluded: true, },
       { title: 'Create & Join Groups', isIncluded: true, },
       { title: 'Sell with Shops', isIncluded: true, },
@@ -61,7 +60,7 @@ const mock = [
 ];
 
 const SocialMediaBreakdown = () => {
-  const theme = useTheme();
+  const {palette:{divider}} = useTheme()
 
   return (
     <Box>
@@ -77,9 +76,7 @@ const SocialMediaBreakdown = () => {
           component={'p'}
           color={'text.secondary'}
           align={'center'}
-        >Our complete social media package for developing brands is now available!
-          {/*Whatever your status, our offers evolve according to your needs.*/}
-        </Typography>
+        >Our complete social media package for developing brands is now available!</Typography>
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
@@ -99,13 +96,10 @@ const SocialMediaBreakdown = () => {
               display={'flex'}
               flexDirection={'column'}
               boxShadow={0}
-              border={`1px solid ${theme.palette.divider}`}
+              border={`1px solid ${divider}`}
             >
               <CardContent
-                sx={{
-                  padding: { sm: 4 },
-                }}
-              >
+                sx={{padding: { sm: 4 }}}>
                 <Box
                   marginBottom={4}
                   display={'flex'}
@@ -125,8 +119,8 @@ const SocialMediaBreakdown = () => {
                       >
                       </Box>
                     </Typography>
-                    <Typography variant={'seoH5'} color={'primary.seoText'} gutterBottom textAlign={'center'}>
-                      <Box component={'span'} fontWeight={600}>
+                    <Typography variant={'seoH5'} color={'text.secondary'} gutterBottom textAlign={'center'}
+                    ><Box component={'span'} fontWeight={600}>
                         {item.action}
                       </Box>
                     </Typography>

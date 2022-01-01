@@ -9,14 +9,12 @@ import Grid from '@mui/material/Grid';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
 import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
-
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import TagIcon from '@mui/icons-material/Tag';
 
 const About = ({img}) => {
-  const theme = useTheme();
-  const {socialMedia:{about,aboutHeading}} = theme
 
+  const {socialMedia:{about,aboutHeading}} = useTheme()
 
   return (
     <Grid container spacing={4}>
@@ -70,10 +68,7 @@ const About = ({img}) => {
                   sx={{
                     objectFit: 'cover',
                     borderRadius: '2.5rem',
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0.7)'
-                        : 'none',
+                    filter: 'brightness(0.8)'
                   }}
                 />
               </Box>
@@ -88,7 +83,7 @@ const About = ({img}) => {
               variant="h4"
               color="text.primary"
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
               }}
             >{aboutHeading}
             </Typography>
@@ -99,19 +94,19 @@ const About = ({img}) => {
           <Box display="flex" marginTop={1}>
             <Box
               component={Avatar}
-              bgcolor={'primary.dark'}
+              bgcolor={'secondary.main'}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}>
-              <Box component={TagIcon} alt={'Hash Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
+              <Box component={TagIcon} alt={'Hash Tag Icon'} sx={{filter: 'brightness(0) invert(1)'}} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
-              bgcolor={'primary.dark'}
+              bgcolor={'secondary.main'}
               marginLeft={1}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}
             >
-              <Box component={AlternateEmailIcon} alt={'Alternate Email Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
+              <Box component={AlternateEmailIcon} alt={'Alternate Email Icon'} sx={{ filter: 'brightness(0) invert(1)',}} width={{ xs: 15, md: 20 }}/>
             </Box>
           </Box>
           <Box

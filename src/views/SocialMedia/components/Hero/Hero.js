@@ -18,7 +18,7 @@ const Hero = ({img}) => {
   const {
     breakpoints,
     socialMedia:{hero},
-    palette:{mode, secondary},
+    palette:{secondary:{main:mainColor}},
   } = useTheme()
 
   const isMd = useMediaQuery(breakpoints.up('md'), {
@@ -33,15 +33,13 @@ const Hero = ({img}) => {
             <Typography
               variant="h3"
               color="text.primary"
-              sx={{
-                fontWeight: 600,
-              }}
+              sx={{ fontWeight: 600, }}
             >Connect and reveal your business's<Typography
-                color={'primary.seoText'}
+                color={'primary.dark'}
                 component={'span'}
                 variant={'cursive'}
                 sx={{
-                  background: `linear-gradient(180deg, transparent 90%, ${alpha(secondary.main, 0.70)} 0%)`
+                  background: `linear-gradient(180deg, transparent 90%, ${alpha(mainColor, 0.70)} 0%)`
                 }}
               >{` unique essence.`}
               </Typography>
@@ -56,14 +54,14 @@ const Hero = ({img}) => {
           <Box display="flex" marginTop={1}>
             <Box
               component={Avatar}
-              bgcolor={'primary.dark'}
+              bgcolor={'secondary.main'}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}>
               <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
-              bgcolor={'primary.dark'}
+              bgcolor={'secondary.main'}
               marginLeft={1}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}
@@ -135,10 +133,7 @@ const Hero = ({img}) => {
                   sx={{
                     objectFit: 'cover',
                     borderRadius: '2.5rem',
-                    filter:
-                      mode === 'dark'
-                        ? 'brightness(0.7)'
-                        : 'none',
+                    filter: 'brightness(0.8)'
                   }}
                 />
               </Box>

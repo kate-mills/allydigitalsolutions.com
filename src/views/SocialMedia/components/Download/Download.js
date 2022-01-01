@@ -15,7 +15,7 @@ const Download = () => {
           data-aos={'fade-up'}
           gutterBottom
           sx={{
-            fontWeight: 700,
+            fontWeight: 600,
           }}
         >Our all-inclusive package is now available.
         </Typography>
@@ -29,18 +29,18 @@ const Download = () => {
         flexDirection={{ xs: 'column', sm: 'row' }}
       >
         <Box>
-          <Typography fontWeight={700} variant={'h6'} gutterBottom>Our clients say it's effortless.</Typography>
+          <Typography fontWeight={600} variant={'h6'} gutterBottom>Our clients say it's effortless.</Typography>
           <Typography>Answer simple questions to get the process rolling.  No pressure - ever!</Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Box display="flex" marginTop={1}>
 
-            <Box component={Avatar} bgcolor={'primary.dark'} width={{ xs: 40, sm: 50 }} height={{ xs: 40, sm: 50 }} >
+            <Box component={Avatar} bgcolor={'secondary.main'} width={{ xs: 40, sm: 50 }} height={{ xs: 40, sm: 50 }} >
               <Box component={TagIcon} alt={'Tag Icon'} sx={{ filter: 'brightness(0) invert(1)' }} width={{ xs: 15, md: 20 }}/>
             </Box>
             <Box
               component={Avatar}
-              bgcolor={'primary.dark'}
+              bgcolor={'secondary.main'}
               marginLeft={1}
               width={{ xs: 40, sm: 50 }}
               height={{ xs: 40, sm: 50 }}

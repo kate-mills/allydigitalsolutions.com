@@ -9,9 +9,9 @@ import CreditCardsIllustration from 'svg/illustrations/CreditCards';
 import Link from 'components/Link'
 
 const Payment = () => {
-  const theme = useTheme();
-  const {palette:{mode}} = theme
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const {breakpoints:{up}} = useTheme()
+
+  const isMd = useMediaQuery(up('md'), {
     defaultMatches: true,
   });
 
@@ -22,7 +22,7 @@ const Payment = () => {
           <Box marginBottom={2}>
             <Typography
               variant="h4"
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >Make shopping simple with a Facebook and Instagram store.
             </Typography>
           </Box>
@@ -37,23 +37,27 @@ const Payment = () => {
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
           >
             <Box
-              component={Button}
+              component={Link}
+              to={'/contact-page-cover/'}
+            >
+              <Button
               variant="outlined"
               color="primary"
               size="large"
               fullWidth={!isMd}
-            >
-              <Link to="/contact-page-cover/">Contact sales</Link>
+              >Contact Sales</Button>
             </Box>
             <Box
-              component={Button}
-              variant="contained"
-              color="primary"
-              size="large"
-              fullWidth={!isMd}
+              component={Link}
               marginTop={{ xs: 1, sm: 0 }}
               marginLeft={{ sm: 2 }}
-            ><Link to="/contact-sidebar-map/" sx={{color: `${mode==='dark'? '#000': '#fff'}`}}>Get Started</Link>
+              to="/contact-sidebar-map/"
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                fullWidth={!isMd}>Get Started</Button>
             </Box>
           </Box>
         </Box>
