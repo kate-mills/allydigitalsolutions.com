@@ -64,6 +64,7 @@ const Hero = () => {
   const theme = useTheme();
 
   const {ally:{assignYour}} = theme
+
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -89,7 +90,7 @@ const Hero = () => {
               sx={{ fontWeight: 600, }}
             >A modern approach to digital management that<br/>
               <Typography
-                color={'primary.seoText'}
+                color={'primary.dark'}
                 variant={'cursive'}
                 component={'span'}
                 sx={{
