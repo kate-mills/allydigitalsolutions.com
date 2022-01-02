@@ -35,7 +35,7 @@ const Hero = ({img}) => {
               color="text.primary"
               sx={{ fontWeight: 600, }}
             >Connect and reveal your business's<Typography
-                color={'primary.dark'}
+                color={'primary.main'}
                 component={'span'}
                 variant={'cursive'}
                 sx={{
@@ -141,9 +141,6 @@ const Hero = ({img}) => {
           </Box>
         </Box>
       </Grid>
-
-
-
     </Grid>
   );
 };
