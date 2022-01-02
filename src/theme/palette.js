@@ -4,54 +4,43 @@ const vogue = {
     dark: "#34170B",
     yellow: '#E9CD9D',
     gold: '#AA835F',
-    silver: "#bbb7b5",
+    silver: "#BBB7B5",
 }
-const cosmoYellow = {
+const vogueYellow = {
   light: "#ffffce",
-  main: "#e9cd9d",
+  main: vogue.yellow,
   dark: "#b69c6e",
   contrastText: "#000000",
 }
-const cosmoGold = {
-  light: "#ddb38d",
-  main: "#aa835f",
-  dark: "#795635",
-  contrastText: "#000406",
-}
-const cosmoSilver = {
+const vogueSilver = {
   light: "#ede9e7",
-  main: "#bbb7b5",
+  main: vogue.silver,
   dark: "#8b8785",
   contrastText: "#000000",
 }
-const cosmoBlue = {
+const vogueBlue = {
   light: "#5093cc",
-  main: "#06669b",
+  main: vogue.blue,
   dark: "#003c6c",
   contrastText: "#ffffff",
 }
-const cosmoOrange = {
-  light: "#ffaa70",
-  main: "#EE7943",
-  dark: "#b64a16",
-  contrastText: "#000000",
-}
+
 export const light = {
   alternate: {
-    main: "#f9f9f7",
-    dark: "#ebebeb",
+    main: "#F9F9F7",
+    dark: "#EBEBEB",
   },
   cardShadow: "rgba(23, 70, 161, .11)",
   common: {
-    black: "#000",
+    black: "#160000",
     white: "#fff",
     ...vogue,
   },
   mode: "light",
-  primary: cosmoBlue,
-  secondary: cosmoSilver,
+  primary: vogueBlue,
+  secondary: vogueSilver,
   text: {
-     primary: "#34170B",
+    primary: vogue.dark,
     secondary: "#603e32",
   },
   divider: "rgba(0, 0, 0, 0.12)",
@@ -66,8 +55,8 @@ export const light = {
 
 export const dark = {
   alternate: {
-    main: "#1a2138",
-    dark: "#151a30",
+    main: "#1A2138",
+    dark: "#151A30",
   },
   cardShadow: "rgba(0, 0, 0, .11)",
   common: {
@@ -76,11 +65,11 @@ export const dark = {
     ...vogue,
   },
   mode: "dark",
-  primary: cosmoYellow,
-  secondary:cosmoGold,
+  primary: vogueYellow,
+  secondary: vogueSilver,
   text: {
     primary: "#fff",
-    secondary: "#bec7cb",
+    secondary: "#BEC7CB",
   },
   divider: "rgba(255, 255, 255, 0.12)",
   background: {
@@ -91,3 +80,19 @@ export const dark = {
     footer: "#2D2428",
   },
 };
+
+/*
+  const vogueOrange = {
+  light: "#ffaa70",
+  main: vogue.orange,
+  dark: "#b64a16",
+  contrastText: "#000000",
+}
+const vogueGold = {
+  light: "#ddb38d",
+  main: vogue.gold,
+  dark: "#795635",
+  contrastText: "#000406",
+}
+*/
+

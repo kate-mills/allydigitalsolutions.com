@@ -20,6 +20,10 @@ const getTheme = (mode, themeToggler) =>
           lineHeight: '1.1em',
           color: mode === 'light' ? light.primary.dark: dark.primary.light,
         },
+        h4:{
+          fontWeight: 600,
+          fontSize: '2.1rem',
+        },
         seoH5: {
           lineHeight: 1.6,
           fontSize: '1.25rem',
