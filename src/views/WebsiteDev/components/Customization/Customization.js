@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -8,31 +7,19 @@ import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Link from 'components/Link'
+import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
-import {useSrcImages} from 'hooks/use-src-images'
-
-const Customization = () => {
+const Customization = ({img1, img2}) => {
   const {breakpoints:{up}} = useTheme()
-
-  const isMd = useMediaQuery(up('md'), {
-    defaultMatches: true,
-  });
-
-  const {
-    webDevOne:{publicURL:publicURLOne},
-    webDevTwo:{publicURL:publicURLTwo}
-  } = useSrcImages()
+  const isMd = useMediaQuery(up('md'),{defaultMatches:true});
 
   return (
     <Box>
       <Box marginBottom={4}>
         <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
+          sx={{textTransform:'uppercase',fontWeight:600}}
           gutterBottom
-          color={'secondary.main'}
+          color={'primary.main'}
           align={'center'}
         >CUSTOMIZATION
         </Typography>
@@ -42,7 +29,7 @@ const Customization = () => {
           align={'center'}
           data-aos={'fade-up'}
           gutterBottom
-          sx={{ fontWeight: 700 }}
+          sx={{ fontWeight: 600 }}
         >Customize your website 
         </Typography>
         <Typography
@@ -92,10 +79,10 @@ const Customization = () => {
         <Grid item xs={12} sm={6} data-aos={'fade-up'}>
           <Grid container alignItems="center">
             <Box
-              component={LazyLoadImage}
+              component={GatsbyImage}
               height={1}
               width={1}
-              src={publicURLTwo}
+              image={getImage(img2)}
               alt="Web Developer wearing shades, sitting on steps of an office building alongside her purse."
               effect="blur"
               boxShadow={3}
@@ -114,10 +101,10 @@ const Customization = () => {
             }}
           >
             <Box
-              component={LazyLoadImage}
+              component={GatsbyImage}
               height={1}
               width={1}
-              src={publicURLOne}
+              image={getImage(img1)}
               alt="Web Developer wearing a hat, sitting on steps of an office building with a leather jacket over her shoulder."
               effect="blur"
               boxShadow={3}

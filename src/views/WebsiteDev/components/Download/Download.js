@@ -12,10 +12,7 @@ const Application = () => {
           variant="h4"
           data-aos={'fade-up'}
           gutterBottom
-          sx={{
-            fontWeight: 600,
-          }}
-        >
+          sx={{ fontWeight: 600, }} >
           Everything you need in a website.
         </Typography>
         <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>We make sure to include all the details and niceties that a growing business could need.
@@ -49,5 +46,4 @@ const Application = () => {
     </Box>
   );
 };
-
 export default Application;

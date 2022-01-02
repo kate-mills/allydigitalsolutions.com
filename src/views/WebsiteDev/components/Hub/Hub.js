@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
+import { GatsbyImage, getImage  } from "gatsby-plugin-image";
+import VisibilitySensor from 'react-visibility-sensor';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import {useSrcImages} from 'hooks/use-src-images'
 
 
 const mock = [
@@ -31,10 +30,9 @@ const mock = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({img}) => {
 
   const {breakpoints:{up}} = useTheme() 
-  const { officeGals:{publicURL} }  = useSrcImages()
 
   const isMd = useMediaQuery(up('md'),{defaultMatches: true});
 
@@ -44,7 +42,6 @@ const Hero = () => {
     if (viewPortEntered) {
       return;
     }
-
     setViewPortEntered(isVisible);
   };
 
@@ -62,10 +59,10 @@ const Hero = () => {
         data-aos-duration="2000"
       >
         <Box
-          component={LazyLoadImage}
+          component={GatsbyImage}
           height={1}
           width={1}
-          src={publicURL}
+          image={getImage(img)}
           alt="Web Developers are sitting at a table with their laptops smiling, discussing website development."
           effect="blur"
           boxShadow={3}
@@ -83,8 +80,7 @@ const Hero = () => {
               sx={{ fontWeight: 600 }}
             >Excellence happens with code,{' '}
               <Typography
-                color={'primary.light'}
-                fontSize={'1.2em'}
+                color={'primary.main'}
                 component={'span'}
                 variant={'cursive'}
               >not by chance.
@@ -103,8 +99,7 @@ const Hero = () => {
                   <Typography variant="h3" gutterBottom color="text.primary">
                     <Box fontWeight={600}>
                       <VisibilitySensor
-                        onChange={(isVisible) =>
-                          setViewPortVisibility(isVisible)
+                        onChange={(isVisible) => setViewPortVisibility(isVisible)
                         }
                         delayedCall
                       >

@@ -27,10 +27,7 @@ const mock = [
 ];
 
 const Reviews = () => {
-  //const theme = useTheme();
-  const {spacing:themeSpacing} = useTheme()
-  //console.log(theme)
-
+  const {spacing} = useTheme()
   return (
     <Box>
       <Grid container spacing={2}>
@@ -45,7 +42,7 @@ const Reviews = () => {
                 textDecoration: 'none',
                 transition: 'all .2s ease-in-out',
                 '&:hover': {
-                  transform: `translateY(-${themeSpacing(1 / 2)})`,
+                  transform: `translateY(-${spacing(1 / 2)})`,
                 },
               }}
             >

@@ -1,24 +1,19 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-
-import {useSrcImages} from 'hooks/use-src-images'
-
 import Link from 'components/Link'
+import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
-const Hero = () => {
-
-  const {breakpoints:{up}, palette:{secondary:{main:mainColor}}} = useTheme() 
-  const {webDevOne:{publicURL:publicURLOne}} = useSrcImages()
-
-  const isMd = useMediaQuery(up('md'), {
-    defaultMatches: true,
-  });
+const Hero = ({img}) => {
+  const {
+    breakpoints:{up},
+    palette:{secondary:{main:mainColor}}
+  } = useTheme() 
+  const isMd = useMediaQuery(up('md'), { defaultMatches: true, });
 
   return (
     <Grid container spacing={4}>
@@ -31,10 +26,9 @@ const Hero = () => {
               sx={{ fontWeight: 600 }}>Web development for your
               <Typography
                 component={'span'}
+                color={'primary.main'}
                 variant={'cursive'}
-                sx={{
-                  background:`linear-gradient(180deg, transparent 90%, ${alpha(mainColor, 0.70)} 0%)`
-                }}
+                sx={{ background: `linear-gradient(180deg, transparent 90%, ${alpha(mainColor, 0.70)} 0%)` }}
             >{' business & product.'}</Typography>
             </Typography>
           </Box>
@@ -53,8 +47,7 @@ const Hero = () => {
               color="primary"
               size="large"
               to={'/contact-page-cover/'}
-              fullWidth={isMd ? false : true}
-            >
+              fullWidth={isMd ? false : true}>
               Start now
             </Button>
             <Box
@@ -79,25 +72,21 @@ const Hero = () => {
         md={6}
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
+        data-aos-duration="2000">
         <Box
-          component={LazyLoadImage}
+          component={GatsbyImage}
           height={1}
           width={1}
-          src={publicURLOne}
+          image={getImage(img)}
           alt="Web Developer wearing a hat, sitting on steps of an office building with a leather jacket over her shoulder."
           effect="blur"
           boxShadow={3}
           borderRadius={2}
           maxWidth={600}
-          sx={{
-            filter: 'brightness(0.9)',
-          }}
+          sx={{filter: 'brightness(0.9)'}}
         />
       </Grid>
     </Grid>
   );
 };
-
 export default Hero;

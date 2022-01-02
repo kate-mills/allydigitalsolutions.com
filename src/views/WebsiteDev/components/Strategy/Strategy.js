@@ -15,7 +15,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 const Strategy = () => {
-
   const {breakpoints:{up}} = useTheme();
   const isMd = useMediaQuery(up('md'), { defaultMatches: true, });
 
@@ -23,9 +22,9 @@ const Strategy = () => {
     <Box>
       <Box marginBottom={2}>
         <Typography
-          sx={{ textTransform: 'uppercase', fontWeight: 'medium', }}
+          sx={{ textTransform: 'uppercase', fontWeight: 600, }}
           gutterBottom
-          color={'secondary.main'}
+          color={'primary.main'}
           align={'center'}
         >strategy
         </Typography>
