@@ -36,15 +36,16 @@ function SEO({ description, lang, meta, title, image, noindex, snippet, article 
 
   const { pathname } = useLocation()
 
+
+
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    img: image || defaultImage,
+    img: image ? `${siteUrl}${image}`: defaultImage,
     twitterUsername,
     url: `${siteUrl}/${pathname}`,
     organization,
   }
-
 
   return (
     <React.Fragment>
