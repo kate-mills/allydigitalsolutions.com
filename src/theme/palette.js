@@ -1,3 +1,11 @@
+const vogue = {
+    blue: '#06669B',
+    orange: '#EE7943',
+    dark: "#34170B",
+    yellow: '#E9CD9D',
+    gold: '#AA835F',
+    silver: "#bbb7b5",
+}
 const cosmoYellow = {
   light: "#ffffce",
   main: "#e9cd9d",
@@ -37,11 +45,7 @@ export const light = {
   common: {
     black: "#000",
     white: "#fff",
-    silver: "#bbb7b5",
-    gold: '#AA835F',
-    yellow: '#E9CD9D',
-    blue: '#06669B',
-    orange: '#EE7943',
+    ...vogue,
   },
   mode: "light",
   primary: cosmoBlue,
@@ -69,11 +73,7 @@ export const dark = {
   common: {
     black: "#000",
     white: "#fff",
-    silver: "#bbb7b5",
-    gold: '#AA835F',
-    yellow: '#E9CD9D',
-    blue: '#06669B',
-    orange: '#EE7943',
+    ...vogue,
   },
   mode: "dark",
   primary: cosmoYellow,
