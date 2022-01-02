@@ -16,8 +16,8 @@ const QuickStart = () => {
             color="text.primary"
             align={'center'}
             gutterBottom
-            sx={{ fontWeight: 700 }}>
-           Let's Dominate Your Industry! 
+            sx={{ fontWeight: 600 }}
+          > Let's Dominate Your Industry! 
           </Typography>
           <Typography
             variant="h6"

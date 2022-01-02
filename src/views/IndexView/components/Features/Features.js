@@ -24,9 +24,13 @@ const mock = [
 
 const Features = () => {
   const {katePng}  = useSrcImages()
-  const theme = useTheme();
-  const {ally: {ourClientsClear}} = theme
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const {
+    ally: {ourClientsClear},
+    palette:{primary:{main:mainColor}},
+    breakpoints:{up},
+  } = useTheme();
+
+  const isMd = useMediaQuery(up('md'), {
     defaultMatches: true,
   });
 
@@ -41,17 +45,14 @@ const Features = () => {
   return (
     <Box>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
-
-
         <Grid item container justifyContent="center" alignItems="center" xs={12} md={6} sx={{ display: { xs: 'none', md: 'flex'}, backgroundColor: 'inherit'}}>
           <Box
             component={Card}
             boxShadow={4}
             height={1}
             width={1}
-            backgroundColor={ theme.palette.primary.main }
-          >
-            <Box component={GatsbyImage} height={1} width={1} minHeight={300} image={getImage(katePng.img)}
+            backgroundColor={mainColor}
+          ><Box component={GatsbyImage} height={1} width={1}  minHeight={340} image={getImage(katePng.img)}
             alt="Woman smiling holding a laptop."
           /></Box>
         </Grid>
@@ -59,7 +60,7 @@ const Features = () => {
 
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
-            <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>Less work. More time.
+            <Typography variant={'h4'} gutterBottom>Less work. More time.
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
               {ourClientsClear}

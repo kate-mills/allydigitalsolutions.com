@@ -30,8 +30,12 @@ const mock = [
 ];
 
 const Services = () => {
-  const theme = useTheme();
-  const {ally:{ourMission}}=theme
+  const {
+    ally:{ourMission},
+    palette:{
+      secondary:{main:mainColor},
+    },
+  } = useTheme();
 
   return (
     <Box>
@@ -42,9 +46,7 @@ const Services = () => {
             color="text.primary"
             align={'center'}
             gutterBottom
-            sx={{
-              fontWeight: 700,
-            }}
+            sx={{ fontWeight: 600 }}
           >Create Conversation.
           </Typography>
           <Typography
@@ -74,8 +76,8 @@ const Services = () => {
                   width={60}
                   height={60}
                   marginBottom={2}
-                  bgcolor={alpha(theme.palette.primary.main, 0.1)}
-                  color={theme.palette.primary.main}
+                  bgcolor={alpha(mainColor, 0.1)}
+                  color={mainColor}
                 >
                   {item.icon}
                 </Box>

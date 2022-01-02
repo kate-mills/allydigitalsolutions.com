@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -9,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import {sixServices} from 'theme/slogans'
 
 const Benefits = () => {
-  const theme = useTheme();
+
   return (
     <Grid container spacing={4}>
       {sixServices.map((item, i) => (
@@ -29,8 +28,8 @@ const Benefits = () => {
                 width={50}
                 height={50}
                 marginBottom={2}
-                bgcolor={theme.palette.primary.main}
-                color={theme.palette.background.paper}
+                bgcolor={'secondary.main'}
+                color={'background.paper'}
               >
                 {item.icon}
               </Box>

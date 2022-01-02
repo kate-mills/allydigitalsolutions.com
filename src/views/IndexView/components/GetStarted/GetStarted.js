@@ -7,11 +7,12 @@ import { useTheme } from '@mui/material/styles';
 import Link from 'components/Link'
 
 const GetStarted = () => {
-  const theme = useTheme();
-  const {ally: {allyDigitalSolutionsIs}} = theme
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+  const {
+    ally:{allyDigitalSolutionsIs},
+    breakpoints:{up},
+  } = useTheme()
+
+  const isMd = useMediaQuery(up('md'), { defaultMatches: true, });
 
   return (
     <Box>
@@ -20,9 +21,6 @@ const GetStarted = () => {
         color="text.primary"
         align={'center'}
         gutterBottom
-        sx={{
-          fontWeight: 700,
-        }}
       >Get started with Ally Digital today!
       </Typography>
       <Typography
