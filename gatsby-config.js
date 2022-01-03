@@ -43,7 +43,6 @@ module.exports = {
         sitemap: `${currentUrl}/sitemap/sitemap-0.xml`,
         policy: [
           { userAgent: '*', allow: '/' },
-          {userAgent: '*', disallow: '/404'},
           {userAgent: '*', disallow: '/about-us'},
           {userAgent: '*', disallow: '/company-terms'},
           {userAgent: '*', disallow: '/contact-page-cover'},
@@ -69,10 +68,10 @@ module.exports = {
         description: `A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.`,
         lang: `en`,
         start_url: `/`,
-        background_color:`#B6BFC3`,
-        theme_color: `#B6BFC3`,
+        background_color:`#BBB7B5`,
+        theme_color: `#BBB7B5`,
         display: `standalone`,
-        icon: `src/images/icon-square.png`,
+        icon: `src/images/icon.png`,
       },
     },
     {
