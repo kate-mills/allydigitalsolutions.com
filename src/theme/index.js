@@ -26,7 +26,7 @@ const getTheme = (mode, themeToggler) =>
         seoH5: {
           lineHeight: 1.6,
           fontSize: '1.25rem',
-          fontWeight: 500,
+          fontWeight: 600,
         },
         button: {
           textTransform: 'capitalize',
@@ -41,7 +41,7 @@ const getTheme = (mode, themeToggler) =>
         MuiButton: {
           styleOverrides: {
             root: {
-              fontWeight: 500,
+              //fontWeight: 600,
               borderRadius: 5,
               paddingTop: 10,
               paddingBottom: 10,
