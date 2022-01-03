@@ -18,7 +18,6 @@ const getTheme = (mode, themeToggler) =>
           fontSize: '1.1em',
           fontWeight: 400,
           lineHeight: '1.1em',
-          color: mode === 'light' ? light.primary.dark: dark.primary.light,
         },
         h4:{
           fontWeight: 600,
@@ -30,7 +29,7 @@ const getTheme = (mode, themeToggler) =>
           fontWeight: 500,
         },
         button: {
-          textTransform: 'none',
+          textTransform: 'capitalize',
           fontWeight: 'regular',
         },
       },
