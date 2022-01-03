@@ -14,22 +14,17 @@ import {
 
 import {useSrcImages} from 'hooks/use-src-images'
 
-
 const MobileApp = () => {
-
   const {
     palette:{
-      background:{ paper:bgPaper, default:bgDefault },
-      alternate:{ main:altMain },
-      primary:{ dark }
-    },
-    spacing,
-  } = useTheme()
+      background:{paper,default:bgDefault},
+      alternate:{main:altMain},
+      primary:{dark}
+    }, spacing } = useTheme()
 
   const {
-    socialMedia: {publicURL:seoURL},
-    socialMediaMobile:{img:socialImg}
-  }  = useSrcImages()
+    socialMediaSeo: {publicURL:seoURL},
+    socialMediaMobile:{img}}  = useSrcImages()
 
   return (
     <Main
@@ -42,11 +37,11 @@ const MobileApp = () => {
           marginTop: -13,
           paddingTop: 13,
           backgroundColor: altMain,
-          backgroundImage: `linear-gradient(120deg, ${bgPaper} 0%, ${altMain} 100%)`,
+          backgroundImage: `linear-gradient(120deg, ${paper} 0%, ${altMain} 100%)`,
         }}
       >
         <Container>
-          <Hero img={socialImg}/>
+          <Hero img={img}/>
         </Container>
         <Box
           component={'svg'}
@@ -85,11 +80,10 @@ const MobileApp = () => {
           }}
         >
           <Box position={'relative'} zIndex={2}>
-            <About img={socialImg} />
+            <About img={img} />
           </Box>
         </Box>
       </Container>
-
       <Box bgcolor={'alternate.main'}>
         <Container>
           <Payment />
@@ -124,14 +118,11 @@ const MobileApp = () => {
         </Box>
       </Box>
       <Divider />
-
       <Container>
         <Download />
       </Container>
       <Divider />
-
     </Main>
   );
 };
-
 export default MobileApp;
