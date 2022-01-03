@@ -27,7 +27,7 @@ export const useSrcImages = () => {
           publicURL
         }
         socialMediaMobile: file(relativePath: { eq: "social-media-mobile.jpg" }) {
-          img: childImageSharp { gatsbyImageData( layout:FIXED, width: 311, height: 668, placeholder: BLURRED, quality: 100,) }
+          img: childImageSharp { gatsbyImageData( layout:CONSTRAINED, width: 311, height: 668, placeholder: BLURRED) }
         }
         webDevOne: file(relativePath: { eq: "web-developer-01r-x2.jpg" }) {
           publicURL
