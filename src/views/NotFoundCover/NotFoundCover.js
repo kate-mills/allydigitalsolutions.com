@@ -1,11 +1,11 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Link from 'components/Link';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { GatsbyImage, getImage  } from "gatsby-plugin-image";
 
 
 import Main from 'layouts/Main';
@@ -14,11 +14,12 @@ import Container from 'components/Container';
 import {useSrcImages} from 'hooks/use-src-images'
 
 const NotFoundCover = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const { palette:{mode}, breakpoints:{up}, } = useTheme()
+  const {office:{img}}  = useSrcImages()
+
+  const isMd = useMediaQuery(up('md'), {
     defaultMatches: true,
   });
-  const {office:{publicURL} }  = useSrcImages()
 
   return (
     <Main>
@@ -59,7 +60,7 @@ const NotFoundCover = () => {
                   >
                     Oops! Looks like you followed a bad link.
                     <br />If you think the problem is on our end, please{' '}
-                    <Link to={'/contact-page-cover'} underline="none">
+                    <Link to={'/contact-page-cover/'} underline="none">
                       tell us
                     </Link>
                   </Typography>
@@ -134,16 +135,17 @@ const NotFoundCover = () => {
                       }}
                     >
                       <Box
-                        component={LazyLoadImage}
+                        component={GatsbyImage}
                         effect="blur"
-                        src={publicURL}
+                        image={getImage(img)}
+                        alt="A woman in the background works in an office lobby with a pink velvet chair in the foreground."
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}
                         maxWidth={1}
                         sx={{
                           filter:
-                            theme.palette.mode === 'dark'
+                            mode === 'dark'
                               ? 'brightness(0.7)'
                               : 'none',
                         }}

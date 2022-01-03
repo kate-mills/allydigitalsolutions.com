@@ -44,7 +44,7 @@ const ContactPageCover = () => {
           height={1}
           width={1}
           image={getImage(office.img)}
-          alt="Office lobby with bookshelf and pink velvet chair."
+          alt="A woman in the background works in an office lobby with a pink velvet chair in the foreground."
           effect="blur"
           sx={{
             objectFit: 'cover',

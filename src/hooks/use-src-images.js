@@ -15,7 +15,7 @@ export const useSrcImages = () => {
         katePng: file(relativePath: { eq: "meet-kate.png" }) {
           img: childImageSharp { gatsbyImageData(layout: CONSTRAINED, width: 586, height: 341, backgroundColor: "#BBB7B5", quality: 100) }
         }
-        office: file(relativePath: { eq: "office.jpg" }) {
+        office: file(relativePath: { eq: "ally-digital-solutions.jpg" }) {
           publicURL
           img: childImageSharp { gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, height: 805, width: 569) }
         }
@@ -25,7 +25,7 @@ export const useSrcImages = () => {
         socialMediaSeo: file(relativePath: { eq: "social-media.jpg" }) {
           publicURL
         }
-        socialMediaMobile: file(relativePath: { eq: "social-media-mobile.jpg" }) {
+        socialMediaMobile: file(relativePath: { eq: "responsive-social-media.jpg" }) {
           img: childImageSharp { gatsbyImageData( layout:CONSTRAINED, width: 311, height: 668, placeholder: BLURRED) }
         }
         webDevOne: file(relativePath: { eq: "web-development.jpg" }) {

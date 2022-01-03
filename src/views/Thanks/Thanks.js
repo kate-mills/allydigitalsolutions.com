@@ -133,7 +133,7 @@ const ThanksPage  = () => {
                     >
                       <Box
                         component={GatsbyImage}
-                        alt="Office lobby with bookshelf and pink velvet chair."
+                        alt="A woman in the background works in an office lobby with a pink velvet chair in the foreground."
                         effect="blur"
                         image={getImage(img)}
                         height={{ xs: 'auto', md: 1 }}
