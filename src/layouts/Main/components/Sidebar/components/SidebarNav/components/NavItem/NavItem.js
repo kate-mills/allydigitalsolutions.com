@@ -60,7 +60,7 @@ const NavItem = ({ title, items }) => {
                         ? alpha(theme.palette.primary?.main, 0.1)
                         : 'transparent',
                     fontWeight: 400,
-                    fontWeight: activeLink === p.href ? 700 : 400,
+                    fontWeight: activeLink === p.href ? 600 : 400,
                   }}
                 >{p.title}
                   {p.isNew && (

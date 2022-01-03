@@ -22,13 +22,13 @@ const PrivacyPolicy = () => {
         </Box>
 
         <Box marginTop={4} marginBottom={2}>
-          <Typography sx={{ fontWeight: 700 }} variant={"h4"}>
+          <Typography sx={{ fontWeight: 600 }} variant={"h4"}>
             Interpretation and Definitions
           </Typography>
         </Box>
 
         <Box>
-          <Typography sx={{ fontWeight: 700 }} variant={"h6"}>
+          <Typography sx={{ fontWeight: 600 }} variant={"h6"}>
             Interpretation
           </Typography>
         </Box>
@@ -40,7 +40,7 @@ const PrivacyPolicy = () => {
         </Box>
 
         <Box>
-          <Typography sx={{ fontWeight: 700 }} variant={"h6"}>
+          <Typography sx={{ fontWeight: 600 }} variant={"h6"}>
             Definitions
           </Typography>
           For the purposes of this Privacy Policy:
@@ -141,18 +141,18 @@ const PrivacyPolicy = () => {
 
         <Box>
           <Typography
-            sx={{ fontWeight: 700 }}
+            sx={{ fontWeight: 600 }}
             variant={"h4"}
             marginTop={4}
             marginBottom={1}
           >
             Collecting and Using Your Personal Data
           </Typography>
-          <Typography sx={{ fontWeight: 700 }} variant={"h6"}>
+          <Typography sx={{ fontWeight: 600 }} variant={"h6"}>
             Types of Data Collected
           </Typography>
           <Box marginTop={2}>
-            <Typography sx={{ fontWeight: 700 }} variant={"subtitle1"}>
+            <Typography sx={{ fontWeight: 600 }} variant={"subtitle1"}>
               Personal Data
             </Typography>
             <Box>
@@ -177,7 +177,7 @@ const PrivacyPolicy = () => {
             </Box>
           </Box>
           <Box marginTop={2}>
-            <Typography sx={{ fontWeight: 700 }} variant={"subtitle1"}>
+            <Typography sx={{ fontWeight: 600 }} variant={"subtitle1"}>
               Usage Data
             </Typography>
             <Box>
@@ -213,7 +213,7 @@ const PrivacyPolicy = () => {
           </Box>
           <Box>
             <Typography
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
               variant={"h6"}
               marginTop={4}
               marginBottom={1}
@@ -230,13 +230,13 @@ const PrivacyPolicy = () => {
           </Box>
           <Box>
             {/* List ITEM EXAMPLE
-              <Box marginLeft={3} marginTop={1}><Typography sx={{fontWeight:700, display:'inline'}}></Typography>{' '}</Box>
+              <Box marginLeft={3} marginTop={1}><Typography sx={{fontWeight:600, display:'inline'}}></Typography>{' '}</Box>
             */}
 
             {/*START Cookies or Browser Cookies*/}
             <Box marginLeft={3} marginTop={1}>
               <Typography
-                sx={{ fontWeight: 700, display: "inline" }}
+                sx={{ fontWeight: 600, display: "inline" }}
                 variant={"subtitle2"}
               >
                 Cookies or Browser Cookies.
@@ -256,7 +256,7 @@ const PrivacyPolicy = () => {
             {/*START Web Beacons */}
             <Box marginLeft={3} marginTop={1}>
               <Typography
-                sx={{ fontWeight: 700, display: "inline" }}
+                sx={{ fontWeight: 600, display: "inline" }}
                 variant={"subtitle2"}
               >
                 Web Beacons.
@@ -287,7 +287,7 @@ const PrivacyPolicy = () => {
               marginLeft={3}
               marginTop={1}
               component={"li"}
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >
               Necessary / Essential Cookies
             </Box>
@@ -306,7 +306,7 @@ const PrivacyPolicy = () => {
               marginTop={2}
               marginLeft={3}
               component={"li"}
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >
               Cookies Policy / Notice Acceptance Cookies
             </Box>
@@ -321,7 +321,7 @@ const PrivacyPolicy = () => {
               marginTop={2}
               marginLeft={3}
               component={"li"}
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >
               Functionality Cookies
             </Box>
@@ -339,7 +339,7 @@ const PrivacyPolicy = () => {
               marginLeft={3}
               marginTop={2}
               component={"li"}
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
             >
               Tracking and Performance Cookies
             </Box>
@@ -371,7 +371,7 @@ const PrivacyPolicy = () => {
             {/*USE OF YOUR PERSONAL DATA*/}
             <Box>
               <Typography
-                sx={{ fontWeight: 700 }}
+                sx={{ fontWeight: 600 }}
                 variant={"h5"}
                 marginTop={4}
                 marginBottom={1}
@@ -385,7 +385,7 @@ const PrivacyPolicy = () => {
               <Box marginLeft={3} marginTop={1}>
                 {" "}
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   {" "}
@@ -395,7 +395,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   To manage Your account:
@@ -407,7 +407,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   For the performance of a contract:
@@ -418,7 +418,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   To contact You:
@@ -432,7 +432,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   To provide You
@@ -444,7 +444,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   To manage Your requests:
@@ -453,7 +453,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   For business transfers:
@@ -467,7 +467,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   For other purposes
@@ -487,7 +487,7 @@ const PrivacyPolicy = () => {
               </Typography>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   With Service Providers:
@@ -498,7 +498,7 @@ const PrivacyPolicy = () => {
 
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   For business transfers:
@@ -511,7 +511,7 @@ const PrivacyPolicy = () => {
 
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   With Affiliates:
@@ -525,7 +525,7 @@ const PrivacyPolicy = () => {
 
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   With business partners:
@@ -536,7 +536,7 @@ const PrivacyPolicy = () => {
 
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   With other users
@@ -547,7 +547,7 @@ const PrivacyPolicy = () => {
               </Box>
               <Box marginLeft={3} marginTop={1}>
                 <Typography
-                  sx={{ fontWeight: 700, display: "inline" }}
+                  sx={{ fontWeight: 600, display: "inline" }}
                   paddingRight={1}
                 >
                   With Your consent
@@ -560,7 +560,7 @@ const PrivacyPolicy = () => {
           <Box>
             {" "}
             {/* RETENTION OF YOUR PERSONAL DATA */}
-            <Typography sx={{ fontWeight: 700 }} variant={"h6"} marginTop={2}>
+            <Typography sx={{ fontWeight: 600 }} variant={"h6"} marginTop={2}>
               Retention of Your Personal Data
             </Typography>
             <Typography marginLeft={2} marginBottom={1}>
@@ -581,7 +581,7 @@ const PrivacyPolicy = () => {
           </Box>
           <Box>
             {/* TRANSFER OF YOUR PERSONAL DATA*/}
-            <Typography sx={{ fontWeight: 700 }} variant={"h6"} marginTop={2}>
+            <Typography sx={{ fontWeight: 600 }} variant={"h6"} marginTop={2}>
               Transfer of Your Personal Data
             </Typography>
             <Typography marginLeft={2} marginBottom={1}>
@@ -610,7 +610,7 @@ const PrivacyPolicy = () => {
             {" "}
             {/*DISCLOSURE OF YOUR PERSONAL DATA */}
             <Typography
-              sx={{ fontWeight: 700 }}
+              sx={{ fontWeight: 600 }}
               variant={"h5"}
               marginTop={4}
               marginBottom={1}
@@ -618,7 +618,7 @@ const PrivacyPolicy = () => {
               Disclosure of Your Personal Data
             </Typography>
             <Box>
-              <Typography sx={{ fontWeight: 700 }} variant={"h6"}>
+              <Typography sx={{ fontWeight: 600 }} variant={"h6"}>
                 Business Transactions
               </Typography>
               <Typography marginLeft={2} marginBottom={1}>
@@ -629,7 +629,7 @@ const PrivacyPolicy = () => {
               </Typography>
             </Box>
             <Box>
-              <Typography sx={{ fontWeight: 700 }} variant={"h6"}>
+              <Typography sx={{ fontWeight: 600 }} variant={"h6"}>
                 Law enforcement
               </Typography>
               <Typography marginLeft={2} marginBottom={1}>
@@ -640,7 +640,7 @@ const PrivacyPolicy = () => {
               </Typography>
             </Box>
             <Box>
-              <Typography sx={{ fontWeight: 700 }} variant={"h6"}>
+              <Typography sx={{ fontWeight: 600 }} variant={"h6"}>
                 Other legal requirements
               </Typography>
               <Typography marginLeft={2} marginBottom={1}>
@@ -670,7 +670,7 @@ const PrivacyPolicy = () => {
         </Box>
         <Box>
           <Typography
-            sx={{ fontWeight: 700 }}
+            sx={{ fontWeight: 600 }}
             variant={"h5"}
             marginTop={4}
             marginBottom={1}
@@ -688,7 +688,7 @@ const PrivacyPolicy = () => {
 
         <Box>
           <Typography
-            sx={{ fontWeight: 700 }}
+            sx={{ fontWeight: 600 }}
             variant={"h4"}
             marginTop={4}
             marginBottom={1}
@@ -716,7 +716,7 @@ const PrivacyPolicy = () => {
 
         <Box>
           <Typography
-            sx={{ fontWeight: 700 }}
+            sx={{ fontWeight: 600 }}
             variant={"h4"}
             marginTop={4}
             marginBottom={1}
@@ -738,7 +738,7 @@ const PrivacyPolicy = () => {
         </Box>
 
         <Box marginTop={2}>
-          <Typography sx={{ fontWeight: 700 }} variant={"h4"} marginBottom={1}>
+          <Typography sx={{ fontWeight: 600 }} variant={"h4"} marginBottom={1}>
             Changes to this Privacy Policy
           </Typography>
           <Typography>
@@ -764,5 +764,5 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy;
 
-//LIST ITEM <Box marginLeft={3} marginTop={1}><Typography sx={{fontWeight:700, display:'inline', }} paddingRight={1}>BOLD</Typography>EXTRA TEXT</Box>
+//LIST ITEM <Box marginLeft={3} marginTop={1}><Typography sx={{fontWeight:600, display:'inline', }} paddingRight={1}>BOLD</Typography>EXTRA TEXT</Box>
 

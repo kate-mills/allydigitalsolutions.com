@@ -16,7 +16,7 @@ const ContactCard = () => {
       <Box padding={{ xs: 2, sm: 3 }}>
         <Typography
           sx={{
-            fontWeight: '700',
+            fontWeight: '600',
           }}
           gutterBottom
         >

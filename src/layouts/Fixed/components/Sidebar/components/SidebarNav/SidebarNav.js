@@ -29,7 +29,7 @@ const SidebarNav = ({ pages, onClose }) => {
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 700,
+                fontWeight: 600,
                 textTransform: 'uppercase',
                 marginBottom: 1,
                 display: 'block',
