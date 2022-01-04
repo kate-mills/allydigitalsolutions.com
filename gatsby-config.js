@@ -70,8 +70,8 @@ module.exports = {
         start_url: `/`,
         background_color:`#BBB7B5`,
         theme_color: `#BBB7B5`,
-        display: `standalone`,
-        icon: `src/images/icon.png`,
+        display: `minimal-ui`,
+        icon: `src/images/blue-icon.png`,
       },
     },
     {
