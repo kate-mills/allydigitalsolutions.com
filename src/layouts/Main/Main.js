@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-//import Link from 'components/Link';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -24,33 +23,21 @@ const Main = ({
     snippet='',
   }) => {
 
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+    const {breakpoints:{up},palette:{background:{paper}},zIndex:{appBar}} = useTheme();
+    const isMd = useMediaQuery(up('md'), { defaultMatches: true, });
 
-  const [openSidebar, setOpenSidebar] = useState(false);
+    const [openSidebar,setOpenSidebar] = useState(false);
+    const handleSidebarOpen  = ()=>{ setOpenSidebar(true); };
+    const handleSidebarClose = ()=>{ setOpenSidebar(false); };
+    const open = isMd ? false : openSidebar;
 
-  const handleSidebarOpen = () => {
-    setOpenSidebar(true);
-  };
-
-  const handleSidebarClose = () => {
-    setOpenSidebar(false);
-  };
-
-  const open = isMd ? false : openSidebar;
-
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 38,
-  });
+    const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 38, });
 
   return (
     <React.Fragment>
       <Seo title={title} image={image} description={description} snippet={snippet} noindex={noindex}/>
     <Box>
-      <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
+      <Box bgcolor={bgcolor} position={'relative'} zIndex={appBar}>
         <Container
           paddingTop={'8px !important'}
           paddingBottom={'0 !important'}
@@ -60,26 +47,20 @@ const Main = ({
       </Box>
       <AppBar
         position={'sticky'}
-        sx={{
-          top: 0,
-          backgroundColor: trigger ? theme.palette.background.paper : bgcolor,
-        }}
-        elevation={trigger ? 1 : 0}
-      >
+        sx={{ top: 0, backgroundColor: trigger ? paper : bgcolor, }}
+        elevation={trigger ? 1 : 0}>
         <Container paddingY={1}>
           <Topbar
             onSidebarOpen={handleSidebarOpen}
             pages={pages}
-            colorInvert={trigger ? false : colorInvert}
-          />
+            colorInvert={trigger ? false : colorInvert}/>
         </Container>
       </AppBar>
       <Sidebar
         onClose={handleSidebarClose}
         open={open}
         variant="temporary"
-        pages={pages}
-      />
+        pages={pages}/>
       <main>
         {children}
         <Divider />
@@ -102,5 +83,4 @@ Main.propTypes = {
   noindex: PropTypes.bool,
   snippet:PropTypes.string,
 };
-
 export default Main;
