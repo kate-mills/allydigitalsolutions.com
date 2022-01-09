@@ -3,6 +3,9 @@
 require("dotenv").config()
 const currentUrl = `https://allydigitalsolutions.com`
 
+//console.log('process', process)
+console.log('AIRTABLE_API_KEY', process.env.AIRTABLE_API_KEY)
+
 module.exports = {
   siteMetadata: {
     title: `Ally Digital Solutions`,
@@ -85,11 +88,11 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
+        apiKey: process.env.AIRTABLE_API_KEY,
         concurrency: 5,
         tables: [
           {
-            baseId: process.env.GATSBY_AIRTABLE_ALLY_BASE_ID,
+            baseId: process.env.AIRTABLE_ALLY_BASE_ID,
             tableName: `Illustrations`,
           },
         ],
