@@ -3,9 +3,6 @@
 require("dotenv").config()
 const currentUrl = `https://allydigitalsolutions.com`
 
-//console.log('process', process)
-console.log('AIRTABLE_API_KEY', process.env.AIRTABLE_API_KEY)
-
 module.exports = {
   siteMetadata: {
     title: `Ally Digital Solutions`,
@@ -47,13 +44,23 @@ module.exports = {
         policy: [
           { userAgent: '*', allow: '/' },
           {userAgent: '*', disallow: '/about-us'},
+          {userAgent: '*', disallow: '/blogs'},
+          {userAgent: '*', disallow: '/build-color-schemes'},
           {userAgent: '*', disallow: '/company-terms'},
-          {userAgent: '*', disallow: '/contact-page-cover'},
           {userAgent: '*', disallow: '/contact-page'},
+          {userAgent: '*', disallow: '/contact-page-cover'},
+          {userAgent: '*', disallow: '/contact-us'},
           {userAgent: '*', disallow: '/discover-new-colors'},
+          {userAgent: '*', disallow: '/e-commerce'},
           {userAgent: '*', disallow: '/free-website-images'},
           {userAgent: '*', disallow: '/not-found-cover'},
+          {userAgent: '*', disallow: '/portfolio'},
+          {userAgent: '*', disallow: '/social-media'},
+          {userAgent: '*', disallow: '/social-media/media-1'},
+          {userAgent: '*', disallow: '/social-media/media-3'},
+          {userAgent: '*', disallow: '/social-media/media-5'},
           {userAgent: '*', disallow: '/thanks'},
+          {userAgent: '*', disallow: '/websites'},
         ],
       }
     },
