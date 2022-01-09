@@ -46,12 +46,13 @@ function SEO({ description, lang, meta, title, image, noindex, snippet, article 
     url: `${siteUrl}/${pathname}`,
     organization,
   }
+  const fullTitle =  `Ally Digital Solutions | ${seo.title}`
 
   return (
     <React.Fragment>
     <Helmet
       htmlAttributes={{lang: 'en'}}
-      title={title ? `Ally Digital Solutions | ${seo.title}`: defaultTitle}
+      title={fullTitle}
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.img} />
@@ -64,7 +65,7 @@ function SEO({ description, lang, meta, title, image, noindex, snippet, article 
       {/* facebook card */}
       {seo.url && <meta property="og:url" content={seo.url} />}
       {article ? <meta property="og:type" content="article" />:<meta property="og:type" content="website" /> }
-      {seo.title && <meta property="og:title" content={seo.title} />}
+      {seo.title && <meta property="og:title" content={fullTitle} />}
       {seo.description && <meta property="og:description" content={seo.description}/>}
       {seo.img && <meta property="og:image" content={seo.img} />}
 
