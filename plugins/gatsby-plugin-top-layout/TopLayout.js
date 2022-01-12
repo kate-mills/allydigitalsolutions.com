@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import {getPinterestBaseCode} from './pinterest'
 
 //import 'slick-carousel/slick/slick.css';
 //import 'slick-carousel/slick/slick-theme.css';
@@ -17,7 +16,6 @@ import Page from '../../src/components/Page';
 
 
 export default function TopLayout(props) {
-  console.log(getPinterestBaseCode())
   return (
     <React.Fragment>
       <Helmet>
@@ -43,8 +41,6 @@ export default function TopLayout(props) {
         <meta property="og:description" content="A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation."/>
 
         <meta property="og:url" content="https://allydigitalsolutions.com" />
-        <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612587505909&pd[em]=<hashed_email_address>&noscript=1" />
-        {/* end Pinterest Tag */}
       </Helmet>
       <Page>
         {props.children}
