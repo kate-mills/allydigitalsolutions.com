@@ -16,7 +16,7 @@ module.exports = {
     siteUrl: `${currentUrl}`,//keep for sitemap-plugin
     defaultImage: `${currentUrl}/seoimg.jpg`,
     organization: {
-      email: `hello@${currentUrl}`,
+      email: `hello@allydigitalsolutions.com`,
       logo: `${currentUrl}/images/logo.svg`,
       name: `Ally Digital Solutions`,
       otherUrls: [ `https://www.instagram.com/allydigitalsolutions`, ],
@@ -60,15 +60,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `%s | Ally Digital Solutions`,
-        short_name: `AllyDigital`,
+        name: `Ally Digital Solutions - %s`,
+        short_name: `allydigital`,
         description: `A modern approach to digital management that transforms businesses into brands through consistent and unique messaging, promoting engagement, and shaping the conversation.`,
         lang: `en`,
         start_url: `/`,
-        background_color:`#BBB7B5`,
-        theme_color: `#BBB7B5`,
+        background_color:`#FFFFFF`,
+        theme_color: `#06669B`,
         display: `minimal-ui`,
-        icon: `src/images/blue-icon.png`,
+        icon: `src/images/maskable.png`,
+        id: '/',
+        crossOrigin: `use-credentials`,
       },
     },
     {
@@ -115,5 +117,38 @@ module.exports = {
         //experimentId: "nfa82CprS161s3tAv5DHEg",
       }
     },
+    {
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: "6005676941", //YOUR_GOOGLE_TAGMANAGER_ID
+
+      // Include GTM in development.
+      //
+      // Defaults to false meaning GTM will only be loaded in production.
+      includeInDevelopment: false,
+
+      // datalayer to be set before GTM is loaded
+      // should be an object or a function that is executed in the browser
+      //
+      // Defaults to null
+      defaultDataLayer: { platform: "gatsby" },
+
+      // Specify optional GTM environment details.
+      gtmAuth: "XAETcNcp3A5ztYiQHCdl6g", //YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING
+      gtmPreview: "env-1", //YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME
+      dataLayerName: "GTM-KTG89CB", //YOUR_DATA_LAYER_NAME
+
+      // Name of the event that is triggered
+      // on every Gatsby route change.
+      //
+      // Defaults to gatsby-route-change
+      //routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+      // Defaults to false
+      //enableWebVitalsTracking: true,
+      // Defaults to https://www.googletagmanager.com
+      //selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+    },
+  },
+
   ],
 };
