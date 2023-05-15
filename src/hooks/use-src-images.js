@@ -12,8 +12,8 @@ export const useSrcImages = () => {
   } = useStaticQuery(
     graphql`
       {
-        katePng: file(relativePath: { eq: "meet-kate.png" }) {
-          img: childImageSharp { gatsbyImageData(layout: CONSTRAINED, width: 586, height: 341, backgroundColor: "#BBB7B5", quality: 100) }
+        katePng: file(relativePath: { eq: "ksm.png" }) {
+          img: childImageSharp { gatsbyImageData(layout: CONSTRAINED, width: 500, height: 500, quality: 100) }
         }
         office: file(relativePath: { eq: "ally-digital-solutions.jpg" }) {
           publicURL
